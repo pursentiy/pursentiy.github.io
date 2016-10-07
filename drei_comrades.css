@@ -1,0 +1,591 @@
+body{
+	margin:0px;
+	min-width: 405px;
+}
+
+.overflow{
+	overflow:hidden;
+}
+
+
+header{
+	height:60px;
+	width:100%;
+	background-color:#2F2E2E;
+	position: fixed;
+	z-index: 2;
+}
+
+header ul {
+	margin-top:21.5px;
+	display:flex;
+	justify-content: center;
+	-webkit-padding-start: 0px;
+}
+
+header ul li{
+	font-size: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	list-style:none; 
+	color:white;
+	padding:0px 35px 0px 35px;
+	cursor:pointer;
+	
+}
+
+header ul li a{
+transition: 0.4s ease;
+	-o-transition: 0.4s ease;
+	-moz-transition: 0.4s ease;
+	-webkit-transition: 0.4s ease;
+	-ms-transition: 0.4s ease;
+}
+
+.main_navigation{
+	display:none;
+}
+
+header ul li:hover a{
+	color:#636363;
+}
+
+.button_toggle{
+	display:none;
+}
+
+.under_header{
+	width:100%;
+	height:60px;
+}
+
+section.main_car .car{
+	width:100%;
+	height:900px;
+	background:url("pictures/car.jpg") no-repeat center;
+	background-size:cover;
+}
+
+.car .social{
+	position: relative;
+	z-index:1;
+	margin:0px auto;
+	width:200px;
+	height:100px;
+	top:86.5%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.car .social [class^="social_"]{
+	width:55px;
+	height:55px;
+	border-radius: 50%;
+	cursor:pointer;
+}
+
+.car .social .social_vk{
+	background:url("pictures/vk.png") no-repeat center;
+	background-size:cover;
+}
+
+.car .social .social_fb{
+	background:url("pictures/fb.png") no-repeat center;
+	background-size:cover;
+}
+
+.car .social .social_in{
+	background:url("pictures/in.png") no-repeat center;
+	background-size:cover;
+}
+
+
+.background_dark{
+	
+}
+
+section.offer{
+	height:620px;
+	width:100%;
+	
+}
+
+.offer .service{
+	width:100%;
+	height:490px;
+	color:#d1d1d1;
+	font-family: Arial, Helvetica, sans-serif;
+	background:url("pictures/dark.jpg") no-repeat center;
+	background-size: cover;
+	font-size: 2em;
+	padding-top:130px;
+	text-align: center;
+}
+
+.offer .under{
+	width:36px;
+	height:3px;
+	position: relative;
+	top:20px;
+	margin:0px auto;
+	background:#d1d1d1;
+}
+
+.offer .service .advices{
+	margin-top:50px;
+	display:flex;
+	justify-content: center;
+}
+
+.offer .service [class^="offer_"]{
+	width:170px;
+	height:280px;
+	margin-top:50px;
+	margin:0px 15px 0px 15px;
+}
+
+.offer .service [class^="offer_"] [class^="photo_"]{
+	width:100%;
+	height:50%;
+
+}
+
+
+.offer .service [class^="offer_"] .text{
+	width:100%;
+	height:50%;
+}
+
+.offer .service .offer_repair .photo_1{
+	background:url("pictures/back.png") no-repeat -1% 80%;
+	background-size:400%;
+}
+
+.offer .service .offer_clothes .photo_2{
+	background:url("pictures/back.png") no-repeat 50% 80%;
+	background-size:400%;
+}
+
+
+.offer .service .offer_paint .photo_3{
+	background:url("pictures/back.png") no-repeat 101% 80%;
+	background-size:400%;
+}
+
+
+.offer .service [class^="offer_"] .text{
+	font-size:0.55em;
+}
+
+h3{
+	font-size: 1.4em;
+	-webkit-margin-before: 0.55em;
+	-webkit-margin-after: 0.5em;
+}
+
+section.works{
+	width:100%;
+	height:1080px;
+	background:#f7f7f7;
+}
+
+.works .work{
+	padding-top:110px;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+	color:#6e6e6e;
+}
+
+.work .under{
+	width:36px;
+	height:3px;
+	position: relative;
+	top:-17px;
+	margin:0px auto;
+	background:#303030;
+}
+
+.works .work h3{
+
+	color:#303030;
+	font-size: 1.4em;
+	font-weight: normal;
+	-webkit-margin-after: 1em;
+	-ms-margin-after: 1em;
+	-moz-margin-after: 1em;
+	-o-margin-after: 1em;
+}
+
+.work .cars{
+	width:1288px;
+	height:648px;
+	margin:0px auto;
+	margin-top:70px;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+}
+
+.work .cars [class^="pos_"]{
+	width:426px;
+	min-width:426px;
+	height:319px;
+	cursor:pointer;
+	transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-webkit-transition: 0.5s ease;
+	-ms-transition: 0.5s ease;
+}
+
+.work .cars [class^="pos_"]:hover{
+	filter:brightness(0.5);
+
+}
+
+
+
+.scale{
+	display: relative;
+	z-index: 2;
+	transform:scale(2.5) translate(213px,80px);
+	filter:brightness(1);
+}
+
+
+.work .cars .pos_first{
+	background:url("pictures/first.jpg") no-repeat;
+}
+
+
+.work .cars .pos_second{
+	background:url("pictures/second.jpg") no-repeat;
+
+}
+
+.work .cars .pos_third{
+	background:url("pictures/third.jpg") no-repeat;
+
+}
+
+.work .cars .pos_fourth{
+	background:url("pictures/fourth.jpg") no-repeat;
+
+}
+
+.work .cars .pos_fifth{
+	background:url("pictures/fifth.jpg") no-repeat;
+
+}
+
+.work .cars .pos_sixth{
+	background:url("pictures/sixth.jpg") no-repeat;
+
+}
+
+section.about{
+	width:100%;
+	height:620px;
+	background:url("pictures/background_pink.jpg") no-repeat center;
+	background-size:cover;
+	
+}
+
+
+.about .who_are_we{
+	width:680px;
+	height:450px;
+	background:#f7f7f7;
+	margin:0px auto;
+	position: relative;
+	top: 85px;
+
+}
+
+.about .who_are_we .text{
+	width:500px;
+	height:300px;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+	padding-top:60px;
+	margin:0px auto;
+	color:#6e6e6e;
+}
+
+.about .who_are_we .text h3{
+	font-size: 1.4em;
+	font-weight: normal;
+	-webkit-margin-after: 1.4em;
+	-ms-margin-after: 1em;
+	-moz-margin-after: 1em;
+	-o-margin-after: 1em;
+	color:#303030;
+}
+
+.about .who_are_we .text .under{
+	width:36px;
+	height:3px;
+	position: relative;
+	top:-21px;
+	margin:0px auto;
+	background:#303030;
+}
+
+.just_photo{
+	width:100%;
+	height:400px;
+	overflow: hidden;
+}
+
+.just_photo .people{
+	position: relative;
+	width:100%;
+	height:1000px;
+	background:url("pictures/just_photo.jpg") no-repeat 50% 80%;
+	background-size:cover; 
+	z-index: -1;
+	top:-200px;
+	overflow: hidden;
+}
+
+.forms{
+	width:100%;
+	height:900px;
+	background:url("pictures/background_pink.jpg") no-repeat center;
+	background-size:cover;
+
+}
+
+.forms .form{
+	position: relative;
+	width:680px;
+	height:570px;
+	background:white;
+	margin: 0px auto;
+	top:-40px;
+	bottom: 50px;
+}
+
+.forms .car{
+	position: relative;
+	width:280px;
+	height:230px;
+	margin:0px auto;
+	padding-top:50px;
+	background: url("pictures/car.png") no-repeat center
+}
+
+.forms .form h3{
+
+	color:#303030;
+	font-size: 1.4em;
+	font-weight: normal;
+	-webkit-margin-after: 1em;
+	-ms-margin-after: 1em;
+	-moz-margin-after: 1em;
+	-o-margin-after: 1em;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 2.2em;
+	padding-top:60px;
+	color:#303030;
+}
+
+.forms .form  .under{
+	width:36px;
+	height:3px;
+	position: relative;
+	top:-21px;
+	margin:0px auto;
+	background:#303030;
+}
+
+.forms .form .bottom{
+	width:100%;
+	height: 340px;
+	display: flex;
+	justify-content: space-around;
+}
+.forms .form .info{
+	display: inline-block;
+	width:250px;
+	height:340px;
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.1em;
+	color:#6e6e6e;
+	margin-left: 20px;
+}
+
+.forms .form .input{
+	width:260px;
+	height:340px;
+
+	margin-right: 20px;
+}
+
+.forms .input input{
+	margin:15px 0px 0px 0px;
+	border:1px solid #2F2E2E;
+	outline: none;
+	width:230px;
+	height:23px;
+	color:#6e6e6e;
+	font-family: Arial, Helvetica, sans-serif;
+	padding-left: 5px;
+}
+
+.forms .input input:first-child{
+	margin-top:45px;
+}
+
+.forms .input input[type="submit"]{
+	display:none;
+}
+
+.forms .input label{
+
+	position:relative;
+	width:50px;
+	height:23px;
+	background: #2F2E2E;
+	color:#f5f5f5;
+	margin-top: 30px;
+	padding:7px 15px;
+	top: 28px;
+	left: 0px;
+	cursor:pointer ;
+}
+
+.forms .input textarea{
+	padding-left: 5px;
+	width:226px;
+	position: relative;
+	resize: none;
+	border:1px solid #2F2E2E;
+	outline: none;
+	margin-left: 10px;
+	top: 15px;
+	left: -10px;
+	color:#6e6e6e;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+footer{
+	height:170px;
+	width:100%;
+	background:#2F2E2E;
+}
+
+footer .social{
+	position: relative;
+	width:170px;
+	height:50px;
+	margin:0px auto;
+
+	justify-content: space-around;
+	align-items: center;
+	top:45px;
+	display:flex;
+}
+
+footer .social [class^="social_"]{
+	width:40px;
+	height:40px;
+	border-radius: 50%;
+
+}
+
+footer .social .social_vk{
+	background:url("pictures/vk.png") no-repeat center;
+}
+
+footer .social .social_fb{
+	background:url("pictures/fb.png") no-repeat center;
+}
+
+footer .social .social_in{
+	background:url("pictures/in.png") no-repeat center;
+}
+
+footer .credits{
+	color:#6e6e6e;
+	text-align: center;
+	padding-top:60px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.parent_popup {
+	display: none;
+	background:rgba(0, 0, 0, 0.9);
+	height: 100%;
+
+	position: fixed;
+	width: 100%;
+	z-index: 500;
+	top: 0;
+	left: 0;
+}
+.popup {
+	background-size: cover;
+	height: 806px;
+
+margin:5% auto;
+
+	color: #f00;
+	width: 952px;
+
+}
+
+.parent_popup_display{
+	display:block;
+}
+
+.parent_popup .close{
+	width:32px;
+	height:32px;
+	background:url("pictures/close.png") no-repeat center;
+	float: right;
+	cursor:pointer;
+	margin-top:20px;
+	padding-left:30px;
+
+}
+
+.first{
+	background:url("pictures/first_big.jpg") no-repeat center;
+}
+
+.second{
+	background:url("pictures/second_big.jpg") no-repeat center;
+}
+
+.third{
+	background:url("pictures/third_big.jpg") no-repeat center;
+}
+
+.fourth{
+	background:url("pictures/fourth_big.jpg") no-repeat center;
+}
+
+.fifth{
+	background:url("pictures/fifth_big.jpg") no-repeat center;
+}
+
+.sixth{
+	background:url("pictures/sixth_big.jpg") no-repeat center;
+}
+
+li a{
+	text-decoration: none;
+color:white;
+}
+
+
+
+
+
+
