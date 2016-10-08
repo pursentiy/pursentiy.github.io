@@ -5,37 +5,10 @@
 <title>Хлеб</title>
 <link href="bread.css" rel="stylesheet" type="text/css">
 <link href="Bread_media_screen.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="paralax.js" ></script> 
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-
-
-$('div[href^="#"]').click(function(){
-var target = $(this).attr('href');
-$('html, body').animate({scrollTop: $(target).offset().top}, 800);//800 - длительность скроллинга в мс
-return false; 
-});
-
-
-	var touch = $('#touch-menu');
-	var menu = $('.back');
-
-	$(touch).on('click',function(e){
-		e.preventDefault();
-		menu.slideToggle();
-	});
-
-    $(window).resize(function(){
-    	var wid = $(window).width();
-    	if(wid > 990 && menu.is(':hidden')){
-    		menu.removeAttr('style');
-    	}
-    });
-	
-});
-</script>
+<script type="text/javascript" src="paralax.js" ></script> 
 </head>
 
 <header>
