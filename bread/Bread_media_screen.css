@@ -221,6 +221,7 @@ max-width: 100%;
 background: url(Baked_bread_1-1.jpg) no-repeat center;
     height: 600px;
 background-position: center;
+background-size: cover;
 
 	}
 
