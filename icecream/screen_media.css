@@ -371,6 +371,10 @@ font-size: 20px;
 	}
 
 	footer .elements {
+		 display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
 		flex-direction: column;
 		width:65%;
 		    top: 260px;
