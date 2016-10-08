@@ -1,0 +1,360 @@
+body{
+	margin:0px;
+}
+
+header{
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+	position:fixed;
+	background:white;
+	width:100%;
+	height:60px;
+	color:grey;
+	font-size:1.3em;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	    Z-INDEX: 222;
+}
+
+header .logo{
+	position:relative;
+	width:2.5em;
+	height:2.5em;
+	background:url("images/68c56f_374f9c83c8744b3bbcf6f90b6d20438a.png") no-repeat 50% 50%;
+	background-size:cover;
+	cursor:pointer;
+	transition: 0.6s;
+	margin-left: -100px;
+}
+
+header .logo:hover{
+	background:url("images/68c56f_8e81dd700e1a4bada02c2dbd72a14370.png") no-repeat 50% 50%;
+	background-size:cover;
+}
+
+
+
+header .list{
+	margin-left:-400px;
+	
+}
+
+header .list ul{
+	display:flex;
+	margin-left:-400px;
+}
+
+header .list li{
+	
+	
+	list-style:none;
+	margin-left:15%;	
+	cursor:pointer;
+	color:#e3e3e3;
+	transition: 0.4s ease;
+}
+
+header .list li:hover{
+	color:#999999;
+}
+
+header .main_navigation{
+	display:none;
+}
+
+section.grass .photo{
+	display:block;
+	width:100%;
+	height:30em;
+	text-align: center;
+	background:url("images/68c56f_7451319e4ee649adb874d0539c5f6beef000.jpg") no-repeat center;	
+	background-size:cover;
+}
+
+section.grass .photo .text_button{
+	display:inline-block;
+	text-align: center;
+	margin-top:3em;
+	font-size:3em;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	color:white;
+}
+
+section.grass .photo .text_button span{
+
+	font-style:italic;
+	font-size:0.9em;
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;	
+}
+
+section.grass .photo .button{
+	width:100%;
+
+	text-align:center;
+	font-size:0.5em;
+	font-style:italic;
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+
+	padding-bottom:3.5%;
+	padding-top:3.5%;
+	border:1px solid white;
+	color:white;
+	cursor:pointer;
+}
+
+section.description .photo{
+	display:block;
+	width:100%;
+	height:30em;
+	background:url("images/68c56f_ec8979ff5e6d4f36b47390fa1db463d5.png") no-repeat center ;
+	background-size:cover;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+section.description .photo .text{
+
+	width:500px;
+	height:100%;
+}
+
+section.description .photo .text span{
+	display: block;
+	width:300px;
+	height:25em;
+	color:white;
+	font-style: italic;
+	margin:0px auto;
+	margin-top:110px;
+}
+section.description .photo span h3{
+	font-style: normal;
+	-webkit-margin-before:0px;
+}
+
+
+section.description .photo .photo_above{
+	background:url("images/ca2a5a_783a922d38084da2b663ec0262eb3ebf.png") no-repeat center;
+	height:100%;
+	width:500px;
+	background-size: cover;
+}
+
+section.description .photo .photo_above span{
+	width:200px;
+	font-size:1.5em;
+	display: block;
+	color:white;
+	margin:210px auto;
+}
+
+
+section.description .photo .photo_above span div.italic{
+	font-style: italic;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+
+.photo_above .button{
+	width:40px;
+	height:30px;
+	margin:30px auto;
+	background:url("arrow.png") no-repeat center;
+	cursor:pointer;
+}
+
+.descriprion_second .photo{
+	width:100%;
+	height:30em;
+	background:url("images/gandex.jpg") no-repeat 50% 40%;
+	background-size:100%;
+	display:flex;
+	justify-content: center;
+}
+
+.descriprion_second .video{
+	background:url("images/ca2a5a_9c9a6cb614ad4502a0b44bb249bf04a8.png") no-repeat center;
+	height:100%;
+	width:500px;
+	background-size: cover;
+}
+
+.descriprion_second .music{
+	background:url("images/2016-07-29_00-13-42.png") no-repeat center;
+	height:100%;
+	width:500px;
+	background-size: cover;
+
+}
+
+.descriprion_second .video span{
+	color:white;
+	width:300px;
+	font-size:1.5em;
+	display:block;
+	margin:150px auto;
+}
+
+.descriprion_second .video span .italic{
+	font-style: italic;
+	text-align: center;
+	margin-bottom: 10px;
+
+}
+
+.descriprion_second .video span .button{
+	font-style: italic;
+	text-align: center;
+	margin-top:50px;
+	border:1px solid white;
+	padding:15px 0px 15px 0px;
+	cursor: pointer;
+}
+
+footer{
+	width:100%;
+	height:250px;
+}
+
+footer .all{
+	width:1000px;
+	height:220px;
+	margin:0px auto;
+	display:flex;
+	justify-content: space-around;
+}
+
+footer .all .position{
+	width:200px;
+	height:170px;
+}
+
+footer .position{
+	padding-top:45px;
+	color:#999999;
+	font-size: 1.3em
+}
+
+.position .location{
+	margin-top:15px;
+	color:#999999;
+	font-style:italic;
+	font-size: 0.9em;
+}
+
+.position .about{
+margin:65px 0px 0px 0px;
+	font-size:0.7em;
+	color: #999999;
+	font-style: italic;
+		width:400px;
+}
+
+.position .about a{
+	color:#999999;
+
+}
+
+footer .all .social{
+
+	width:200px;
+	height:170px;
+	padding-top:45px;
+	text-align: center;
+	color:#999999;
+font-weight: bold;
+}
+
+footer .all .subscribe{
+	padding-top: 45px;
+	width:350px;
+	height:170px;
+	color:#999999;
+	font-size: 1.3em
+}
+
+.social .social_networks{
+	width:100%;
+	height:70px;
+	margin:0px auto;
+		margin-top:15px;
+	display:flex;
+	justify-content: space-around;
+}
+
+
+.social_networks [class^="social_"]{
+	width:35px;
+	height:35px;
+	cursor:pointer;
+	border-radius: 50%;
+	cursor:pointer;	
+}
+
+.social_networks .social_fb{
+	background:url("facebook.png") no-repeat center;
+	background-size: cover;
+}
+
+.social_networks .social_tw{
+	background:url("twitter.png") no-repeat center;
+	background-size: cover;
+}
+
+.social_networks .social_cloud{
+	background:url("cloud.png") no-repeat center;
+	background-size: cover;
+}
+
+.social_networks .social_yt{
+	background:url("youtube.png") no-repeat center;
+	background-size: cover;
+}
+
+.subscribe input[type="text"]{
+	font-style: italic;
+	width:100%;
+	padding:6.5px 0px 6.5px 5px;
+	margin-top:15px;
+	background:#f2f2f2;
+	border-style:none;
+	border:1px solid #999999;
+	outline: none;
+}
+
+input, textarea, keygen, select, button {
+	color:#999999;
+}
+
+
+.subscribe input[type="button"]{
+	display:none;
+}
+
+
+.subscribe label{
+	display: block;
+	text-align: center;
+	font-style: italic;
+	vertical-align: middle;
+	margin-top:15px;
+	width:100%;
+	padding:5px 0px 5px 0px;
+	background-color: #999999;
+	color:white;
+	cursor:pointer;
+}
+
+audio{
+	width:100%;
+height:100%;
+background:url("images/37a84c6dba0ae18ea9d1a8785eed441e.jpg") no-repeat center;
+background-size:cover;
+}
+
+
+
+
+

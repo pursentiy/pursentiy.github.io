@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Хлеб</title>
+<link href="хлеб.css" rel="stylesheet" type="text/css">
+<link href="Bread_media_screen.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="paralax.js" ></script> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+
+$('div[href^="#"]').click(function(){
+var target = $(this).attr('href');
+$('html, body').animate({scrollTop: $(target).offset().top}, 800);//800 - длительность скроллинга в мс
+return false; 
+});
+
+
+	var touch = $('#touch-menu');
+	var menu = $('.back');
+
+	$(touch).on('click',function(e){
+		e.preventDefault();
+		menu.slideToggle();
+	});
+
+    $(window).resize(function(){
+    	var wid = $(window).width();
+    	if(wid > 990 && menu.is(':hidden')){
+    		menu.removeAttr('style');
+    	}
+    });
+	
+});
+</script>
+</head>
+
+<header>
+<section class="header">
+
+
+<div class="overflow_black">
+<a href="#" id="touch-menu"></a></div>
+<div class="back">
+<ul>
+<li>ГЛАВНАЯ</li>
+<li>МЕНЮ</li>
+<li>ОНЛАЙН-ЗАКАЗ</li>
+<li>О НАС</li>
+<li>КОНТАКТЫ</li>
+</ul>
+<div class="adress">УЛ. АРБАТ, 1А, МОСКВА, 119019, РОССИЯ</div>
+</div>
+
+</section>
+
+</header>
+
+<div class="info">
+<div class="text"><br><br><br><br><h1>Хлеб.</h1><span class="text-child">Простые радости нашей жизни</span></div>
+<div   href="#sub_menu" class="sub-menu"></div>
+</div>
+
+<div id="sub_menu" class="menu_top">
+<div class="menu_subclass">
+<section class="menu">
+<div i class="main-text">Самое свежее для вас и ваших любимых</div>
+<div class="positions">
+<div class="first-position">
+<div class="text">Ароматный хлеб</div></div>
+<div class="second-position"><div class="text">Кофе</div></div>
+<div class="third-position"><div class="text">Крендельки</div></div>
+<div class="button-menu">Смотреть меню</div>
+</div>
+</section></div></div>
+<div class="photo"></div>
+<section class="description">
+
+<article class="first">
+
+ 
+<div class="text_description"><div class="span"><h5>Хлеб как дома</h5>
+Теперь же можно поговорить и от том, какой замечательный хлеб готовит наша пекарня, каждое утро мы привозим самую отброную муку,<br> перемолотую с любовью и заботой, бережно замешиваем тесто и выпеаем наш известный и вкусный хлеб. Попробуйте же его и вы!<br><br><br>
+<div class="button_about">
+<input id="button_about" type="button" value="Подробнее">
+<label for="button_about">Подробнее</label></div>
+</div>
+</div>
+<div class="discription"><div class="photo_description"></div>
+</div>
+</article>
+
+</div>
+
+<article class="second">
+<div class="description-two"></div>
+<div class="text_description"><div class="span">
+Это текст. Нажмите один раз и выберите «Редактировать текст» или просто кликните дважды, чтобы добавить свой текст и настроить шрифт. Вы можете переместить его в любое место на странице. Расскажите посетителям сайта о себе..<br><br><br>
+<div class="button_about buy">
+<input id="button_buy" type="button" value="Подробнее">
+<label for="button_buy">Купить</label></div>
+</div>
+</div>
+
+</article>
+
+</section>
+<div class="coffe"></div>
+<footer>
+<div class="footer-text">
+<div class="main">Подпишитесь на новости</div>
+<div class="input">
+
+<input type="text" name="email" placeholder="Укажите ваш email">
+<input id="button_subscribe" type="button" value="Пописаться">
+<div class="email_pic"></div>
+<label for="button_subscribe">Подписаться</label>
+
+</div>
+<div class="social">Мы в соцсетях:
+<div class="sub_social">
+<div class="social_vk"></div>
+<div class="social_fb"></div>
+<div class="social_ow"></div>
+<div class="social_tw"></div>
+<div class="social_in"></div>
+</div></div>
+<div class="outro">©2023 Хлеб. Сайт создан на <a href="#">Wix.com</a></div></div>
+</footer>
+<body>
+</body>
+</html>

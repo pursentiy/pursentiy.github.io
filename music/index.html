@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Музыка</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<style type="text/css">
+		@import url("music.css");
+		@import url("screen_media.css");
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+
+			$('div[href^="#"]').click(function(){
+				var target = $(this).attr('href');
+$('html, body').animate({scrollTop: $(target).offset().top}, 1100);//800 - длительность скроллинга в мс
+return false; 
+});
+
+			$('.button_toggle').on('click',function(){
+				$('.main_navigation').toggleClass('open');
+				$('.blur').toggleClass('blured')
+			});
+
+
+
+		});
+	</script>
+
+</head>
+
+<body>
+	<header>
+		<div class="logo"></div>
+		<div class="list">
+			<ul>
+				<li>ГЛАВНОЕ</li>
+				<li>АФИША</li>
+				<li>ВИДЕО</li>
+				<li>ПРЕССА</li>
+			</ul>
+		</div>
+
+		<div class="main_navigation">
+
+			<ul>
+				<li>ГЛАВНОЕ</li>
+				<li>АФИША</li>
+				<li>ВИДЕО</li>
+				<li>ПРЕССА</li>
+			</ul>
+		</div>
+	</header>
+	<div class="button_toggle"><input type="checkbox"><span class="transform"></span></div>
+<div class="blur_effect">	<div class="object">
+		<section class="grass">
+			<div class="photo">
+				<div class="text_button"><span>Твой</span><br>КРАЙ ТИШИНЫ
+					<div class="button">Узнать даты концертов</div></div>
+
+				</div>
+
+			</section>
+
+			<section class="description">
+				<div class="photo">
+					<div class="text">
+						<span><h3>Lorem ipsum</h3> dolor sit amet, consectetur adipiscing elit. Donec hendrerit risus sit amet varius vulputate. Integer sed neque pellentesque, vestibulum tortor vel, elementum erat. Vivamus in porta nunc. Cras luctus sem sit amet semper tempor. Donec blandit interdum luctus. In pulvinar vel diam pellentesque accumsan. Phasellus semper sem ut turpis facilisis, ac accumsan velit congue. In hac habitasse platea dictumst. Donec elit arcu, consequat a dapibus in, sagittis sit amet ex. Nulla posuere purus elit, quis mollis mi tempus a. Vivamus sollicitudin a arcu vel ultricies
+						</span>
+					</div>
+					<div class="photo_above">
+						<span>
+							<div class="italic">Слушайте </div>
+							НОВЫЙ АЛЬБОМ
+							<div href="#music_player" class="button"></div>
+						</span>
+
+					</div>
+				</div>
+			</section>
+			<section class="descriprion_second">
+				<div class="photo">
+					<div class="video"><span>
+						<div class="italic">Наше </div>
+						ОФИЦИАЛЬНОЕ ВИДЕО
+						<div class="button">Смотреть сейчас</div>
+					</span></div>
+					<div id="music_player" class="music"><audio controls>
+						<source  src="#" type="audio/mp3"></audio>
+						</div>
+					</div>	
+				</section>
+				<footer>
+					<div class="all">
+						<div class="position">Менеджмент
+							<div class="location">ул. Арбат, 1а, Москва<br>
+								119019, Россия<br>
+								info@mysite.ru</div>
+								<div class="about">© 2023 Твой край тишины. Сайт создан на <a href="#">Wix.com</a></div>
+							</div>
+							<div class="social">Присоединяйтесь
+								<div class="social_networks">
+									<div class="social_fb"></div>
+									<div class="social_tw"></div>
+									<div class="social_cloud"></div>
+									<div class="social_yt"></div>
+								</div>
+							</div>
+							<div class="subscribe">
+								Подпишитесь на рассылку
+								<input type="text" name="subscribe_field" placeholder="Укажите ваш email">
+								<input type="button" id="subscribe_button">
+								<label for="subscribe_button">Подписаться</label>
+							</div>
+						</div>
+
+					</footer>
+				
+</div></div>
+			</body>
+			</html>

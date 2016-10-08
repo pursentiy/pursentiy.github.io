@@ -1,0 +1,393 @@
+@media screen and (min-width:2500px){
+.first .text_description .span {
+    margin-left: 70%;
+}
+}
+
+/*Ноутбуки и мониторы с низким разрешением*/
+
+@media screen and (max-width:1200px){
+
+ul li{
+	padding:25px 15px;
+}
+
+.adress{
+width:350px;
+}
+
+.menu .first-position{
+width:300px;
+}
+
+.menu .second-position{
+width:300px;
+margin-left:320px;
+	}
+
+.menu .third-position{
+width:300px;
+margin-left:640px;
+	}
+
+
+.menu .positions{
+
+margin-left:0px;
+}
+
+.menu [class$="-position"] .text{
+	width:100%;
+}
+
+
+
+.menu .button-menu{
+margin-left:395px;
+	}
+
+.second .text_description .span{
+		margin-left:75px;
+	}
+
+.footer-text .social {
+		    width: 80%;
+		margin:10px auto;
+
+	}
+
+	.footer-text .social .sub_social {
+width:50%;
+	}
+
+}
+
+
+
+/*Планшеты */
+
+@media screen and (max-width:992px){
+	.back{
+		height:272px;
+	}
+
+    ul {
+display:flex;
+flex-direction: column;
+text-align: center;
+margin-left:0px;
+border:1px solid white;
+}
+
+    ul li{
+	display:block;
+float:none;
+color:grey;
+padding:10px 10px
+cursor: pointer;
+transition: color 0.2s ;
+border-bottom: 1px solid white;
+
+}
+
+    #touch-menu{
+	background:black;
+	display:block;
+    float:none;
+    color:white;
+    padding:0px;
+    cursor: pointer;
+    background: url("file:///C:/Users/purse/Downloads/47.png") no-repeat center;
+   text-decoration:none;
+	width:30px;
+	height:30px;
+	margin:20px 40px 0px 0px;
+float:right;
+}
+
+
+
+div.info{
+height: 950px;
+}
+
+div.sub-menu{
+margin:300px auto;
+}
+
+.back{
+	display:none;
+}
+
+.overflow_black {
+width:100%;
+height:70px;
+background:black;
+}
+
+h1 {
+font-size: 150px
+	}
+
+.menu_top{
+	display:block;
+	height:2100px;
+
+}
+
+
+
+.menu .positions{
+display: inline-block;
+width:100%;
+margin:60px 0px 0px 0px;
+
+}
+
+.menu .first-position{
+margin: 0px auto;
+width:450px;
+height: 500px;
+
+}
+
+.menu .first-position .text{
+margin-top:500px;
+	}
+
+.menu .second-position{
+margin: 120px auto;
+width:450px;
+height: 500px;
+	}
+
+	.menu .second-position .text{
+margin-top:500px;
+	}
+
+.menu .third-position{
+margin: 120px auto;
+width:450px;
+height: 500px;
+background-repeat:no-repeat; 
+background-size: cover;
+	}
+
+	.menu .third-position .text{
+margin-top:500px;
+	}
+
+	a.sub-menu {
+margin-right: 0px;
+	}
+
+.second .text_description .span{
+	    width: 340px;
+		margin-left:25px;
+	}
+
+	.menu .button-menu{
+
+		    margin:30px auto;
+	}
+
+.photo {
+height:475px;
+}
+
+section.description{
+	display:block;
+	height:1610px;
+}
+
+.first {
+	width:100%;
+display:block;
+
+	}
+
+
+
+	.first .discription {
+margin-top: 210px;
+width:100%;
+max-width: 100%;
+height:440px;
+background-position: center;
+	}
+
+article .text_description {
+width:100%;
+    margin-top: 220px;
+	}
+
+	.first .text_description .span {
+margin:0px auto;
+	}
+
+
+.second {
+display:block;
+}
+
+
+.description-two {
+width:100%;
+height:440px;
+margin-top: 130px;
+}
+
+.second .text_description {
+margin-top:100px;
+width:100%;
+	}
+
+	.second .text_description .span{
+margin:0px auto;
+
+}
+
+    .coffe{
+
+    	height:475px;
+    }
+
+footer {
+height:555px;
+}
+
+input{
+width:19.5em;
+}
+
+    .footer-text .main {
+    	padding-top: 70px;
+
+font-size: 1.8em;
+    }
+
+.footer-text .input{
+	width:420px;
+}
+
+.input::after {
+width:26em;
+margin-top: -165px;
+	}
+
+	.input label {
+margin:60px auto;
+width:420px;
+	}
+
+	.footer-text .social {
+		    width: 80%;
+		margin:100px auto;
+
+	}
+
+	.footer-text .social .sub_social {
+width:50%;
+	}
+
+	.footer-text .outro {
+margin:65px auto 0px auto;;
+	}
+
+
+}
+
+/*Телефоны*/
+
+@media screen and (max-width:480px){
+
+	h1{
+
+		font-size:100px;
+	}
+
+	div.info {
+    height:680px;
+	}
+
+	.text{
+		margin-top: 110px;
+	}
+
+	div.sub-menu{
+margin:210px auto;
+
+}
+
+	.text-child {
+font-size: 15px;
+	}
+
+	.menu_top {
+    height:1670px;
+	}
+
+	.menu .main-text {
+margin-top:0px;
+	}
+
+.menu [class$="-position"] {
+width:250px;
+height:350px;
+}
+
+.menu [class$="-position"] .text {
+margin-top: 370px;
+}
+
+.first .text_description .span {
+width:240px;
+}
+
+.second .text_description {
+margin-top:70px;
+	}
+
+.second .text_description .span {
+max-width: 240px;
+	}
+
+.footer-text .input {
+width:100%;
+}
+
+	input {
+  width: 75%;
+  margin-left:50px;
+  
+	}
+
+	.input::after {
+           width: 95%;
+           margin:-105px auto;
+           
+	}
+
+.footer-text .input .email_pic {
+margin-left: 10px;
+}
+
+.input label {
+width:50%;
+    margin: 30px auto;
+}
+
+.footer-text .social {
+margin: 60px auto;
+width: 90%;
+	}
+
+	.footer-text .social .sub_social {
+width:100%;
+	}
+
+	.footer-text .outro {
+    margin: 95px auto 0px auto;
+}
+
+	}

@@ -1,0 +1,511 @@
+* { padding: 0; margin: 0; }
+
+body{
+	width:auto;
+	min-width:320px;
+    height:auto;
+}
+ ul{
+ 	margin-left:40px;
+ }
+ul li{
+	display:block;
+float:left;
+padding:25px 25px;
+color:grey;
+cursor: pointer;
+transition: color 0.2s ;
+}
+
+ul li:hover, #touch-menu:hover{
+color:#e8e8e8;
+}
+
+#touch-menu{
+	display:none;
+}
+
+.adress{
+	display:block;
+	width:370px;
+	height:100%;
+	color:#e8e8e8;
+	margin-top:25px;
+	float:right;
+	vertical-align:middle;
+	align-self: center;	
+}
+
+
+
+.back{	
+width:100%;
+height:70px;
+background:black;
+overflow:hidden; 
+z-index: 100;
+}
+
+.overflow_black {
+	background: none;
+}
+
+
+.text{
+margin-top:200px;
+text-align:center;
+vertical-align:middle;
+
+
+}
+
+h1{
+font-size:182px;
+font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+margin-bottom:0px;
+padding-bottom:0px;	
+}
+
+.text-child{
+font-size:35px;
+font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;	
+
+}
+
+div.info{
+	
+width:100%;
+height:850px;
+
+display:inline-block;
+
+margin-top:0%;
+background-image:  url("file:///C:/Users/purse/Desktop/%D0%A1%D0%B0%D0%B9%D1%82%D1%8B/%D0%A5%D0%BB%D0%B5%D0%B1/%D0%A5%D0%BB%D0%B5%D0%B1%D0%BD%D1%8B%D0%B9%20%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD%20%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20_%20WIX_files/9c608a_1d105a52d5834dfa98f0ead7697277f7.jpg");
+background-repeat: no-repeat;
+background-position:  100% 100%;
+background-size: cover;
+
+}
+
+div.sub-menu{
+
+width:40px;
+height:35px;
+background:url("file:///C:/Users/purse/Desktop/%D0%A5%D0%BB%D0%B5%D0%B1/arrow-down.png") no-repeat center;
+
+margin:200px auto;
+cursor:pointer;
+}
+
+.menu_top{
+	width:100%;
+	display:flex;
+	justify-content:center;
+}
+
+.menu{
+	
+	width:100%;
+	height:800px;
+	margin:0 auto;
+}
+
+.menu .main-text{
+	font-size:33px;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	margin-top:120px;
+	text-align:center;
+    font-weight: bold;
+}
+
+.menu .positions{
+	margin-top:-120px;
+}
+
+.menu .first-position{
+	
+width:320px;
+height:350px;
+background:url("file:///C:/Users/purse/Desktop/%D0%A5%D0%BB%D0%B5%D0%B1/walnut-bread-ck-1215937-x.jpg") 50% 50%;	
+background-size:cover;
+margin-left:0px;
+margin-top:200px;
+
+}
+
+.menu .first-position .text{
+	display:inline-block;
+	width:320px;
+	text-align:center;
+	margin-top:380px;
+	font-size:28px;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+}
+
+.menu .second-position{
+	display:block;
+width:320px;
+height:350px;
+background:url("file:///C:/Users/purse/Desktop/%D0%A5%D0%BB%D0%B5%D0%B1/Cinnamon-Coffee.jpg");	
+background-size:cover;
+margin-left:400px;
+margin-top:-350px;
+}
+
+.menu .second-position .text{
+	display:inline-block;
+	width:320px;
+	text-align:center;
+	margin-top:380px;
+	font-size:28px;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+}
+
+.menu .third-position{
+	display:block;
+width:320px;
+height:350px;
+background:url("file:///C:/Users/purse/Desktop/%D0%A5%D0%BB%D0%B5%D0%B1/Krendel-nemezkij-s-shafranom.jpg") no-repeat 50% 100%;	
+background-size: COVER;
+margin-top:-350px;
+margin-left:800px;
+}
+
+.menu .third-position .text{
+	display:inline-block;
+	width:320px;
+	text-align:center;
+	margin-top:380px;
+	font-size:28px;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+}
+
+.menu .button-menu{
+width:150px;
+height:35px;
+background:black;
+margin-left:480px;
+margin-top:110px;
+color:white;
+text-align:center;
+padding-top:15px;
+font-family:  Helvetica,  sans-serif;
+cursor:pointer;	
+}
+
+.menu .button-menu:hover{
+	 transition: 0.4s;
+	background:#5e5e5e;
+}
+
+.menu .button-menu:not(:hover){
+	 transition: 0.5s;
+	background:black;
+}
+	
+
+.photo{
+width:100%;
+height:950px;
+
+background:url("file:///C:/Users/purse/YandexDisk/%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%88%D0%BE%D1%82%D1%8B/2016-07-24_23-13-51.png") no-repeat center;	
+background-size:cover;
+
+}
+
+section.description {
+	width:100%;
+	
+	height:1200px;
+	margin:0px auto;
+	
+display:flex;
+flex-direction:column;
+flex-basis:80%;
+}
+
+ .first{
+	height:600px;
+	width:100%;
+	
+	display:flex;
+	justify-content:space-between;
+
+}
+
+.first .discription{
+	height:100%;
+	max-width:50%;
+ background:url("file:///C:/Users/purse/Desktop/%D0%A5%D0%BB%D0%B5%D0%B1/leeds-bread.jpg");
+ background-size:cover;
+	flex-basis:50%;
+	align-self:flex-end;
+	
+
+	
+}
+
+article .text_description{
+width:50%;
+height:80px;
+
+font-size:20px;	
+font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+color:grey;
+ flex-grow:1;
+ display:flex;
+ flex-direction: column;
+ justify-content:center;
+	margin-top:220px;
+
+}
+
+.first .text_description .span{
+	margin-left:20%;
+	width:380px;
+	max-width:380px;
+	
+	
+}
+
+ .button_about label{
+	display: block;
+    width:170px;
+	text-align:center;
+	vertical-align:middle;
+	height:32px;
+	 padding:10px 0px 10px 0px;
+	 color:white;
+	margin-top:0px;
+	margin-left:0px;
+	 background:black;
+	 cursor:pointer;
+	 font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	 font-size:1.3em;
+	 transition:0.2s ease-out ;
+}
+
+.second{
+	width:100%;
+	height:600px;
+    
+ display:flex;
+}  
+
+
+.description-two{
+	width:50%;
+	height:100%;
+	flex-grow:1;
+	
+	background:url("file:///C:/Users/purse/Desktop/%D0%A5%D0%BB%D0%B5%D0%B1/9c608a_3788015f5c9f4523a0b39e66eef2e81a.jpg") no-repeat center;
+background-size:cover;
+
+
+}
+
+.second .text_description{
+	width:50%;
+	flex-grow:0;
+	display:flex;
+	
+	justify-content:flex-start;
+	font-size:18px;	
+	
+font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+color:grey;
+
+}
+
+.second .text_description .span{
+width:380px;
+max-width:380px;
+	
+flex-basis:35%;
+	margin-left:150px;
+}
+
+.button_about.buy label{
+	
+	margin-top:0px;
+	
+}
+
+.text_description label:hover{
+	background:#5e5e5e;
+}
+
+.coffe{
+	    width: 100%;
+    height: 950px;
+    background: url("file:///C:/Users/purse/Desktop/%D0%A5%D0%BB%D0%B5%D0%B1/9c608a_90d745578a2545719165d1c5ef32e2a8.jpg") no-repeat center;
+    background-size: cover;
+}
+
+footer{
+width:100%;
+height:420px;
+background:black;
+padding:0px;
+}
+
+.footer-text{
+	width:100%;
+	height:100%;
+	margin: 0px auto;
+	
+}
+
+.footer-text .main{
+	color:white;
+	font-size:2.4em;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	text-align:center;
+	padding-top:1em;	
+}
+
+.footer-text .input{
+width:690px;
+height:150px;
+margin:0px auto;
+
+}
+
+input{
+	
+	width:24.5em;
+margin-top:3.5em;
+margin-left:2.1em;
+border:none;
+background:black;
+color:white;
+font-size:1.2em;	
+}
+
+
+
+.input::after{
+	content:"";
+	display: block;
+	color:white;
+	width:30.7em;
+	height:1px;
+	background:white;
+	margin-top:0px;
+	
+	
+}
+.footer-text .input .email_pic{
+	display: block;
+	width:30px;
+	height:25px;
+	background:url("file:///C:/Users/purse/Downloads/25.png") no-repeat center;
+	background-size:cover;
+	margin-top:-22px;
+}
+
+ input[type="button"]{
+	display:none;
+}
+
+input[type="text"]{
+	 outline: none;
+	
+}
+
+.input label{
+	display:block;
+	 width:170px;
+	 height:25px;
+	 text-align: center;
+	 margin-left:24.6em;
+	 margin-top:-42px;
+	  padding:10px 0px 10px 0px;
+	 background:white;
+	 cursor:pointer;
+	 font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	 font-size:1.3em;
+	
+ }
+
+.footer-text .social{
+width:35%;
+height:50px;
+margin-top:2.1em;
+
+margin:0px auto;
+color:white;
+text-align:center;
+font-size:1.1em;
+	font-family:Arial;
+}
+
+.footer-text .social .sub_social{
+width:50%;
+height:60%;
+display:flex;
+justify-content:space-around;	
+margin:30px auto;
+}
+
+footer [class^="social_"]{
+	width:1.3em;
+	height:1.3em;
+	cursor:pointer;
+	
+	border-radius: 50%;
+	
+	
+}
+
+
+
+footer .social_vk{
+	
+	background:url("vk_logo.png") no-repeat center,#454545;
+	background-size:80%;
+	padding:5px;
+
+}
+
+footer .social_fb{
+	
+	background:url("facebook_logo.png") no-repeat center,#454545;
+	background-size:80%;
+	padding:5px;
+}
+
+footer .social_ow{
+	
+	background:url("owl_logo.png") no-repeat center,#454545;
+	background-size:80%;
+	padding:5px;
+}
+
+footer .social_tw{
+	
+	background:url("twitter_logo.png") no-repeat center,#454545;
+	background-size:80%;
+	padding:5px;
+}
+
+footer .social_in{
+
+	background:url("instagram_logo.png") no-repeat center,#454545;
+	background-size:80%;
+	padding:5px;
+}
+
+.footer-text .outro{
+	width:50%;
+    height:2pc;;
+    color:grey;
+    margin:90px auto 0px auto;
+    text-align:center;
+    font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+}
+
+.footer-text .outro a{
+	color:grey;
+}
+

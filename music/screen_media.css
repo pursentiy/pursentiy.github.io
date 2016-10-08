@@ -1,0 +1,295 @@
+/*Ноутбуки*/
+@media screen and (max-width:1200px){
+
+	header .logo {
+		margin-left: -200px;
+	}
+
+	header .list {
+		margin-left: 0px
+	}
+
+}
+
+
+@media screen and (max-width:1002px){	
+	body{
+		min-width:1002px;
+	}
+	footer .all {
+		width:100%;
+	}
+}
+
+
+@media only screen and (max-width : 767px) { 
+	body{
+		min-width:400px;
+	}
+
+	header{
+		background: transparent;
+	}
+
+	header .list{
+		display:none;
+	}
+
+	header .logo {
+		display:none;
+	}
+
+	header .main_navigation{
+		display:block;
+		list-style: none;	
+		position:fixed;
+		top:0;
+		left:0;
+		color:black;
+		background:white;
+		opacity: 0.95;
+		box-shadow: 1.5px 0px 30px;
+		width:40%;
+		height:100%;
+		text-align: center;
+		transform: translateX(-110%);
+		transition: transform 0.6s ease;
+		z-index: 100;
+	}
+
+	header .main_navigation.open{
+		transform: translateX(0%);
+	}
+
+	header .main_navigation ul{
+		list-style: none;
+		cursor:pointer;	
+		margin-top: 50px;
+		-webkit-padding-start: 0px;
+		-o-padding-start: 0px;
+		-moz-padding-start: 0px;
+		-ms-padding-start: 0px;
+
+	}
+
+	header .main_navigation ul li{
+		padding:25px 15px;
+
+	}
+
+	.button_toggle{
+		position:fixed;
+		width:40px;
+		height:36px;
+		right:30px;
+		top:30px;
+		background: transparent;
+		z-index:321;
+	}
+
+	.button_toggle  span {
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		background: black;
+		margin-top:12px;
+		transition: all 0.1s;
+
+	}
+
+	input[type="checkbox"]{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		opacity: 0;
+		cursor: pointer;
+		margin-top:0px;
+
+	}
+
+	input[type="checkbox"]:checked + span:after{
+		transform: rotate(-45deg) translate(-4px, 16px);
+		-o-transform:rotate(-45deg) translate(-4px, 16px) !important; 
+		-moz-transform: rotate(-45deg) translate(-4px, 16px) !important; 
+		-ms-transform: rotate(-45deg) translate(-4px, 16px) !important; 
+		-webkit-transform: rotate(-45deg) translate(-4px, 16px) !important; 
+	}
+
+	input[type="checkbox"]:checked + span:before{
+		transform: rotate(45deg) translate(-1px, -12px);
+		-o-transform: rotate(45deg) translate(-1px, -12px) !important; 
+		-moz-transform: rotate(45deg) translate(-1px, -12px) !important; 
+		-ms-transform: rotate(45deg) translate(-1px, -12px) !important; 
+		-webkit-transform: rotate(45deg) translate(-1px, -12px) !important; 
+	}
+
+	input[type="checkbox"]:checked + span{
+		background: transparent;
+	}
+
+	.button_toggle span:before, .button_toggle span:after {
+		content: "";
+		position: absolute;
+		width: 40px;
+		height: 2px;
+		background: black;
+		transition: all 0.3s;
+	}
+
+	.button_toggle span:before{
+		top:12px;
+	}
+
+	.button_toggle span:after{
+
+		top:-12px;	
+	}
+
+	section.grass .photo{
+		width:100%;
+	}
+
+	section.grass .photo {
+
+		width:100%;
+	}
+
+
+	section.description .photo {
+		display: block;
+		width:100%;
+	}
+
+	section.description .photo .text {
+		width:100%;
+	}
+
+	section.description .photo .text span {
+		padding-top:5em;
+		vertical-align: middle;
+		height:30em;
+		margin-top:0px;
+	}
+
+	section.description .photo .photo_above{
+		width:100%;
+	}
+
+
+	section.description .photo .photo_above span {
+		margin:0px auto;
+		padding-top:200px;
+	}
+
+
+	.descriprion_second .video{
+		width:100%;
+	}
+
+	.descriprion_second .video span {
+		margin:480px auto;
+		padding-top: 150px;
+	}
+
+	.descriprion_second .photo {
+		display:block;
+	}
+
+	.descriprion_second .music{
+		width:100%;
+	}
+
+	audio {
+		background-position: 50% 10%;
+
+	}
+
+	footer{
+		margin-top: 500px;
+		height:500px;
+	}
+
+	footer .all {
+		display: flex;
+		flex-direction: column;
+	}
+
+	footer .all .position {
+		margin-left:10px;
+		margin-top: 140px;
+	}
+
+	footer .all .social{
+		width:95%;
+		text-align: left;
+		font-size:1.4em;
+		padding-top: 0px;
+		padding-left:10px;
+	}
+
+	.position .about {
+		margin: 340px 0px 0px 0px;
+		width:340px;
+	}
+
+	.subscribe label {
+
+		padding:5px 3.5px 5px 3.5px;
+	}
+
+
+	.social .social_networks {
+		width:70%;
+		margin-left:0px;
+		justify-content: space-between;
+	}
+
+	footer .all .subscribe {
+		width:80%;
+		margin-left:10px;
+		padding-top: 0px;
+	}
+
+
+	.blur.blured{
+		filter:blur(4px);
+	}
+
+
+}
+
+
+/*портретная ориентация*/
+
+@media screen and (max-height:400px ) {
+	
+	header .main_navigation ul{
+		margin:35px auto;
+	}
+
+}
+
+@media screen and (max-height:320px ) {
+
+	header .main_navigation ul{
+		margin:15px auto;
+	}
+
+	@media screen and (max-height:300px ) {
+
+		header .main_navigation ul{
+			margin:5px auto;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		header .main_navigation ul li {
+			padding: 10px 15px;
+
+		}
+
+
+
+	}
