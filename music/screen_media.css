@@ -211,8 +211,8 @@
 	}
 
 	footer .all {
-		display: flex;
-		flex-direction: column;
+		display: block;
+		
 	}
 
 	footer .all .position {
@@ -229,7 +229,7 @@
 	}
 
 	.position .about {
-		margin: 340px 0px 0px 0px;
+		margin: 380px 0px 0px 0px;
 		width:340px;
 	}
 
