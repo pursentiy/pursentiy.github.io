@@ -79,13 +79,10 @@ section.grass .photo .text_button{
 	font-size:3em;
 	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
 	color:white;
-	transition: 0.4s ease;
+
 }
 
-section.grass .photo .text_button:hover{
-color:#9b9b9b;
-background: white;
-	}
+
 
 section.grass .photo .text_button span{
 
@@ -107,7 +104,13 @@ section.grass .photo .button{
 	border:1px solid white;
 	color:white;
 	cursor:pointer;
+	transition: 0.4s ease;
 }
+
+section.grass .photo .button:hover{
+color:#9b9b9b;
+background: white;
+	}
 
 section.description .photo{
 	display:block;
