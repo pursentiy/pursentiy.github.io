@@ -223,15 +223,19 @@ background: url(Baked_bread_1-1.jpg) no-repeat center;
 background-position: center;
 background-size: cover;
 
+
 	}
 
 article .text_description {
 width:100%;
+position: relative;
+
 
 	}
 
 	.first .text_description .span {
 margin:0px auto;
+    display: block;
 	}
 
 
