@@ -391,7 +391,7 @@ font-size: 20px;
 	}
 
 	footer {
-		height: 850px;
+		height: 950px;
 	}
 
 	footer .elements {
@@ -402,10 +402,14 @@ font-size: 20px;
 		    -ms-flex-direction: column;
 		        flex-direction: column;
 		width:65%;
-		    top: 260px;
+	top:0px;
     left: 40px;
     margin:0px;
 	}
+
+	.elements .adress {
+    width: 59%;
+}
 
 		.elements .fifth {
 padding-top: 580px;
