@@ -72,8 +72,13 @@ width:50%;
 	}
 
     ul {
+display:-webkit-box;
+display:-ms-flexbox;
 display:flex;
-flex-direction: column;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
 text-align: center;
 margin-left:0px;
 border:1px solid white;
@@ -83,8 +88,9 @@ border:1px solid white;
 	display:block;
 float:none;
 color:grey;
-padding:10px 10px
+padding:10px 10px;
 cursor: pointer;
+-webkit-transition: color 0.2s ;
 transition: color 0.2s ;
 border-bottom: 1px solid white;
 
