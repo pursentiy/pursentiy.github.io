@@ -365,12 +365,27 @@ height:710px;
     height: 840px;
 }
 
+forms .form h3 {
+
+    -webkit-margin-after: 0em;
+    -ms-margin-after: 0em;
+    -moz-margin-after: 0em;
+    -o-margin-after: 0em;
+}
+
 .forms .form .bottom {
 	
 	display: block;
 
 
 }
+
+.forms .form .info {
+    display: inline-block;
+    width: 250px;
+    height: 336px;
+    margin-top: -20px;
+    }
 
 
 
@@ -382,13 +397,17 @@ width:100%;
 	.forms .form .input {
     width: 100%;
     margin-right:0px;
-    padding-left: 20px;
+    padding-left: 14px;
     display:inline-block;
 } 
 
 .forms .input input {
 	width: 90%;
 	height:35px;
+}
+
+.forms .input input:first-child {
+     margin-top: 0px; 
 }
 
 .forms .input textarea {
