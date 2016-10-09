@@ -356,6 +356,9 @@ margin-top: 370px;
 .first .text_description .span {
 width:240px;
     margin-top: -180px;
+    position: absolute;
+    margin-left: -110px;
+    left: 50%;
 }
 
 .second .text_description {
