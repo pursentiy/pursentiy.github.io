@@ -221,6 +221,12 @@ section.description .photo .photo_above span div.italic{
 	border:1px solid white;
 	padding:15px 0px 15px 0px;
 	cursor: pointer;
+	transition: 0.4s ease;
+}
+
+.descriprion_second .video span .button:hover{
+	background:white;
+	    color: #9b9b9b;
 }
 
 footer{

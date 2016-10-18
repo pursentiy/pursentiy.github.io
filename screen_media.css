@@ -419,7 +419,7 @@ margin-left:00%;
 	}
 }
 
-@media screen and (orientation:landscape) {
+@media screen and (max-width:750px) and (orientation: landscape) {
 .popup {
    margin:15% auto;
 }
