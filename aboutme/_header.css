@@ -29,6 +29,7 @@ top:0px;
         transform: translateY(0%);
 -webkit-transition:1s ;
 transition: 1s ;
+z-index: 11;
 }
 
 
@@ -137,6 +138,7 @@ top:0px;
         transform: translateY(-210%);
 -webkit-transition:1s ;
 transition: 1s ;
+z-index: 12;
 }
 
 
@@ -311,6 +313,7 @@ top:0px;
         transform: translateY(-210%);
 -webkit-transition:1s ;
 transition: 1s ;
+z-index: 13;
 }
 
  .above3 .photo_wrapper{
@@ -383,7 +386,7 @@ top:0px;
         transform: translateY(-210%);
 -webkit-transition:1s ;
 transition: 1s ;
-
+z-index:17;
 }
 
 .above4_under{

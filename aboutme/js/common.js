@@ -7,32 +7,14 @@ $(function() {
 	$("above2").clone().prependTo("above2_clone");
 	function setHeiHeight() {
 		var absolute_width=$(window).width();
-		var height=$(window).height()-160;
+		var height=$(window).height();
 		var height_description= $('.wrapper').height();
 		$(window).resize( console.log(absolute_width));
 		$(window).resize( console.log(height));
 		$(window).resize(console.log((height/2-height_description/2)));
 
 
-
-		if(height<415 & absolute_width<335){
-			$('.above1').css({
-				height: $(window).height()-160 + 'px'
-			});
-
-			$('.above2').css({
-				height: $(window).height()-160 + 'px'
-			});
-
-			$('.above3').css({
-				height: $(window).height()-160 + 'px'
-			});
-			$('.above4').css({
-				height: 1.2*$(window).height()-160 + 'px'
-			});
-		}
-
-		else if(height>545){
+		if(height>965 & absolute_width>=760){
 			$('.above1').css({
 				height: $(window).height()-160 + 'px'
 			});
@@ -52,20 +34,84 @@ $(function() {
 			});
 		}
 
-		else if(height<=545 & height>320 & absolute_width>500 ){
+		
+
+		else if(absolute_width<1030 & absolute_width>=660 & height<775 & height>500){
 			$('.above1').css({
-				height: 1.1*$(window).height()-160 + 'px'
+				height: 700 + 'px'
 			});
 
 			$('.above2').css({
-				height: 1.1*$(window).height()-160 + 'px'
+				height: 700 + 'px'
 			});
 
 			$('.above3').css({
-				height: 1.1*$(window).height()-160 + 'px'
+				height: 700 + 'px'
 			});
 			$('.above4').css({
-				height: 1.8*$(window).height()-160 + 'px'
+				height: 800 + 'px'
+			});
+			$('.beneath_contacts').delay(1000).css({
+				display:'block'
+			});
+		}
+
+		else if(absolute_width<660 & absolute_width>=540 & height>500){
+			$('.above1').css({
+				height: 700 + 'px'
+			});
+
+			$('.above2').css({
+				height: 700 + 'px'
+			});
+
+			$('.above3').css({
+				height: 700 + 'px'
+			});
+			$('.above4').css({
+				height: 800 + 'px'
+			});
+			$('.beneath_contacts').delay(1000).css({
+				display:'block'
+			});
+
+		}
+
+		else if(absolute_width<760 & absolute_width>=500 & height<500){
+			$('.above1').css({
+				height: 500 + 'px'
+			});
+
+			$('.above2').css({
+				height: 500 + 'px'
+			});
+
+			$('.above3').css({
+				height: 500 + 'px'
+			});
+			$('.above4').css({
+				height: 650 + 'px'
+			});
+			$('.beneath_contacts').delay(1000).css({
+				display:'block'
+			});
+
+		}
+
+		else if(absolute_width<540 & absolute_width>=410 & height>500 ){
+			$('.above1').css({
+				height: 630 + 'px'
+			});
+
+			$('.above2').css({
+				height: 630 + 'px'
+			});
+
+			$('.above3').css({
+				height: 630 + 'px'
+			});
+			$('.above4').css({
+				height: 730 + 'px'
 			});
 			$('.beneath_contacts').css({
 				display:'block'
@@ -73,86 +119,29 @@ $(function() {
 
 		}
 
-		else if(height<=545 & height>320 & absolute_width<500 ){
+		else if(absolute_width<410  & height>500 ){
 			$('.above1').css({
-				height: 1.1*$(window).height()-160 + 'px'
+				height: 500 + 'px'
 			});
 
 			$('.above2').css({
-				height: 1.1*$(window).height()-160 + 'px'
+				height: 500 + 'px'
 			});
 
 			$('.above3').css({
-				height: 1.1*$(window).height()-160 + 'px'
+				height: 500 + 'px'
 			});
 			$('.above4').css({
-				height: 1.1*$(window).height()-160 + 'px'
-			});
-		$('.beneath_contacts').css({
-				display:'none'
-			});
-
-		}
-
-		else if(height<=320 & height>256){
-			$('.above1').css({
-				height: 1.5*$(window).height()-160 + 'px'
-			});
-
-			$('.above2').css({
-				height: 1.5*$(window).height()-160 + 'px'
-			});
-
-			$('.above3').css({
-				height: 1.5*$(window).height()-160 + 'px'
-			});
-			$('.above4').css({
-				height: 2.2*$(window).height()-160 + 'px'
+				height: 600 + 'px'
 			});
 			$('.beneath_contacts').css({
 				display:'block'
 			});
+
 		}
 
-		else if(height<=256 & height>206){
-			$('.above1').css({
-				height: 1.5*$(window).height()-160 + 'px'
-			});
-
-			$('.above2').css({
-				height: 1.5*$(window).height()-160 + 'px'
-			});
-
-			$('.above3').css({
-				height: 1.5*$(window).height()-160 + 'px'
-			});
-			$('.above4').css({
-				height: 2.2*$(window).height()-160 + 'px'
-			});
-			$('.beneath_contacts').css({
-				display:'block'
-			});
-		}
-
-		else if(height<=206){
-			$('.above1').css({
-				height: 1.5*$(window).height()-160 + 'px'
-			});
-
-			$('.above2').css({
-				height: 1.5*$(window).height()-160 + 'px'
-			});
-
-			$('.above3').css({
-				height: 1.5*$(window).height()-160 + 'px'
-			});
-			$('.above4').css({
-				height: 2.6*$(window).height()-160 + 'px'
-			});
-			$('.beneath_contacts').css({
-				display:'block'
-			});
-		}
+		
+		
 		if(absolute_width>=1030){
 			$(".above1 .description .first").css("fontSize",$(window).height()/10.23);
 			$(".above1 .description .second").css("fontSize",$(window).height()/10.8);
@@ -164,29 +153,50 @@ $(function() {
 			$(".above2 .description .second").css("fontSize",$(window).height()/32.7);
 		}
 
-		else if(absolute_width<1030 & absolute_width>=540) {
-			$(".above1 .description .first").css("fontSize",$(window).height()/17);
-			$(".above1 .description .second").css("fontSize",$(window).height()/14);
-			$(".above1 .description .third").css("fontSize",$(window).height()/14.3);
-			$(".above1 .description .fourth").css("fontSize",$(window).height()/23.59);
-			$(".above1 .description .fifth").css("fontSize",$(window).height()/43.59);
+		else if(absolute_width<1030 & absolute_width>=660 & height>800) {
+			$(".above1 .description .first").css("fontSize",5.50 + 'em');
+			$(".above1 .description .second").css("fontSize",5.247 + 'em');
+			$(".above1 .description .third").css("fontSize",5.2 + 'em');
+			$(".above1 .description .fourth").css("fontSize",4.0 + 'em');
+			$(".above1 .description .fifth").css("fontSize",2.359 + 'em');
+		}
+
+		else if(absolute_width<760 & absolute_width>=500 & height<500){
+			$(".above1 .description .first").css("fontSize",3.57 + 'em');
+			$(".above1 .description .second").css("fontSize",2.947 + 'em');
+			$(".above1 .description .third").css("fontSize",2.9 + 'em');
+			$(".above1 .description .fourth").css("fontSize",2.583 + 'em');
+			$(".above1 .description .fifth").css("fontSize",1.359 + 'em');
+		}
+
+
+
+
+		else if(absolute_width<660 & absolute_width>=540) {
+			$(".above1 .description .first").css("fontSize",4.50 + 'em');
+			$(".above1 .description .second").css("fontSize",5.247 + 'em');
+			$(".above1 .description .third").css("fontSize",5.2 + 'em');
+			$(".above1 .description .fourth").css("fontSize",3.283 + 'em');
+			$(".above1 .description .fifth").css("fontSize",2.359 + 'em');
 		}
 
 		else if(absolute_width<540 & absolute_width>=410) {
-			$(".above1 .description .first").css("fontSize",$(window).height()/15.9);
-			$(".above1 .description .second").css("fontSize",$(window).height()/14.9);
-			$(".above1 .description .third").css("fontSize",$(window).height()/15.25);
-			$(".above1 .description .fourth").css("fontSize",$(window).height()/21.99);
-			$(".above1 .description .fifth").css("fontSize",$(window).height()/43.59);
+			$(".above1 .description .first").css("fontSize",3.57 + 'em');
+			$(".above1 .description .second").css("fontSize",2.947 + 'em');
+			$(".above1 .description .third").css("fontSize",2.9 + 'em');
+			$(".above1 .description .fourth").css("fontSize",2.583 + 'em');
+			$(".above1 .description .fifth").css("fontSize",1.359 + 'em');
 		}
 
 		else if(absolute_width<410 ) {
-			$(".above1 .description .first").css("fontSize",$(window).height()/17);
-			$(".above1 .description .second").css("fontSize",$(window).height()/20.0);
-			$(".above1 .description .third").css("fontSize",$(window).height()/20.5);
-			$(".above1 .description .fourth").css("fontSize",$(window).height()/23.5);
-			$(".above1 .description .fifth").css("fontSize",$(window).height()/49.59);
+			$(".above1 .description .first").css("fontSize",2.6 + 'em');
+			$(".above1 .description .second").css("fontSize",2.247 + 'em');
+			$(".above1 .description .third").css("fontSize",2.2 + 'em');
+			$(".above1 .description .fourth").css("fontSize",1.889 + 'em');
+			$(".above1 .description .fifth").css("fontSize",1.359 + 'em');
 		}
+
+		
 //$(".above1 .description ").css("paddingTop",(height-height_description)*0.5);
 }
 
