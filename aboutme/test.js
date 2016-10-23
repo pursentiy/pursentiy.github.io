@@ -4,7 +4,7 @@ $(function() {
 		$('body').addClass('loaded');
 	},1);
 
-	$("above2").clone().prependTo("above2_clone");
+$("above2").clone().prependTo("above2_clone");
 	function setHeiHeight() {
 		var absolute_width=$(window).width();
 		var height_1=$(window).height()-160;
@@ -221,27 +221,6 @@ $(function() {
 //$(".above1 .description ").css("paddingTop",(height-height_description)*0.5);
 }
 
-$("#owl-demo").owlCarousel({
-
-      autoPlay: 15000, //Set AutoPlay to 3 seconds
-
-      singleItem:true
-
-  });
-
-$('#owl-example').owlCarousel({
-	center: true,
-	items : 2,
-	loop:true,
-	responsiveClass:true,
-	navigation : true,
-itemsDesktop : [1000,1], //5 items between 1000px and 901px
-      itemsDesktopSmall : [900,1], // betweem 900px and 601px
-      itemsTablet: [600,1],
-  });
-
-$( ".owl-prev").html('<i class="fa fa-chevron-left"></i>');
-$( ".owl-next").html('<i class="fa fa-chevron-right"></i>');
 
 
 setHeiHeight(); // устанавливаем высоту окна при первой загрузке страницы
@@ -296,44 +275,6 @@ $('.sec_fourth').on('click',function(){
 })
 
 
-	//SVG Fallback
-	if(!Modernizr.svg) {
-		$("img[src*='svg']").attr("src", function() {
-			return $(this).attr("src").replace(".svg", ".png");
-		});
-	};
 
-	//E-mail Ajax Send
-	//Documentation & Example: https://github.com/agragregra/uniMail
-	$("form").submit(function() { //Change
-		var th = $(this);
-		$.ajax({
-			type: "POST",
-			url: "mail.php", //Change
-			data: th.serialize()
-		}).done(function() {
-			alert("Thank you!");
-			setTimeout(function() {
-				// Done Functions
-				th.trigger("reset");
-			}, 1000);
-		});
-		return false;
-	});
-
-	//Chrome Smooth Scroll
-	try {
-		$.browserSelector();
-		if($("html").hasClass("chrome")) {
-			$.smoothScroll();
-		}
-	} catch(err) {
-
-	};
-
-	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
 
 });
-
-//$(".above1 .description ").css("paddingTop",$(window).height()/6.09);
-//$(window).height()-600+'
