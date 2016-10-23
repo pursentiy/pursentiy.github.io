@@ -222,6 +222,28 @@ $("above2").clone().prependTo("above2_clone");
 }
 
 
+$("#owl-demo").owlCarousel({
+
+      autoPlay: 15000, //Set AutoPlay to 3 seconds
+
+      singleItem:true
+
+  });
+
+$('#owl-example').owlCarousel({
+	center: true,
+	items : 2,
+	loop:true,
+	responsiveClass:true,
+	navigation : true,
+itemsDesktop : [1000,1], //5 items between 1000px and 901px
+      itemsDesktopSmall : [900,1], // betweem 900px and 601px
+      itemsTablet: [600,1],
+  });
+
+$( ".owl-prev").html('<i class="fa fa-chevron-left"></i>');
+$( ".owl-next").html('<i class="fa fa-chevron-right"></i>');
+
 
 setHeiHeight(); // устанавливаем высоту окна при первой загрузке страницы
 $(window).load( setHeiHeight );
