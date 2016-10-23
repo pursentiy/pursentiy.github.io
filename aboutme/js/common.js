@@ -14,7 +14,7 @@ $(function() {
 		$(window).resize( console.log(height));
 		$(window).resize(console.log((height/2-height_description/2)));
 
-		 if(height_1>465 & absolute_width>1010){
+		 if(height_1>500 & absolute_width>1010){
 			$('.above1').css({
 				height: $(window).height()-160 + 'px'
 			});
@@ -35,7 +35,7 @@ $(function() {
 		}
 
 
-		if(height_1>465 & absolute_width>=760){
+		if(height_1>500 & absolute_width>=760){
 			$('.above1').css({
 				height: $(window).height()-160 + 'px'
 			});
