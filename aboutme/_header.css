@@ -7,19 +7,43 @@ min-height:298px;
 	display: none ;
 }
 
+.before_elements{
+	position: absolute;
+	width:100%;
+	top:0px;
+	z-index: 15;
+-webkit-transform: translateY(-160px);
+        transform: translateY(-160px);
+-webkit-transition:0.57s;
+transition: 0.57s;
 
+}
 
 .above1{
 	width:100%;
 	background: #7DC7D8;
-	
+	position: relative;
+
+top:0px;
+-webkit-transform: translateY(0%);
+        transform: translateY(0%);
+-webkit-transition:1s ;
+transition: 1s ;
 }
+
+
+
+
 
  .above1 .wrapper{
 width:100%;
 height:100%;
+display: -webkit-box;
+display: -ms-flexbox;
 display: flex;
-align-items: center;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
  }
 
 .above1 .description{
@@ -96,19 +120,36 @@ margin-right:10px;
 	}
 
 .above2{
-
-	width:100%;
+position: absolute;
+width: 100%;
 	background: #FAD04C;
-	align-items: center;
-	justify-content: center;
-	transition:0.7s ease;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+top:0px;
+-webkit-transform: translateY(-210%);
+        transform: translateY(-210%);
+-webkit-transition:1s ;
+transition: 1s ;
 }
+
+
 
 
 .above2 .wrapper{
 	width:100%;
 	height:auto;
 
+}
+
+.above2 .third .first_text{
+	font-family: design;
 }
 
 .above2 .description div.first{
@@ -211,8 +252,6 @@ width:100%;
     padding: 30px 0px;
     margin: 5px;
     color: #FFF;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
     border-radius: 3px;
     text-align: center;
 }
@@ -265,14 +304,28 @@ font-family:design;
 .above3{
 	width:100%;
 	background: #FF8B64;
-	
+	position: absolute;
+width: 100%;
+top:0px;
+-webkit-transform: translateY(-210%);
+        transform: translateY(-210%);
+-webkit-transition:1s ;
+transition: 1s ;
 }
 
  .above3 .photo_wrapper{
 width:80%;
 height:100%;
+display: -webkit-box;
+display: -ms-flexbox;
 display: flex;
-align-items: center;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+ }
+
+ .above3 .hover:hover{
+ 	filter:brightness(0.68);
  }
 
  #owl-example .item{
@@ -283,6 +336,7 @@ align-items: center;
   width: 100%;
   height: auto;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 .photo_wrapper{
@@ -321,8 +375,28 @@ margin:0px auto;
 .above4{
 	width:100%;
 	background: #60997C;
+	
+	position: absolute;
+width: 100%;
+top:0px;
+-webkit-transform: translateY(-210%);
+        transform: translateY(-210%);
+-webkit-transition:1s ;
+transition: 1s ;
+
+}
+
+.above4_under{
+
+	width:100%;
+	height:100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+
 }
 
 .above4 .wrapper_out{
@@ -476,9 +550,83 @@ color:white;
 	cursor:pointer;
 }
 
-.display{
-	display: block !important;
-		display: flex !important;
+.above4 .beneath_contacts{
+	display: none;
+	position: absolute;
+	bottom:5px;
+		width:100%;
+
+    font-family: oswald, Arial Narrow;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+    color:white;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    font-family: design;
 }
+
+.display_2{
+-webkit-transform: translateY(40px);
+        transform: translateY(40px);
+z-index: 11;
+}
+
+.display_3{
+-webkit-transform: translateY(80px);
+        transform: translateY(80px);
+z-index: 12;
+}
+
+.display_4{
+-webkit-transform: translateY(120px);
+        transform: translateY(120px);
+z-index: 13;
+}
+
+.display_none{
+	transform: translateY(-110%);
+}
+
+.pop_1{
+	-webkit-transform: translateY(-120px);
+	        transform: translateY(-120px);
+	-webkit-transition-delay:0.425s;
+	        transition-delay:0.425s;
+}
+
+.pop_2{
+	-webkit-transform: translateY(-80px);
+	        transform: translateY(-80px);
+	-webkit-transition-delay:0.425s;
+	        transition-delay:0.425s;
+}
+
+.pop_3{
+	-webkit-transform: translateY(-40px);
+	        transform: translateY(-40px);
+	-webkit-transition-delay:0.425s;
+	        transition-delay:0.425s;
+}
+
+.pop_up{
+-webkit-transform: translateY(-160px);
+        transform: translateY(-160px);
+-webkit-transition-delay:0.15s;
+        transition-delay:0.15s;
+}
+
+.before{
+	position: relative;
+}
+
+.unvisible{
+	display:none;
+}
+
+.visible{
+	display:block;
+}
+
 
 
