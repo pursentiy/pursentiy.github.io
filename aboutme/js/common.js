@@ -7,14 +7,35 @@ $(function() {
 	$("above2").clone().prependTo("above2_clone");
 	function setHeiHeight() {
 		var absolute_width=$(window).width();
+		var height_1=$(window).height()-160;
 		var height=$(window).height();
 		var height_description= $('.wrapper').height();
 		$(window).resize( console.log(absolute_width));
 		$(window).resize( console.log(height));
 		$(window).resize(console.log((height/2-height_description/2)));
 
+		 if(height_1>465 & absolute_width>1010){
+			$('.above1').css({
+				height: $(window).height()-160 + 'px'
+			});
 
-		if(height>965 & absolute_width>=760){
+			$('.above2').css({
+				height: $(window).height()-160 + 'px'
+			});
+
+			$('.above3').css({
+				height: $(window).height()-160 + 'px'
+			});
+			$('.above4').css({
+				height: $(window).height()-160 + 'px'
+			});
+			$('.beneath_contacts').css({
+				display:'none'
+			});
+		}
+
+
+		if(height_1>465 & absolute_width>=760){
 			$('.above1').css({
 				height: $(window).height()-160 + 'px'
 			});
@@ -224,6 +245,7 @@ $( ".owl-next").html('<i class="fa fa-chevron-right"></i>');
 
 
 setHeiHeight(); // устанавливаем высоту окна при первой загрузке страницы
+$(window).load( setHeiHeight );
 $(window).resize( setHeiHeight ); // обновляем при изменении размеров окна
 
 $('.sec_first').on('click',function(){ 
