@@ -1,8 +1,6 @@
 $(function() {
 
-	setTimeout(function(){
-		$('body').addClass('loaded');
-	},1);
+	
 
 $("above2").clone().prependTo("above2_clone");
 	function setHeiHeight() {
@@ -35,7 +33,7 @@ $("above2").clone().prependTo("above2_clone");
 		}
 
 
-		if(height_1>500 & absolute_width>=760){
+		if(height_1>1000 & absolute_width>=760){
 			$('.above1').css({
 				height: $(window).height()-160 + 'px'
 			});
@@ -57,7 +55,7 @@ $("above2").clone().prependTo("above2_clone");
 
 		
 
-		else if(absolute_width<1030 & absolute_width>=660 & height<775 & height>500){
+		else if(absolute_width<1080 & absolute_width>=660 & height<785 & height>500){
 			$('.above1').css({
 				height: 700 + 'px'
 			});
@@ -231,6 +229,7 @@ $("#owl-demo").owlCarousel({
   });
 
 $('#owl-example').owlCarousel({
+	autoPlay: 5000,
 	center: true,
 	items : 2,
 	loop:true,
@@ -297,6 +296,8 @@ $('.sec_fourth').on('click',function(){
 })
 
 
-
+setTimeout(function(){
+		$('body').addClass('loaded');
+	},1000);
 
 });
