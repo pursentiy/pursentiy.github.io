@@ -33,7 +33,7 @@ $("above2").clone().prependTo("above2_clone");
 		}
 
 
-		if(height_1>1000 & absolute_width>=760){
+		if(height>1000 & absolute_width>=760){
 			$('.above1').css({
 				height: $(window).height()-160 + 'px'
 			});
