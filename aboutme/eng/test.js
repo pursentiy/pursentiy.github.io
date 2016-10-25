@@ -12,7 +12,7 @@ $("above2").clone().prependTo("above2_clone");
 		$(window).resize( console.log(height));
 		$(window).resize(console.log((height/2-height_description/2)));
 
-		 if(height_1>500 & absolute_width>1010){
+		 if(height>500 & absolute_width>1010){
 			$('.above1').css({
 				height: $(window).height()-160 + 'px'
 			});
@@ -55,7 +55,7 @@ $("above2").clone().prependTo("above2_clone");
 
 		
 
-		else if(absolute_width<1080 & absolute_width>=660 & height<785 & height>500){
+		else if(absolute_width<1080 & absolute_width>=660 & height<1005 & height>500){
 			$('.above1').css({
 				height: 700 + 'px'
 			});
