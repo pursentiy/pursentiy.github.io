@@ -119,15 +119,15 @@ $("above2").clone().prependTo("above2_clone");
 
 		else if(absolute_width<540 & absolute_width>=410 & height>500 ){
 			$('.above1').css({
-				height: 630 + 'px'
+				height: 660 + 'px'
 			});
 
 			$('.above2').css({
-				height: 630 + 'px'
+				height: 660 + 'px'
 			});
 
 			$('.above3').css({
-				height: 630 + 'px'
+				height: 660 + 'px'
 			});
 			$('.above4').css({
 				height: 730 + 'px'
@@ -204,15 +204,15 @@ $("above2").clone().prependTo("above2_clone");
 			$(".above1 .description .second").css("fontSize",2.947 + 'em');
 			$(".above1 .description .third").css("fontSize",2.9 + 'em');
 			$(".above1 .description .fourth").css("fontSize",2.583 + 'em');
-			$(".above1 .description .fifth").css("fontSize",1.359 + 'em');
+			$(".above1 .description .fifth").css("fontSize",1.579 + 'em');
 		}
 
 		else if(absolute_width<410 ) {
 			$(".above1 .description .first").css("fontSize",2.6 + 'em');
-			$(".above1 .description .second").css("fontSize",2.247 + 'em');
-			$(".above1 .description .third").css("fontSize",2.2 + 'em');
+			$(".above1 .description .second").css("fontSize",2.447 + 'em');
+			$(".above1 .description .third").css("fontSize",2.4 + 'em');
 			$(".above1 .description .fourth").css("fontSize",1.889 + 'em');
-			$(".above1 .description .fifth").css("fontSize",1.359 + 'em');
+			$(".above1 .description .fifth").css("fontSize",0.859 + 'em');
 		}
 
 		
@@ -298,6 +298,6 @@ $('.sec_fourth').on('click',function(){
 
 setTimeout(function(){
 		$('body').addClass('loaded');
-	},1000);
+	},1200);
 
 });
