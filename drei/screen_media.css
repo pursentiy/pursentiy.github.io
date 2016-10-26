@@ -32,7 +32,6 @@
 		min-width:426px;
 		height:319px;
 		cursor:pointer;
-		-webkit-transition: 0.5s ease;
 		transition: 0.5s ease;
 	}
 
@@ -68,7 +67,6 @@ top:10%;
 		min-width:313px;
 		height:259.5px;
 		cursor:pointer;
-		-webkit-transition: 0.5s ease;
 		transition: 0.5s ease;
 		background-size: cover;
 	}
@@ -110,7 +108,6 @@ background: url(pictures/background_pink.jpg) no-repeat center;
 	padding-top: 90px;
 
 }
-}
 
 @media screen and (max-width:765px){
 
@@ -130,7 +127,6 @@ height:50px;
     border-radius: 3px;
         right: 37px;
     top: 33px;
-    -webkit-transition: 0.3s ease;
     transition:0.3s ease;
 }
 
@@ -165,34 +161,22 @@ header{
     width: 35%;
     height: 100%;
     text-align: center;
-    -webkit-transform: translateX(-110%);
-            transform: translateX(-110%); 
-    -webkit-transition: -webkit-transform 0.6s ease; 
-    transition: -webkit-transform 0.6s ease; 
-    transition: transform 0.6s ease; 
-    transition: transform 0.6s ease, -webkit-transform 0.6s ease;
+    transform: translateX(-110%); 
+    transition: transform 0.6s ease;
     z-index: 100;
     scroll-behavior: 
 	}
 
 
 	.scroll{
-		-webkit-transform: translateX(0%);
-		        transform: translateX(0%);
+		transform: translateX(0%);
 	}
 
 header .main_navigation ul {
 	margin-top:21.5px;
-	display:-webkit-box;
-	display:-ms-flexbox;
 	display:flex;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
+	justify-content: center;
+	flex-direction: column;
 	-webkit-padding-start: 0px;
 }
 
@@ -203,7 +187,6 @@ header .main_navigation ul li{
 	color:white;
 	padding:50px 35px 0px 35px;
 	cursor:pointer;
-	-webkit-transition: 0.4s ease;
 	transition: 0.4s ease;
 }
 
@@ -224,7 +207,6 @@ header .main_navigation ul li{
 		height: 2px;
 		background: black;
 		margin-top:12px;
-		-webkit-transition: all 0.1s;
 		transition: all 0.1s;
     background: white;
 	}
@@ -266,7 +248,6 @@ header .main_navigation ul li{
 		width: 40px;
 		height: 2px;
 		background: black;
-		-webkit-transition: all 0.3s;
 		transition: all 0.3s;
 		    background: white;
 	}
@@ -290,10 +271,7 @@ height:1000px;
 }
 
 .offer .service .advices {
--webkit-box-orient: vertical;
--webkit-box-direction: normal;
-    -ms-flex-direction: column;
-        flex-direction: column;
+flex-direction: column;
 
 	}
 
@@ -316,12 +294,8 @@ margin:0px auto;
 .work .cars {
 width:400px;
 margin-top:-180px;
--webkit-box-orient: vertical;
--webkit-box-direction: normal;
-    -ms-flex-direction: column;
-        flex-direction: column;
--ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
+flex-direction: column;
+flex-wrap: nowrap;
 	}
 
 .work .cars [class^="pos_"] {
@@ -365,49 +339,27 @@ height:710px;
     height: 840px;
 }
 
-forms .form h3 {
-
-    -webkit-margin-after: 0em;
-    -ms-margin-after: 0em;
-    -moz-margin-after: 0em;
-    -o-margin-after: 0em;
-}
-
 .forms .form .bottom {
-	
-	display: block;
-
-
+flex-direction: column;
+align-items: center;
+margin-top:100px;
 }
-
-.forms .form .info {
-    display: inline-block;
-    width: 250px;
-    height: 336px;
-    margin-top: -20px;
-    }
 
 
 
 .forms .form .info {
 width:100%;
-
 	}
 
 	.forms .form .input {
     width: 100%;
     margin-right:0px;
-    padding-left: 12px;
-    display:inline-block;
+    padding-left: 20px;
 } 
 
 .forms .input input {
 	width: 90%;
 	height:35px;
-}
-
-.forms .input input:first-child {
-     margin-top: 0px; 
 }
 
 .forms .input textarea {
@@ -419,8 +371,9 @@ margin-left:00%;
 	}
 }
 
-@media screen and (max-width:750px) and (orientation: landscape) {
+@media screen and (orientation:landscape) {
 .popup {
    margin:15% auto;
 }
 	}
+
