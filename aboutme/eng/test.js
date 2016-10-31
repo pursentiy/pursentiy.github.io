@@ -52,23 +52,23 @@ if(height<800 & absolute_width>1210){
 			});
 		}
 
-		 if(height<560 & absolute_width>1210){
+		 if(height<650 & absolute_width>1210){
 			$('.above1').css({
-				height: 2.3*$(window).height()-160 + 'px'
+				height: 700 + 'px'
 			});
 
 			$('.above2').css({
-				height: 2.3*$(window).height()-160 + 'px'
+				height: 700 + 'px'
 			});
 
 			$('.above3').css({
-				height: 2.3*$(window).height()-160 + 'px'
+				height: 700 + 'px'
 			});
 			$('.above4').css({
-				height: 2.3*$(window).height()-160 + 'px'
+				height: 800 + 'px'
 			});
-			$('.beneath_contacts').css({
-				display:'none'
+			$('.beneath_contacts').delay(1000).css({
+				display:'block'
 			});
 		}
 
@@ -201,11 +201,12 @@ if(height<800 & absolute_width>1210){
 
 		
 		
-		if(absolute_width>=1030){
-			$(".above1 .description .first").css("fontSize",$(window).height()/10.23);
-			$(".above1 .description .second").css("fontSize",$(window).height()/10.8);
+		
+		if(absolute_width>=1030 & height>600){
+			$(".above1 .description .first").css("fontSize",$(window).height()/13.1);
+			$(".above1 .description .second").css("fontSize",$(window).height()/9.69);
 			$(".above1 .description .third").css("fontSize",$(window).height()/11.0);
-			$(".above1 .description .fourth").css("fontSize",$(window).height()/14.19);
+			$(".above1 .description .fourth").css("fontSize",$(window).height()/12.31);
 			$(".above1 .description .fifth").css("fontSize",$(window).height()/33.59);
 
 			$(".above2 .description .first").css("fontSize",$(window).height()/35);
@@ -213,10 +214,18 @@ if(height<800 & absolute_width>1210){
 		}
 
 		else if(absolute_width<1030 & absolute_width>=660 & height>800) {
-			$(".above1 .description .first").css("fontSize",5.50 + 'em');
-			$(".above1 .description .second").css("fontSize",5.247 + 'em');
-			$(".above1 .description .third").css("fontSize",5.2 + 'em');
-			$(".above1 .description .fourth").css("fontSize",4.0 + 'em');
+			$(".above1 .description .first").css("fontSize",3.29 + 'em');
+			$(".above1 .description .second").css("fontSize",5.577 + 'em');
+			$(".above1 .description .third").css("fontSize",4.9 + 'em');
+			$(".above1 .description .fourth").css("fontSize",3.5 + 'em');
+			$(".above1 .description .fifth").css("fontSize",2.359 + 'em');
+		}
+
+		else if(absolute_width>1030  & height<600) {
+			$(".above1 .description .first").css("fontSize",3.29 + 'em');
+			$(".above1 .description .second").css("fontSize",5.577 + 'em');
+			$(".above1 .description .third").css("fontSize",4.9 + 'em');
+			$(".above1 .description .fourth").css("fontSize",3.5 + 'em');
 			$(".above1 .description .fifth").css("fontSize",2.359 + 'em');
 		}
 
