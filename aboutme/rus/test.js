@@ -32,7 +32,45 @@ $("above2").clone().prependTo("above2_clone");
 			});
 		}
 
-		
+		if(height<800 & absolute_width>1210){
+			$('.above1').css({
+				height: 1.3*$(window).height()-160 + 'px'
+			});
+
+			$('.above2').css({
+				height: 1.3*$(window).height()-160 + 'px'
+			});
+
+			$('.above3').css({
+				height: 1.3*$(window).height()-160 + 'px'
+			});
+			$('.above4').css({
+				height: 1.3*$(window).height()-160 + 'px'
+			});
+			$('.beneath_contacts').css({
+				display:'none'
+			});
+		}
+
+		 if(height<560 & absolute_width>1210){
+			$('.above1').css({
+				height: 2.3*$(window).height()-160 + 'px'
+			});
+
+			$('.above2').css({
+				height: 2.3*$(window).height()-160 + 'px'
+			});
+
+			$('.above3').css({
+				height: 2.3*$(window).height()-160 + 'px'
+			});
+			$('.above4').css({
+				height: 2.3*$(window).height()-160 + 'px'
+			});
+			$('.beneath_contacts').css({
+				display:'none'
+			});
+		}
 
 
 		if(height>1000 & absolute_width>=760){
@@ -54,49 +92,6 @@ $("above2").clone().prependTo("above2_clone");
 				display:'none'
 			});
 		}
-
-
-
-		 if(height<800 & absolute_width>1210){
-			$('.above1').css({
-				height: 1.3*$(window).height()-160 + 'px'
-			});
-
-			$('.above2').css({
-				height: 1.3*$(window).height()-160 + 'px'
-			});
-
-			$('.above3').css({
-				height: 1.3*$(window).height()-160 + 'px'
-			});
-			$('.above4').css({
-				height: 1.3*$(window).height()-160 + 'px'
-			});
-			$('.beneath_contacts').css({
-				display:'none'
-			});
-		}
-
-
-			$('.above1').css({
-				height: 700 + 'px'
-			});
-
-			$('.above2').css({
-				height: 700 + 'px'
-			});
-
-			$('.above3').css({
-				height: 700 + 'px'
-			});
-			$('.above4').css({
-				height: 800 + 'px'
-			});
-			$('.beneath_contacts').delay(1000).css({
-				display:'block'
-			});
-		}
-
 
 		
 
@@ -206,7 +201,7 @@ $("above2").clone().prependTo("above2_clone");
 
 		
 		
-		if(absolute_width>=1030 & height>600){
+		if(absolute_width>=1030){
 			$(".above1 .description .first").css("fontSize",$(window).height()/13.1);
 			$(".above1 .description .second").css("fontSize",$(window).height()/9.69);
 			$(".above1 .description .third").css("fontSize",$(window).height()/11.0);
@@ -224,15 +219,6 @@ $("above2").clone().prependTo("above2_clone");
 			$(".above1 .description .fourth").css("fontSize",3.5 + 'em');
 			$(".above1 .description .fifth").css("fontSize",2.359 + 'em');
 		}
-
-		else if(absolute_width>1030  & height<600) {
-			$(".above1 .description .first").css("fontSize",3.29 + 'em');
-			$(".above1 .description .second").css("fontSize",5.577 + 'em');
-			$(".above1 .description .third").css("fontSize",4.9 + 'em');
-			$(".above1 .description .fourth").css("fontSize",3.5 + 'em');
-			$(".above1 .description .fifth").css("fontSize",2.359 + 'em');
-		}
-
 
 		else if(absolute_width<760 & absolute_width>=500 & height<500){
 			$(".above1 .description .first").css("fontSize",2.39 + 'em');
