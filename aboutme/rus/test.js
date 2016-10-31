@@ -52,6 +52,26 @@ $("above2").clone().prependTo("above2_clone");
 			});
 		}
 
+		 if(height<560 & absolute_width>1210){
+			$('.above1').css({
+				height: 2.3*$(window).height()-160 + 'px'
+			});
+
+			$('.above2').css({
+				height: 2.3*$(window).height()-160 + 'px'
+			});
+
+			$('.above3').css({
+				height: 2.3*$(window).height()-160 + 'px'
+			});
+			$('.above4').css({
+				height: 2.3*$(window).height()-160 + 'px'
+			});
+			$('.beneath_contacts').css({
+				display:'none'
+			});
+		}
+
 
 		if(height>1000 & absolute_width>=760){
 			$('.above1').css({
