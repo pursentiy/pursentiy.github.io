@@ -63,7 +63,7 @@
    }
 
    .just .row{
-       width:80%;
+       width:82%;
    }
 
 }
@@ -171,7 +171,7 @@
 
 .just .lefter{
     padding-left:2em;
-    margin-top: 6px;
+
 }
 
 }
@@ -201,7 +201,7 @@ display: none;
 .just .lefter{
     padding-left:2em;
     font-size: 17px;
-    margin-top: 6px;
+
 }
 }
 
@@ -215,7 +215,7 @@ display: none;
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
     .what-can .row {
-        width: 100%;
+        width: 101%;
     }
 
     
