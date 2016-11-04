@@ -230,7 +230,7 @@ $('.timer-element:first ').css(
 
 	$('.box_1').on('click',function(){
 
-if(display_width>1025 & display_height>770){
+if(display_width>1025){
 		if(close1==true){
 			$('.possible .box_1').css(
 				'height', '245px'
@@ -260,7 +260,7 @@ if(display_width>1025 & display_height>770){
 
 	$('.box_2').on('click',function(){
 
-if(display_width>1025 & display_height>770){
+if(display_width>1025){
 		if(close2==true){
 			$('.possible .box_2').css(
 				'height', '245px'
