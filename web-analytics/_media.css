@@ -1,138 +1,674 @@
 /*==========  Desktop First Method  ==========*/
 
-@media only screen and (max-width : 1567px) {
 
-.For-whom .row {
-    width: 85%;
+
+@media only screen and (max-width : 1617px) {
+
+    .just .row {
+
+        width: 65%;
+    }
 }
 
-footer .footer .link {
-	font-size: 13px;
+
+
+@media only screen and (max-width : 1567px) {
+
+    .For-whom .row {
+        width: 75%;
+    }
+
+    footer .footer .link {
+       font-size: 13px;
+   }
+
+   .just .row {
+
+    width: 70%;
 }
 
 }
 
 @media only screen and (max-width : 1410px) {
-	footer .wrapper {
-    width: 80%;
+
+
+    footer .wrapper {
+        width: 80%;
     }
 
-footer .wrapper .C {
-	padding-left: 3em;
+    footer .wrapper .C {
+       padding-left: 3em;
+   }
+
+   footer .footer {
+    width: 75%;
 }
 
-footer .footer {
+.just .row {
+
     width: 75%;
-    }
+}
 }
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1250px) {
+@media only screen and (max-width : 1300px) {
 
-.For-whom .row {
-    width: 95%;
-}
+    .For-whom .row {
+        width: 85%;
+    }
 
-.what-can .row{
-	width:90%;
-}
+    .what-can .row{
+       width: 95%;
+       margin: 0px auto;
+   }
 
-.just .row{
-	width:90%;
-}
+   .just .row{
+       width:80%;
+   }
 
 }
 
 @media only screen and (max-width : 1172px) {
-	.For-whom .row {
-    width: 100%;
-}
+    .For-whom .row {
+        width: 100%;
+    }
 
-.For-whom .row .designers {
-    font-size: 20px;
-}
+    .For-whom .row .designers {
+        font-size: 20px;
+    }
 
-.For-whom .row .internet {
-    font-size: 20px;
-}
+    .For-whom .row .internet {
+        font-size: 20px;
+    }
 
-.For-whom .row .businessman {
-    font-size: 20px;
-}
+    .For-whom .row .businessman {
+        font-size: 20px;
+    }
 
-	.programm [class^="pos_"] {
-    -webkit-box-pack: center;
+    .just .row{
+        width:90%;
+    }
+
+    .programm [class^="pos_"] {
+        -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center;
-    padding-left: 3em;
+        justify-content: center;
+        padding-left: 3em;
+    }
+
+    .programm .prog {
+    padding-bottom: 0em;
 }
 
-	footer .wrapper {
-    width: 90%;
+    footer .wrapper {
+        width: 90%;
     }
 
 
-footer .footer {
-    width: 85%;
+    footer .footer {
+        width: 85%;
     }
 
 }
 
 @media only screen and (max-width : 1100px) {
-.programm [class^="pos_"] .first {
-    font-size: 24px;
-}
+    .programm [class^="pos_"] .first {
+        font-size: 24px;
+    }
 
-.programm [class^="pos_"] .second {
-    font-size: 21px;
-}
+    .programm [class^="pos_"] .second {
+        font-size: 21px;
+    }
 
-	.programm [class^="pos_"] {
-    -webkit-box-pack: center;
+    .programm [class^="pos_"] {
+        -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center;
-  
-}
+        justify-content: center;
 
-.programm [class^="pos_"] .image {
-    width: 40px;
-    height: 40px;
-    margin-top: 17px;
-}
+    }
 
-}
+    .programm [class^="pos_"] .image {
+        width: 40px;
+        height: 40px;
+        margin-top: 17px;
+    }
 
-/* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
-.what-can .row {
+    .garanty1 .wrapper {
+        text-align: center;
+        padding-top: 88.5px;
+    }
+
+    .garanty1 .hundred {
+        font-size: 50px;
+        top:7px;
+        top:0px;
+    }
+
+    .garanty1 .hundred>span {
+        font-size: 28px;
+    }
+
+    .garanty1 .i-am {
+        font-size: 21px;
+
+    }
+
+    .i-am {
+        margin-left: 30px;
+    }
+
+    .what-can .row{
+        width: 100%;
+        margin: 0px auto;
+    }
+
+    .just .row {
     width: 100%;
+}
+.just .up_first {
+    margin-bottom: 0.5em;
+    font-size: 16px;
+}
+
+.just .lefter{
+    padding-left:2em;
+    font-size: 17px;
+    margin-top: 6px;
+}
+
+}
+
+@media only screen and (max-width : 1025px) {
+    
+.possible [class^="box_"]:hover {
+    background: transparent;
 }
 
 .possible [class^="box_"] {
-	width:80%;
+    height:285px;
 }
 
-footer .wrapper .C {
-   font-size: 14px;
-       padding-left: 3.9em;
+.possible [class^="box_"] .plus, .plus2 {
+display: none;
+    }
+
+}
+
+@media only screen and (max-width : 927px) {
+.you-cannot .you{
+   padding-top: 56.5px;
+}
+
+    }
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .what-can .row {
+        width: 100%;
+    }
+
+    
+
+    .possible [class^="box_"] {
+       width:80%;
+   }
+
+   footer .wrapper .C {
+     font-size: 14px;
+     padding-left: 3.9em;
+ }
+
+ .For-whom .row .designers {
+    font-size: 18px;
+    padding:0px;
+}
+
+.For-whom .row .internet {
+    font-size: 18px;
+    padding:0px;
+}
+
+.For-whom .row .businessman {
+    font-size: 18px;
+    padding:0px;
 }
 }
+
+@media only screen and (max-width : 991px) {
+    .what-can .positions [class^="pos_"]:nth-child(3) {
+        margin-top: 3.5em;
+    }
+}
+
+@media only screen and (max-width : 932px) {
+
+    .just .lefter {
+   margin-left: 30px;
+}
+
+.just .bit {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.just .abit {
+    margin-left: 0px;
+}
+
+.just .row .col-3 {
+    background: url(img/6.png) no-repeat 50% 50%;
+    background-size: 10%;
+}
+
+.just .row .col-2 {
+    background: url(img/5.png) no-repeat 50% 50%;
+    background-size: 10%;
+
+}
+
+.just .move_right {
+    margin-left: 0;
+}
+
+.just .righter {
+    margin-left: 0em;
+    margin-left: 20px;
+}
+
+    }
+
+    @media only screen and (max-width : 932px) {
+
+.you-cannot .you>br{
+    display: none;
+}
+
+    }
+
+@media only screen and (max-width : 892px) {
+    .just .using {
+        width:85%;
+        background-size:contain;
+    }
+
+    .programm [class^="pos_"] .first {
+        font-size: 21px;
+    }
+
+    .programm [class^="pos_"] .second {
+        font-size: 16.1px;
+    }
+
+    .programm [class^="pos_"] .image {
+        width: 34px;
+        height: 34px;
+        margin-top: 14px;
+    }
+
+    .garanty1 .wrapper {
+        text-align: center;
+        padding-top: 113.5px;
+    }
+
+    .garanty1 .hundred {
+        font-size: 30px;
+        line-height: 31px;
+        top:0px;
+    }
+
+    .garanty1 .hundred>span {
+        font-size: 18px;
+    }
+
+    .garanty1 .i-am {
+        font-size: 17px;
+        line-height: 31px;
+    }
+
+    .i-am {
+        margin-left: 30px;
+    }
+
+    footer .wrapper .igor {
+        background-size: 80%;
+    }
+
+    footer .wrapper .C {
+        font-size: 12px;
+    }
+
+    footer .footer .link {
+        font-size: 12px;
+    }
+
+    footer .footer {
+        width: 95%;
+    }
+
+
+
+}
+
+@media only screen and (max-width : 822px) {
+
+.just .col-7 {
+    margin-bottom: 25px;
+
+}
+
+    }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-	
-	/*Disable Animation on Mobile Devices*/
-	.animated {
-		/*CSS transitions*/
-		-webkit-transition-property: none !important;
-		transition-property: none !important;
-		/*CSS transforms*/
-		-webkit-transform: none !important;
-		transform: none !important;
-		/*CSS animations*/
-		-webkit-animation: none !important;
-		animation: none !important;
-	}
+
+    .For-whom .row .designers {
+        padding-bottom: 3em;
+    }
+
+    .For-whom .row .internet {
+        padding-bottom: 3em;
+    }
+
+    .For-whom .row .businessman {
+        padding-bottom: 3em;
+    }
+
+    
+    .you-cannot {
+        width: 100%;
+        height: 300px;
+    }
+
+    .you-cannot .you {
+        padding-top: 76.5px;
+    }
+
+    .programm [class^="pos_"] .image {
+        width: 34px;
+        height: 34px;
+        margin-top: 14px;
+        display: none;
+    }
+
+    .programm [class^="pos_"] {
+        padding-left: 0em;
+    }
+
+    .programm .button-first .arrow {
+        display: none;
+    }
+
+    .programm .button-first .turn {
+        font-size:17px;
+        margin-left: 0px; 
+    }
+
+    .programm .button-first {
+        width:90%;
+        border-radius:100px;
+
+        text-align: center;
+    }
+
+    .programm [class^="pos_"] .first {
+        font-size: 26px;
+    }
+
+    .programm [class^="pos_"] .second{
+        font-size:21px;
+    }
+
+    .what-can .main {
+        font-size:30px;
+        margin-bottom: 60px;
+    }
+
+
+        .header .web {
+    font-size: 43px;
+}
+
+.header .how {
+    font-size: 18px;
+}
+
+.header .button-first {
+    border-radius: 100px;
+    }
+
+
+    .garanty1 {
+        margin-top: 6em;
+        width: 100%;
+        background: url(img/gradient.png) no-repeat center;
+        background-size: cover;
+        height: 459px;
+    }
+
+    .garanty1 .hundred {
+        display: block;
+        position: relative;
+        top: 15px;
+        font-family: weblysleekuisb;
+        font-size: 62px;
+        color: #ffffff;
+        letter-spacing: 0px;
+        line-height: 46px;
+        text-align: center;
+    }
+
+    .garanty1 .hundred, .i-am {
+        margin-left: 0px;
+    }
+
+    .garanty1 .hundred>span {
+        display: block;
+        text-align: center;
+        font-family: weblysleekuil;
+        font-size: 34px;
+    }
+
+    .garanty1 .i-am {
+     display: none;
+ }
+
+ .garanty1 .i-am-two{
+   
+   display: block;
+   font-family: weblysleekuisb;
+   font-size: 25px;
+   color: #ffffff;
+   letter-spacing: 0px;
+   line-height: 41px;
+   text-align: center;
+   width:90%;
+   margin-right: 0px;
+   padding-right: 0px;
+   margin-left: 0px;
+   padding-left: 65px;
+   padding-left: 0px;
+margin: 0px auto;
+margin-top:25px;
+
+}
+
+.possible{
+    margin-top: 1em;
+}
+
+.possible .button-first .arrow {
+    display: none;
+}
+
+.possible .button-first .turn {
+    font-size:17px;
+    margin-left: 0px; 
+}
+
+.possible .button-first {
+    width:90%;
+    border-radius:100px;
+    margin-top: 4.5em;
+    text-align: center;
+}
+
+
+
+.possible .question{
+    display:none;
+}
+
+
+
+[id^="timer"]{
+    min-width: 0px !important;
+}
+
+footer {
+    width: 100%;
+    background: #2e2e32;
+    margin-top: 5.5em;
+    height: 270px;
+}
+
+footer .wrapper {
+    padding-top:4rem;
+}
+
+footer .footer .link {
+    display: none;
+}
+
+footer .wrapper .igor {
+    display: block;
+    width:100%;
+    padding-top: 3.5rem;
+    height: 40px;
+    background: url(img/igor.png) no-repeat 50% 50%;
+}
+
+footer .wrapper .C {
+    font-size: 16px;
+    margin-top: 1.5em;
+}
+
+}
+
+@media only screen and (max-width : 767px) {
+
+    .just{
+        display: none;
+    }
+
+    .what-can .positions [class^="pos_"]:nth-child(2){
+        margin-top: 3.5em;
+    }
+
+    .possible [class^="box_"] {
+    display: none;
+}
+}
+
+@media only screen and (max-width : 625px) {
+
+
+.you-cannot {
+    width: 100%;
+    height: 424px;
+   
+}
+
+.you-cannot .you{
+     padding-top: 114px
+}
+
+}
+
+@media only screen and (max-width : 537px) {
+footer {
+    height: 285px;
+}
+}
+
+@media only screen and (max-width : 501px) {
+.garanty1 .wrapper {
+   
+    padding-top: 95.5px;
+}
+}
+
+@media only screen and (max-width : 491px) {
+.you-cannot .you{
+      padding-top: 89.5px
+}
+}
+
+@media only screen and (max-width : 480px) {
+.garanty1 .wrapper {
+   
+    padding-top: 75.5px;
+}
+}
+
+
+@media only screen and (max-width : 455px) {
+.you-cannot .you{
+   padding-top: 65px
+}
+
+.programm .button-first {
+    width: 97%;
+    }
+
+    .programm .button-first .turn {
+    font-size: 15.1px;
+    margin-left: 0px;
+}
+
+.possible .button-first {
+    width: 97%;
+    }
+
+    .possible .button-first .turn {
+    font-size: 15.1px;
+    margin-left: 0px;
+}
+
+
+    }
+
+@media only screen and (max-width : 395px) {
+    footer {
+    height: 309px;
+}
+
+}
+
+@media only screen and (max-width : 380px) {
+    footer {
+    height: 335px;
+}
+
+}
+
+
+
+@media only screen and (max-width : 354px) {
+.you-cannot .you{
+   padding-top: 40.5px
+}
+}
+
+
+
+    @media only screen and (max-width : 335px) {
+.garanty1 .wrapper {
+   
+    padding-top: 49.5px;
+}
+
+    footer {
+    height: 365px;
+}
 
 }
 

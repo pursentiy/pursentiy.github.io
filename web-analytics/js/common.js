@@ -1,9 +1,11 @@
 $(function() {
 
 	
-	
+	var display_width=$(window).width()
+	var display_height=$(window).height()
 	var width = $('.timer-element:first>[id^=timer-number-]:first').width()
 	console.log(width);
+	console.log(display_height);
 
 $('.timer-element:first ').css(
 			'margin-left', '15px');
@@ -11,7 +13,7 @@ $('.timer-element:first ').css(
 
 	if(width<20){
 		$('.timer-element:first>[id^=timer-number-]:first').css(
-			'width','62px','!important');
+			'width','58.99px','!important');
 		$('.timer-element:first .timer-slide-inner').css(
 			'width', '100%');
 
@@ -228,11 +230,11 @@ $('.timer-element:first ').css(
 
 	$('.box_1').on('click',function(){
 
+if(display_width>1025 & display_height>770){
 		if(close1==true){
 			$('.possible .box_1').css(
-				'height', '285px'
+				'height', '245px'
 				);
-
 
 			$('.possible .box_1 .plus').css(
 				'color', 'transparent'
@@ -250,13 +252,18 @@ $('.timer-element:first ').css(
 
 				close1=true;
 			}
+		}
+
+		
+			
 		});
 
 	$('.box_2').on('click',function(){
 
+if(display_width>1025 & display_height>770){
 		if(close2==true){
 			$('.possible .box_2').css(
-				'height', '285px'
+				'height', '245px'
 				);
 			$('.possible .box_2 .plus').css(
 				'color', 'transparent'
@@ -274,6 +281,9 @@ $('.timer-element:first ').css(
 
 				close2=true;
 			}
+		}
+
+
 		});
 
 
