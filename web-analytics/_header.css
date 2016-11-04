@@ -1,0 +1,101 @@
+body {
+	font-family: sans-serif;
+	font-size: 16px;
+	min-width: 320px;
+	margin:0px;
+	position: relative;
+	line-height: 1.6;
+	font-family: "RobotoRegular", sans-serif;
+	overflow-x: hidden;
+}
+.hidden {
+	display: none;
+}
+
+.header{
+	width:100%;
+	height:453px;
+	background:url("img/fon.jpg") no-repeat center;
+	background-size: cover;
+	background-position: bottom center;
+	
+}
+
+.web,.how{
+	display:block;
+	color:white;
+	text-align: center;
+
+}
+.header .course-main{
+	margin: 0px auto;
+	text-align: center;
+	padding-top:3em;
+}
+
+.header .course{
+padding:6px 34.4px 6px 34.4px;
+	text-align: center;
+		margin: 0px auto;
+	font-family:weblysleekuil;
+font-size:15px;
+color: #50e3c2;
+letter-spacing:0px;
+ border:1px solid #50e3c2;
+}
+
+.header .web{
+font-family:weblysleekuisb;
+font-size:52px;
+color:#f8e71c;
+letter-spacing:0px;
+    height: 93px;
+margin-top: 0.83em;
+}
+
+.header .how{
+	font-family:weblysleekuil;
+font-size:24px;
+color:#ffffff;
+letter-spacing:0px;
+margin-top: 0.48em;
+}
+
+.header #button_first{
+	display: none;
+}
+
+.header .button-first{
+
+	display: block;
+	margin:0px auto;
+background:#f88200;
+box-shadow:0px 6px 9px 0px rgba(0,0,0,0.13);
+border-radius:10px;
+width:228px;
+padding:9px 33.8px 9px 34.8px;
+	margin-top: 2.8em;
+	transition:0.7s ease;
+	transition-property: background, box-shadow;
+}
+
+.header .button-first .turn{
+	font-family:weblysleekuisb;
+font-size:18px;
+color:#ffffff;
+letter-spacing:0px;
+text-align:center;
+margin-left: 45px;
+}
+
+.header .button-first .arrow{
+	position: absolute;
+	z-index: 1;
+	width:35px;
+	height:37px;
+	margin-top: -5px;
+	    margin-left: -12px;
+	background: url(img/13.png) no-repeat center;
+	background-size: contain;
+}
+

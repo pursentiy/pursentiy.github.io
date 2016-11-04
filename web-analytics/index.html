@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Заголовок</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+	<!-- Bootstrap v3.3.4 Grid Styles -->
+	<style>html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:0.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace, monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-size:10px;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333;background-color:#fff}input,button,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}a{color:#337ab7;text-decoration:none}a:hover,a:focus{color:#23527c;text-decoration:underline}a:focus{outline:thin dotted;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}figure{margin:0}img{vertical-align:middle}.img-responsive{display:block;max-width:100%;height:auto}.img-rounded{border-radius:6px}.img-thumbnail{padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:4px;-webkit-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;display:inline-block;max-width:100%;height:auto}.img-circle{border-radius:50%}hr{margin-top:20px;margin-bottom:20px;border:0;border-top:1px solid #eee}.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0}.sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto}[role="button"]{cursor:pointer}.container{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}@media (min-width:768px){.container{width:750px}}@media (min-width:992px){.container{width:970px}}@media (min-width:1200px){.container{width:1170px}}.container-fluid{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}.row{margin-left:-15px;margin-right:-15px}.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{position:relative;min-height:1px;padding-left:15px;padding-right:15px}.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12{float:left}.col-xs-12{width:100%}.col-xs-11{width:91.66666667%}.col-xs-10{width:83.33333333%}.col-xs-9{width:75%}.col-xs-8{width:66.66666667%}.col-xs-7{width:58.33333333%}.col-xs-6{width:50%}.col-xs-5{width:41.66666667%}.col-xs-4{width:33.33333333%}.col-xs-3{width:25%}.col-xs-2{width:16.66666667%}.col-xs-1{width:8.33333333%}.col-xs-pull-12{right:100%}.col-xs-pull-11{right:91.66666667%}.col-xs-pull-10{right:83.33333333%}.col-xs-pull-9{right:75%}.col-xs-pull-8{right:66.66666667%}.col-xs-pull-7{right:58.33333333%}.col-xs-pull-6{right:50%}.col-xs-pull-5{right:41.66666667%}.col-xs-pull-4{right:33.33333333%}.col-xs-pull-3{right:25%}.col-xs-pull-2{right:16.66666667%}.col-xs-pull-1{right:8.33333333%}.col-xs-pull-0{right:auto}.col-xs-push-12{left:100%}.col-xs-push-11{left:91.66666667%}.col-xs-push-10{left:83.33333333%}.col-xs-push-9{left:75%}.col-xs-push-8{left:66.66666667%}.col-xs-push-7{left:58.33333333%}.col-xs-push-6{left:50%}.col-xs-push-5{left:41.66666667%}.col-xs-push-4{left:33.33333333%}.col-xs-push-3{left:25%}.col-xs-push-2{left:16.66666667%}.col-xs-push-1{left:8.33333333%}.col-xs-push-0{left:auto}.col-xs-offset-12{margin-left:100%}.col-xs-offset-11{margin-left:91.66666667%}.col-xs-offset-10{margin-left:83.33333333%}.col-xs-offset-9{margin-left:75%}.col-xs-offset-8{margin-left:66.66666667%}.col-xs-offset-7{margin-left:58.33333333%}.col-xs-offset-6{margin-left:50%}.col-xs-offset-5{margin-left:41.66666667%}.col-xs-offset-4{margin-left:33.33333333%}.col-xs-offset-3{margin-left:25%}.col-xs-offset-2{margin-left:16.66666667%}.col-xs-offset-1{margin-left:8.33333333%}.col-xs-offset-0{margin-left:0}@media (min-width:768px){.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12{float:left}.col-sm-12{width:100%}.col-sm-11{width:91.66666667%}.col-sm-10{width:83.33333333%}.col-sm-9{width:75%}.col-sm-8{width:66.66666667%}.col-sm-7{width:58.33333333%}.col-sm-6{width:50%}.col-sm-5{width:41.66666667%}.col-sm-4{width:33.33333333%}.col-sm-3{width:25%}.col-sm-2{width:16.66666667%}.col-sm-1{width:8.33333333%}.col-sm-pull-12{right:100%}.col-sm-pull-11{right:91.66666667%}.col-sm-pull-10{right:83.33333333%}.col-sm-pull-9{right:75%}.col-sm-pull-8{right:66.66666667%}.col-sm-pull-7{right:58.33333333%}.col-sm-pull-6{right:50%}.col-sm-pull-5{right:41.66666667%}.col-sm-pull-4{right:33.33333333%}.col-sm-pull-3{right:25%}.col-sm-pull-2{right:16.66666667%}.col-sm-pull-1{right:8.33333333%}.col-sm-pull-0{right:auto}.col-sm-push-12{left:100%}.col-sm-push-11{left:91.66666667%}.col-sm-push-10{left:83.33333333%}.col-sm-push-9{left:75%}.col-sm-push-8{left:66.66666667%}.col-sm-push-7{left:58.33333333%}.col-sm-push-6{left:50%}.col-sm-push-5{left:41.66666667%}.col-sm-push-4{left:33.33333333%}.col-sm-push-3{left:25%}.col-sm-push-2{left:16.66666667%}.col-sm-push-1{left:8.33333333%}.col-sm-push-0{left:auto}.col-sm-offset-12{margin-left:100%}.col-sm-offset-11{margin-left:91.66666667%}.col-sm-offset-10{margin-left:83.33333333%}.col-sm-offset-9{margin-left:75%}.col-sm-offset-8{margin-left:66.66666667%}.col-sm-offset-7{margin-left:58.33333333%}.col-sm-offset-6{margin-left:50%}.col-sm-offset-5{margin-left:41.66666667%}.col-sm-offset-4{margin-left:33.33333333%}.col-sm-offset-3{margin-left:25%}.col-sm-offset-2{margin-left:16.66666667%}.col-sm-offset-1{margin-left:8.33333333%}.col-sm-offset-0{margin-left:0}}@media (min-width:992px){.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12{float:left}.col-md-12{width:100%}.col-md-11{width:91.66666667%}.col-md-10{width:83.33333333%}.col-md-9{width:75%}.col-md-8{width:66.66666667%}.col-md-7{width:58.33333333%}.col-md-6{width:50%}.col-md-5{width:41.66666667%}.col-md-4{width:33.33333333%}.col-md-3{width:25%}.col-md-2{width:16.66666667%}.col-md-1{width:8.33333333%}.col-md-pull-12{right:100%}.col-md-pull-11{right:91.66666667%}.col-md-pull-10{right:83.33333333%}.col-md-pull-9{right:75%}.col-md-pull-8{right:66.66666667%}.col-md-pull-7{right:58.33333333%}.col-md-pull-6{right:50%}.col-md-pull-5{right:41.66666667%}.col-md-pull-4{right:33.33333333%}.col-md-pull-3{right:25%}.col-md-pull-2{right:16.66666667%}.col-md-pull-1{right:8.33333333%}.col-md-pull-0{right:auto}.col-md-push-12{left:100%}.col-md-push-11{left:91.66666667%}.col-md-push-10{left:83.33333333%}.col-md-push-9{left:75%}.col-md-push-8{left:66.66666667%}.col-md-push-7{left:58.33333333%}.col-md-push-6{left:50%}.col-md-push-5{left:41.66666667%}.col-md-push-4{left:33.33333333%}.col-md-push-3{left:25%}.col-md-push-2{left:16.66666667%}.col-md-push-1{left:8.33333333%}.col-md-push-0{left:auto}.col-md-offset-12{margin-left:100%}.col-md-offset-11{margin-left:91.66666667%}.col-md-offset-10{margin-left:83.33333333%}.col-md-offset-9{margin-left:75%}.col-md-offset-8{margin-left:66.66666667%}.col-md-offset-7{margin-left:58.33333333%}.col-md-offset-6{margin-left:50%}.col-md-offset-5{margin-left:41.66666667%}.col-md-offset-4{margin-left:33.33333333%}.col-md-offset-3{margin-left:25%}.col-md-offset-2{margin-left:16.66666667%}.col-md-offset-1{margin-left:8.33333333%}.col-md-offset-0{margin-left:0}}@media (min-width:1200px){.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12{float:left}.col-lg-12{width:100%}.col-lg-11{width:91.66666667%}.col-lg-10{width:83.33333333%}.col-lg-9{width:75%}.col-lg-8{width:66.66666667%}.col-lg-7{width:58.33333333%}.col-lg-6{width:50%}.col-lg-5{width:41.66666667%}.col-lg-4{width:33.33333333%}.col-lg-3{width:25%}.col-lg-2{width:16.66666667%}.col-lg-1{width:8.33333333%}.col-lg-pull-12{right:100%}.col-lg-pull-11{right:91.66666667%}.col-lg-pull-10{right:83.33333333%}.col-lg-pull-9{right:75%}.col-lg-pull-8{right:66.66666667%}.col-lg-pull-7{right:58.33333333%}.col-lg-pull-6{right:50%}.col-lg-pull-5{right:41.66666667%}.col-lg-pull-4{right:33.33333333%}.col-lg-pull-3{right:25%}.col-lg-pull-2{right:16.66666667%}.col-lg-pull-1{right:8.33333333%}.col-lg-pull-0{right:auto}.col-lg-push-12{left:100%}.col-lg-push-11{left:91.66666667%}.col-lg-push-10{left:83.33333333%}.col-lg-push-9{left:75%}.col-lg-push-8{left:66.66666667%}.col-lg-push-7{left:58.33333333%}.col-lg-push-6{left:50%}.col-lg-push-5{left:41.66666667%}.col-lg-push-4{left:33.33333333%}.col-lg-push-3{left:25%}.col-lg-push-2{left:16.66666667%}.col-lg-push-1{left:8.33333333%}.col-lg-push-0{left:auto}.col-lg-offset-12{margin-left:100%}.col-lg-offset-11{margin-left:91.66666667%}.col-lg-offset-10{margin-left:83.33333333%}.col-lg-offset-9{margin-left:75%}.col-lg-offset-8{margin-left:66.66666667%}.col-lg-offset-7{margin-left:58.33333333%}.col-lg-offset-6{margin-left:50%}.col-lg-offset-5{margin-left:41.66666667%}.col-lg-offset-4{margin-left:33.33333333%}.col-lg-offset-3{margin-left:25%}.col-lg-offset-2{margin-left:16.66666667%}.col-lg-offset-1{margin-left:8.33333333%}.col-lg-offset-0{margin-left:0}}.clearfix:before,.clearfix:after,.container:before,.container:after,.container-fluid:before,.container-fluid:after,.row:before,.row:after{content:" ";display:table}.clearfix:after,.container:after,.container-fluid:after,.row:after{clear:both}.center-block{display:block;margin-left:auto;margin-right:auto}.pull-right{float:right !important}.pull-left{float:left !important}.hide{display:none !important}.show{display:block !important}.invisible{visibility:hidden}.text-hide{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}.hidden{display:none !important}.affix{position:fixed}@-ms-viewport{width:device-width}.visible-xs,.visible-sm,.visible-md,.visible-lg{display:none !important}.visible-xs-block,.visible-xs-inline,.visible-xs-inline-block,.visible-sm-block,.visible-sm-inline,.visible-sm-inline-block,.visible-md-block,.visible-md-inline,.visible-md-inline-block,.visible-lg-block,.visible-lg-inline,.visible-lg-inline-block{display:none !important}@media (max-width:767px){.visible-xs{display:block !important}table.visible-xs{display:table}tr.visible-xs{display:table-row !important}th.visible-xs,td.visible-xs{display:table-cell !important}}@media (max-width:767px){.visible-xs-block{display:block !important}}@media (max-width:767px){.visible-xs-inline{display:inline !important}}@media (max-width:767px){.visible-xs-inline-block{display:inline-block !important}}@media (min-width:768px) and (max-width:991px){.visible-sm{display:block !important}table.visible-sm{display:table}tr.visible-sm{display:table-row !important}th.visible-sm,td.visible-sm{display:table-cell !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-block{display:block !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-inline{display:inline !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-inline-block{display:inline-block !important}}@media (min-width:992px) and (max-width:1199px){.visible-md{display:block !important}table.visible-md{display:table}tr.visible-md{display:table-row !important}th.visible-md,td.visible-md{display:table-cell !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-block{display:block !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-inline{display:inline !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-inline-block{display:inline-block !important}}@media (min-width:1200px){.visible-lg{display:block !important}table.visible-lg{display:table}tr.visible-lg{display:table-row !important}th.visible-lg,td.visible-lg{display:table-cell !important}}@media (min-width:1200px){.visible-lg-block{display:block !important}}@media (min-width:1200px){.visible-lg-inline{display:inline !important}}@media (min-width:1200px){.visible-lg-inline-block{display:inline-block !important}}@media (max-width:767px){.hidden-xs{display:none !important}}@media (min-width:768px) and (max-width:991px){.hidden-sm{display:none !important}}@media (min-width:992px) and (max-width:1199px){.hidden-md{display:none !important}}@media (min-width:1200px){.hidden-lg{display:none !important}}.visible-print{display:none !important}@media print{.visible-print{display:block !important}table.visible-print{display:table}tr.visible-print{display:table-row !important}th.visible-print,td.visible-print{display:table-cell !important}}.visible-print-block{display:none !important}@media print{.visible-print-block{display:block !important}}.visible-print-inline{display:none !important}@media print{.visible-print-inline{display:inline !important}}.visible-print-inline-block{display:none !important}@media print{.visible-print-inline-block{display:inline-block !important}}@media print{.hidden-print{display:none !important}}</style>
+	<!-- Header CSS (First Sections of Website: compress & paste after release from _header.css here) -->
+	<style>body{font-family:sans-serif;font-size:16px;min-width:320px;margin:0;position:relative;line-height:1.6;font-family:RobotoRegular,sans-serif;overflow-x:hidden}.hidden{display:none}.header{width:100%;height:453px;background:url(img/fon.jpg) no-repeat center;background-size:cover;background-position:bottom center}.web,.how{display:block;color:#fff;text-align:center}.header .course-main{margin:0 auto;text-align:center;padding-top:3em}.header .course{padding:6px 34.4px;text-align:center;margin:0 auto;font-family:weblysleekuil;font-size:15px;color:#50e3c2;letter-spacing:0;border:1px solid #50e3c2}.header .web{font-family:weblysleekuisb;font-size:52px;color:#f8e71c;letter-spacing:0;height:93px;margin-top:.83em}.header .how{font-family:weblysleekuil;font-size:24px;color:#fff;letter-spacing:0;margin-top:.48em}.header #button_first{display:none}.header .button-first{display:block;margin:0 auto;background:#f88200;box-shadow:0 6px 9px 0 rgba(0,0,0,0.13);border-radius:10px;width:228px;padding:9px 33.8px 9px 34.8px;margin-top:2.8em;transition:.7s ease;transition-property:background,box-shadow}.header .button-first .turn{font-family:weblysleekuisb;font-size:18px;color:#fff;letter-spacing:0;text-align:center;margin-left:45px}.header .button-first .arrow{position:absolute;z-index:1;width:35px;height:37px;margin-top:-5px;margin-left:-12px;background:url(img/13.png) no-repeat center;background-size:contain}</style>
+
+	<!-- Fonts Loader from _fonts.css (HTML5 LocalStorage) -->
+	<script>!function(){function e(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function t(e){return window.localStorage&&localStorage.font_css_cache&&localStorage.font_css_cache_file===e}function n(){if(window.localStorage&&window.XMLHttpRequest)if(t(o))a(localStorage.font_css_cache);else{var n=new XMLHttpRequest;n.open("GET",o,!0),e(n,"load",function(){4===n.readyState&&(a(n.responseText),localStorage.font_css_cache=n.responseText,localStorage.font_css_cache_file=o)}),n.send()}else{var c=document.createElement("link");c.href=o,c.rel="stylesheet",c.type="text/css",document.getElementsByTagName("head")[0].appendChild(c),document.cookie="font_css_cache"}}function a(e){var t=document.createElement("style");t.innerHTML=e,document.getElementsByTagName("head")[0].appendChild(t)}var o="_fonts.css";window.localStorage&&localStorage.font_css_cache||document.cookie.indexOf("font_css_cache")>-1?n():e(window,"load",n)}();</script>
+	
+	<!-- Load CSS Compilled without JS -->
+	<noscript><link rel="stylesheet" href="compiled.min.css"></noscript>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+	<!-- Custom Browsers Color Start -->
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#664f87">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#664f87">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#664f87">
+	<!-- Custom Browsers Color End -->
+</head>
+
+<body>
+	<div class="header">
+		<div class="text">
+			<div class="course-main"><span class="course">курс в записи</span></div>
+			<span class="web">Веб-аналитика</span>
+			<span class="how">Как с помощью инструментов веб-аналитики повышать<br> конверсии и улучшать юзабилити</span>
+			<input type="button" id="button_first"></input>
+			<label class="button-first" for="button_first"><div class="arrow"></div><span class="turn">Включиться</span></label>
+		</div>
+	</div>
+
+	<div class="For-whom">
+		Для кого создана эта программа?
+		<div class="row">
+			<div class="col-xs-4 col-md-4">
+				<div class="img-1"></div>
+				<div class="designers">Дизайнеров интерфейсов</div>
+			</div>
+			<div class="col-xs-4 col-md-4">
+				<div class="img-2"></div>
+				<div class="internet">Интернет-маркетологов</div>
+			</div>
+			<div class="col-xs-4 col-md-4">
+				<div class="img-3"></div>
+				<div class="businessman">Предпринимателей</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="just">
+		Просто взгляните на эти данные
+		<div class="using"></div>
+
+		<div class="row">
+			<div class="col-1"></div>
+			<div class="col-2"></div>
+			<div class="col-3"></div>
+			<div class="col-4"></div>
+			<div class="col-5 black" >Не работают<br> с веб-аналитикой</div>
+			<div class="col-6 black ">Профессионально<br> работают с веб-аналитикой</div>
+			<div class="col-7 black ">Средняя з/п it-специалиста</div>
+			<div class="col-8 grey ">8 800$</div>
+			<div class="col-9 kyan">2000$</div>
+			<div class="col-10 black ">Конверсии продаж</div>
+			<div class="col-11 grey ">0.1% - 2%</div>
+			<div class="col-12 kyan">1% - 12%</div>
+			<div class="col-13 black ">Веб-дизайнеров</div>
+			<div class="col-14 grey ">92%</div>
+			<div class="col-15 kyan">8%</div>
+		</div>
+	</div>
+
+	<div class="you-cannot">
+		<span class="you">Вы Не можете управлять тем, что Не можете изменить.<br>Хотите увеличить цифры - научитесь с ними работать.</span>
+	</div>
+
+	<div class="programm">
+		<span class="prog">Программа курса</span>
+
+		<div class="pos_1">
+			<div class="image"></div>
+			<div class="wrapper">
+				<div class="first">Базовые определения</div>
+				<div class="second">Поймите ключевую терменологию интернет-маркетинга. Общайтесь с клиентами<br> грамотно.</div>
+			</div>
+		</div>
+
+		<div class="pos_1">
+			<div class="image"></div>
+			<div class="wrapper">
+				<div class="first">Основы Яндекс.Метрики </div>
+				<div class="second">Получите ключевую информацию об инструменте. Изучите функционал.</div>
+			</div>
+		</div>
+
+		<div class="pos_1">
+			<div class="image"></div>
+			<div class="wrapper">
+				<div class="first">Настройка целей </div>
+				<div class="second">Научитесь правильно настраивать KPI</div>
+			</div>
+		</div>
+
+		<div class="pos_1">
+			<div class="image"></div>
+			<div class="wrapper">
+				<div class="first">Аналитика отчетов</div>
+				<div class="second">Поймете, как правильно работать с отчетами, делать анализ и сравнение данных.</div>
+			</div>
+		</div>
+
+		<div class="pos_1">
+			<div class="image"></div>
+			<div class="wrapper">
+				<div class="first">Сегментация</div>
+				<div class="second">Научитесь делать выборку ценных данных</div>
+			</div>
+		</div>
+
+		<div class="pos_1">
+			<div class="image"></div>
+			<div class="wrapper">
+				<div class="first">Ключевые метрики эффективного сайта</div>
+				<div class="second">Поймете как быстро и дешево оценить продуктивность и эффективность любого<br> сайта</div>
+			</div>
+		</div>
+
+		<div class="pos_1">
+			<div class="image"></div>
+			<div class="wrapper">
+				<div class="first">Вебвизор</div>
+				<div class="second">Научитесь делать выборку и анализировать персональные сессии пользователей</div>
+			</div>
+		</div>
+
+		<div class="pos_1">
+			<div class="image"></div>
+			<div class="wrapper">
+				<div class="first">Google analytics</div>
+				<div class="second">Научитесь анализировать воронки продаж и пути пользователей</div>
+			</div>
+		</div>
+
+		<div class="pos_1">
+			<div class="image"></div>
+			<div class="wrapper">
+				<div class="first">UTM-метки</div>
+				<div class="second">Научитесь анализировать эффективность источников трафика на сайте</div>
+			</div>
+		</div>
+
+		<div class="pos_1">
+			<div class="image"></div>
+			<div class="wrapper">
+				<div class="first">A/B тестирование</div>
+				<div class="second">Научитесь выявлять лучший вариант дизайна или текста на сайте</div>
+			</div>
+		</div>
+
+		<input type="button" id="button_first"></input>
+		<label class="button-first" for="button_first"><div class="arrow"></div><span class="turn">Начать обучение 49$ вместо <span class="cross">100$</span></label>
+	</div>
+
+	<div class="what-can">
+		<span class="main">Чему вы научитесь в процессе обучения</span>
+
+		<div class="positions row">
+			<div class="pos_1 col-xs-4 col-md-4">
+				<div class="image"></div>
+				<span class="text">Эффективно применять<br>
+					сервис Яндекс.Метрика</span>
+				</div>
+				<div class="pos_2 col-xs-4 col-md-4">
+					<div class="image"></div>
+					<span class="text">Настраивать и анализировать<br> конверсионные воронки</span>
+				</div>
+				<div class="pos_3 col-xs-4 col-md-4">
+					<div class="image"></div>
+					<span class="text">Использовать отчеты<br>
+						Метрики и Google Analytics</span>
+					</div>
+					<div class="pos_4 col-xs-4 col-md-4">
+						<div class="image"></div>
+						<span class="text">Проводить аудит<br>
+							ключевых метрик сайта</span>
+						</div>
+						<div class="pos_5 col-xs-4 col-md-4">
+							<div class="image"></div>
+							<span class="text">Формировать гипотезы<br> улучшений на основании<br> данных веб-аналитики</span>
+						</div>
+						<div class="pos_6 col-xs-4 col-md-4">
+							<div class="image"></div>
+							<span class="text">Оценивать гипотезы<br> 
+								с помощью а/б тестирования</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="garanty">
+
+					</div>
+					<!-- Здесь пишем код -->
+
+					<div class="hidden"></div>
+
+					<div class="garanty1">
+						<div class="wrapper">
+							<span class="hundred">100%<br><span>гарантия</span></span>
+							<span class="i-am">Я уверен в пользе и ценности курса.<br>
+								Поэтому, если Вам что-то не понравится, мы вернем<br> вам средства.</span>
+							</div>
+						</div>
+
+						<div class="possible">
+							<span class="question">Возможные вопросы</span>
+							<div class="box_1">Как и когда я могу смотреть курс?<span class="plus">| </span>
+								<div class="hover">Доступ к курсу вы получаете сразу после оплаты. Видеоуроки на учебной<br> 
+									платформе можно просматривать в любое<br> удобное время, любое количество раз в течении курса.</div>
+								</div>
+								<div class="box_2">Подойдет ли мне этот курс?<span class="plus">|</span>
+									<div class="hover">Доступ к курсу вы получаете сразу после оплаты. Видеоуроки на учебной<br> 
+										платформе можно просматривать в любое<br> удобное время, любое количество раз в течении курса.</div>
+									</div>
+
+									<input type="button" id="button_first"></input>
+									<label class="button-first" for="button_first"><div class="arrow"></div><span class="turn">Начать обучение 49$ вместо <span class="cross">100$</span></label>
+
+									<span class="closing">Закрытие продаж через</span>
+									<script src="http://megatimer.ru/s/778daf009d4d9bf57f2794f58af98dfa.js"></script>	</div>
+
+									<footer>
+										<div class="window politics">
+											<span class="head politics">Политика конфиденциальности</span>
+											<div class="close-btn"></div>
+											<div class="rest">
+												1. ПРЕДМЕТ ДОГОВОРА<br><br>
+												1.1. Исполнитель обязуется предоставить услуги (далее – «Продукты» / «услуги»), выбранные Заказчиком, а Заказчик обязуется оплатить их стоимость Исполнителю.		<br><br>
+												1.2.    В контексте данного Договора Продуктами являются обеспечение доступа к электронным видео-версиям курса. Их перечень, условия приобретения и другие условия представлены по адресу http://www.intensive.jazov.com (далее – «сайт»). 		<br><br>
+												<br><br>
+												2. ЦЕНА ПРОДУКТА. ПОРЯДОК РАСЧЕТОВ		<br><br>
+												2.1.   Цена Продукта составляет цену выбранной услуги, которая указана на сайте.		<br><br>
+												2.2.   Исполнитель может в одностороннем порядке изменить цену Продукта до момента его оплаты Заказчиком, путем публикации новой цены на сайте.		<br><br>
+												2.3.   Заказчик осуществляет оплату выбранного Продукта путем 100% предоплаты в срок, указанный на сайте и/или в направленном Исполнителем Заказчику на его заказ счете. 		<br><br>
+												2.4.   Расчет между Сторонами осуществляется в безналичной форме путем перечисления денежных средств на текущий счет Исполнителя, указанный в направленном Заказчику на его заказ счете или другим удобным Заказчику путем из предоставленных возможностей, указанных на сайте.		<br><br>
+												2.5.   Продукт считается оплаченным с даты зачисления соответствующей суммы на счет Исполнителя в обусловленный срок.		<br><br>
+												2.6.   Оплата Заказчиком Продукта является заключением настоящего Договора (акцепт оферты).		<br><br>
+												2.7.   Возврат оплаченных Заказчиком денежных средств, в случае расторжения или прекращения срока действия настоящего Договора или неполучения Заказчиком оплаченного Продукта в связи с неполной оплатой, не производится. Настоящее условие остается в силе и действует также после расторжения или прекращения Договора.		<br><br>
+												2.8.   Расходы, в том числе банковская комиссия, по перечислению Заказчиком денежных средств по данному Договору возлагается на Заказчика.		<br><br>
+
+												3. ПОРЯДОК ПРЕДОСТАВЛЕНИЯ ПРОДУКТА		<br><br>
+												3.1.    В случае полного согласия со всеми условиями данного Договора Заказчик заполняет все обязательные поля бланка заказа на сайте.		<br><br>
+												3.2.   На подтверждение принятия заказа Исполнитель направляет Заказчику информацию для оплаты выбранного Заказчиком Продукта. Заказчик, в свою очередь, обязан отправить на электронный адрес Исполнителя копию квитанции, что подтверждает оплату соответствующего Продукта.		<br><br>
+												3.3.   Договор считается заключенным с даты оплаты Продукта в порядке, определенном в п. 2 данного Договора или получения Продукта, в зависимости от того, что наступит раньше.		<br><br>
+												3.4.   Продукт считается предоставленным Исполнителем по факту его предоставления (например,  предоставление средствами электронной связи ссылки доступа к электронной видео-версии курса) и полученным, а также принятым Заказчиком в случае отсутствия от него претензий на протяжении трех дней с даты оплаты Продукта.		<br><br>
+												<br><br>
+
+												4. ПРАВА И ОБЯЗАННОСТИ СТОРОН		<br><br>
+												4.1. Права Заказчика:		<br><br>
+												4.1.1.  	выбрать любой из предложенных Продуктов;		<br><br>
+												4.1.2.      получать от Исполнителя всю необходимую информацию, связанную с Продуктом в порядке и на условиях согласно Договору;		<br><br>
+												4.1.3.      отказаться от Продукта до его оплаты / первого платежа при рассрочке;		<br><br>
+												4.1.4.  	получить оплаченный Продукт;		<br><br>
+												4.1.5.  	в одностороннем порядке отказаться от данного Договора в случаях, предусмотренных Договором и действующим законодательством Украины. Такой отказ не обязывает Исполнителя вернуть средства, оплаченные за Продукты, за исключением случаев, когда отказ произошел в связи с нарушением Исполнителем условий Договора.		<br><br>
+												4.2. Обязанности Заказчика:		<br><br>
+												4.2.1.  	оплатить выбранный Продукт в порядке и сроки, указанные в п. 2 Договора;		<br><br>
+												4.2.2.  	придерживаться Правил, инструкций Исполнителя и условий данного Договора;		<br><br>
+												4.2.3.      предоставить информацию Исполнителю для связи в порядке п. 3.1. Договора;		<br><br>
+												4.2.4.      уведомить Исполнителя про изменение контактной информации (e-mail, телефон) по средствам электронной почты;		<br><br>
+												4.2.5.      обеспечить надлежащую работу технических средств для получения Продукта;		<br><br>
+												4.2.6.      не нарушать авторские права Исполнителя путем распространения (передачи, размещения в сети Интернет и т.п.) какой-либо информации, полученной Заказчиком<br><br>
+												4.3. Заказчик обязуется не выполнять следующих действий:		<br><br>
+												4.3.1.      осуществлять видео-, аудиозапись курса;		<br><br>
+												4.3.2.      распространять видео-, аудиозапись курса любым из возможных способов;		<br><br>
+												4.3.3.      распространять материалы Продуктов в виде расшифровки, то есть перевода аудио или видео материалов в текстовый формат, и перевода на другие языки;		<br><br>
+												4.3.4.      использовать получаемую от Исполнителя информацию в коммерческих целях, путем пересказа или распространения знаний и основ, полученных от Исполнителя;		<br><br>
+												4.3.5.      использовать получаемую от Исполнителя информацию и знания, включая (без ограничения) в целях создания подобного и/или конкурентного продукта или сервиса или с целью получения коммерческой или финансовой выгоды;		<br><br>
+												4.3.6.      организовывать или проводить собственные тренинги или занятия на базе тренингов (вебинаров и т.п.) Исполнителя;		<br><br>
+												4.3.7.      осуществлять действия, направленные на нарушение нормального функционирования и проведения курса;		<br><br>
+												4.3.8.      передавать и/или предоставлять доступ или делать программу трансляции тренинга доступной каким-либо третьим лицам;		<br><br>
+												4.3.9.      допускать распространения недостоверной, ложной информации, информации, порочащей честь, достоинство, деловую репутацию Исполнителя, тренеров и других лиц, а также информации, побуждающей и призывающей к межнациональной, этнической расовой нетерпимости, розни, войне, смене государственного строя стран, информации, распространение которой запрещено действующим законодательством Украины;		<br><br>
+												4.3.10.      осуществлять иные действия, не предусмотренные Договором и Правилами, но содержащие состав уголовного либо административного правонарушения, либо нарушающих права и законные интересы Исполнителя или третьих лиц.		<br><br>
+												4.4. Права Исполнителя:		<br><br>
+												4.4.1.  	самостоятельно определять цену Продукта;		<br><br>
+												4.4.2.      вносить изменения в расписание занятий согласно п. 1.2. Договора;		<br><br>
+												4.4.3.      отстранить Заказчика от участия в тренинге в случае нарушения условий Договора и Правил;<br><br>
+												4.4.4.      обновлять содержание, функциональные возможности и пользовательский интерфейс сайта и программы трансляции по своему собственному усмотрению. Исполнитель имеет право сообщать Заказчику о произведенных модификациях посредствам размещения соответствующей информации на сайте и/или письмом на адрес электронной почты и/или в чате группы;<br><br>
+												4.4.5.      во время проведения тренинга осуществлять его аудио-, видеофиксацию;<br><br>
+												4.4.6.      отказаться в одностороннем порядке от Договора без возврата денежных средств в случаях:<br><br>
+												4.4.6.1. несоблюдения Заказчиком порядка и срока оплаты;<br><br>
+												4.4.6.2. нарушения Заказчиком раздела 7. Договора, п.п. 4.2., 4.3., 9.2. и п. 9.3. Договора.<br><br>
+												4.5. Обязанности Исполнителя:		<br><br>
+												4.5.1.      предоставить выбранный и оплаченный Заказчиком Продукт<br><br>
+												4.5.2.      информировать Заказчика о дополнительных условиях и предстоящих изменениях в порядке проведения курса (расписании, переносе занятий и т.д.) путем размещения соответствующей информации на сайте и/или письмом на адрес электронной почты;<br><br>
+
+												<br><br>
+
+												5. ОТВЕТСТВЕННОСТЬ СТОРОН		<br><br>
+
+												5.1.   Стороны за нарушение условий данного Договора несут ответственность в соответствии с действующим законодательством Украины.		<br><br>
+												5.2.   Исполнитель не несет ответственность за нарушение условий Договора в случае предоставления Заказчиком недостоверной и/или неполной информации касательно себя во время оформления заказа, в т.ч. контактной информации (e-mail, телефон и т.п.), а также в случае не предоставления Заказчиком новой контактной информации (e-mail, телефон).		<br><br>
+												5.3.   В случае неполучения Заказчиком Продукта не по вине Исполнителя или отстранения Заказчика от участия в тренинге в связи с нарушением Договора и/или Правил, средства, оплаченные Заказчиком за Продукт, не возвращаются.		<br><br>
+												5.4.   Исполнитель несет ответственность за нарушение условий Договора, исключительно в случае, если ненадлежащее исполнение произошло по его вине.		<br><br>
+												5.5.   Исполнитель не несет ответственности за модификацию программы тренинга и изменения расписания занятий, а также за качество каналов связи общего пользования, с помощью которых обеспечивается доступ к Продуктам.		<br><br>		<br><br>
+											</div>
+										</div>
+										<div class="window agreement">
+											<span class="head agreement">Договор публичной оферты</span>
+											<div class="close-btn"></div>
+											<div class="rest">
+												Данная оферта адресована физическим лицам (далее – «Заказчик») и является публичным предложением компании «Igor Jazov» (далее – «Исполнитель») заключить договор, который размещен в сети Интернет по адресу: http://intensive.jazov.com (далее – «Договор»), на следующих условиях:		<br><br>
+
+												1. ПРЕДМЕТ ДОГОВОРА<br><br>
+												1.1. Исполнитель обязуется предоставить услуги (далее – «Продукты» / «услуги»), выбранные Заказчиком, а Заказчик обязуется оплатить их стоимость Исполнителю.		<br><br>
+												1.2.    В контексте данного Договора Продуктами являются обеспечение доступа к электронным видео-версиям курса. Их перечень, условия приобретения и другие условия представлены по адресу http://www.intensive.jazov.com (далее – «сайт»). 		<br><br>
+												<br><br>
+												2. ЦЕНА ПРОДУКТА. ПОРЯДОК РАСЧЕТОВ		<br><br>
+												2.1.   Цена Продукта составляет цену выбранной услуги, которая указана на сайте.		<br><br>
+												2.2.   Исполнитель может в одностороннем порядке изменить цену Продукта до момента его оплаты Заказчиком, путем публикации новой цены на сайте.		<br><br>
+												2.3.   Заказчик осуществляет оплату выбранного Продукта путем 100% предоплаты в срок, указанный на сайте и/или в направленном Исполнителем Заказчику на его заказ счете. 		<br><br>
+												2.4.   Расчет между Сторонами осуществляется в безналичной форме путем перечисления денежных средств на текущий счет Исполнителя, указанный в направленном Заказчику на его заказ счете или другим удобным Заказчику путем из предоставленных возможностей, указанных на сайте.		<br><br>
+												2.5.   Продукт считается оплаченным с даты зачисления соответствующей суммы на счет Исполнителя в обусловленный срок.		<br><br>
+												2.6.   Оплата Заказчиком Продукта является заключением настоящего Договора (акцепт оферты).		<br><br>
+												2.7.   Возврат оплаченных Заказчиком денежных средств, в случае расторжения или прекращения срока действия настоящего Договора или неполучения Заказчиком оплаченного Продукта в связи с неполной оплатой, не производится. Настоящее условие остается в силе и действует также после расторжения или прекращения Договора.		<br><br>
+												2.8.   Расходы, в том числе банковская комиссия, по перечислению Заказчиком денежных средств по данному Договору возлагается на Заказчика.		<br><br>
+
+												3. ПОРЯДОК ПРЕДОСТАВЛЕНИЯ ПРОДУКТА		<br><br>
+												3.1.    В случае полного согласия со всеми условиями данного Договора Заказчик заполняет все обязательные поля бланка заказа на сайте.		<br><br>
+												3.2.   На подтверждение принятия заказа Исполнитель направляет Заказчику информацию для оплаты выбранного Заказчиком Продукта. Заказчик, в свою очередь, обязан отправить на электронный адрес Исполнителя копию квитанции, что подтверждает оплату соответствующего Продукта.		<br><br>
+												3.3.   Договор считается заключенным с даты оплаты Продукта в порядке, определенном в п. 2 данного Договора или получения Продукта, в зависимости от того, что наступит раньше.		<br><br>
+												3.4.   Продукт считается предоставленным Исполнителем по факту его предоставления (например,  предоставление средствами электронной связи ссылки доступа к электронной видео-версии курса) и полученным, а также принятым Заказчиком в случае отсутствия от него претензий на протяжении трех дней с даты оплаты Продукта.		<br><br>
+												<br><br>
+
+												4. ПРАВА И ОБЯЗАННОСТИ СТОРОН		<br><br>
+												4.1. Права Заказчика:		<br><br>
+												4.1.1.  	выбрать любой из предложенных Продуктов;		<br><br>
+												4.1.2.      получать от Исполнителя всю необходимую информацию, связанную с Продуктом в порядке и на условиях согласно Договору;		<br><br>
+												4.1.3.      отказаться от Продукта до его оплаты / первого платежа при рассрочке;		<br><br>
+												4.1.4.  	получить оплаченный Продукт;		<br><br>
+												4.1.5.  	в одностороннем порядке отказаться от данного Договора в случаях, предусмотренных Договором и действующим законодательством Украины. Такой отказ не обязывает Исполнителя вернуть средства, оплаченные за Продукты, за исключением случаев, когда отказ произошел в связи с нарушением Исполнителем условий Договора.		<br><br>
+												4.2. Обязанности Заказчика:		<br><br>
+												4.2.1.  	оплатить выбранный Продукт в порядке и сроки, указанные в п. 2 Договора;		<br><br>
+												4.2.2.  	придерживаться Правил, инструкций Исполнителя и условий данного Договора;		<br><br>
+												4.2.3.      предоставить информацию Исполнителю для связи в порядке п. 3.1. Договора;		<br><br>
+												4.2.4.      уведомить Исполнителя про изменение контактной информации (e-mail, телефон) по средствам электронной почты;		<br><br>
+												4.2.5.      обеспечить надлежащую работу технических средств для получения Продукта;		<br><br>
+												4.2.6.      не нарушать авторские права Исполнителя путем распространения (передачи, размещения в сети Интернет и т.п.) какой-либо информации, полученной Заказчиком<br><br>
+												4.3. Заказчик обязуется не выполнять следующих действий:		<br><br>
+												4.3.1.      осуществлять видео-, аудиозапись курса;		<br><br>
+												4.3.2.      распространять видео-, аудиозапись курса любым из возможных способов;		<br><br>
+												4.3.3.      распространять материалы Продуктов в виде расшифровки, то есть перевода аудио или видео материалов в текстовый формат, и перевода на другие языки;		<br><br>
+												4.3.4.      использовать получаемую от Исполнителя информацию в коммерческих целях, путем пересказа или распространения знаний и основ, полученных от Исполнителя;		<br><br>
+												4.3.5.      использовать получаемую от Исполнителя информацию и знания, включая (без ограничения) в целях создания подобного и/или конкурентного продукта или сервиса или с целью получения коммерческой или финансовой выгоды;		<br><br>
+												4.3.6.      организовывать или проводить собственные тренинги или занятия на базе тренингов (вебинаров и т.п.) Исполнителя;		<br><br>
+												4.3.7.      осуществлять действия, направленные на нарушение нормального функционирования и проведения курса;		<br><br>
+												4.3.8.      передавать и/или предоставлять доступ или делать программу трансляции тренинга доступной каким-либо третьим лицам;		<br><br>
+												4.3.9.      допускать распространения недостоверной, ложной информации, информации, порочащей честь, достоинство, деловую репутацию Исполнителя, тренеров и других лиц, а также информации, побуждающей и призывающей к межнациональной, этнической расовой нетерпимости, розни, войне, смене государственного строя стран, информации, распространение которой запрещено действующим законодательством Украины;		<br><br>
+												4.3.10.      осуществлять иные действия, не предусмотренные Договором и Правилами, но содержащие состав уголовного либо административного правонарушения, либо нарушающих права и законные интересы Исполнителя или третьих лиц.		<br><br>
+												4.4. Права Исполнителя:		<br><br>
+												4.4.1.  	самостоятельно определять цену Продукта;		<br><br>
+												4.4.2.      вносить изменения в расписание занятий согласно п. 1.2. Договора;		<br><br>
+												4.4.3.      отстранить Заказчика от участия в тренинге в случае нарушения условий Договора и Правил;<br><br>
+												4.4.4.      обновлять содержание, функциональные возможности и пользовательский интерфейс сайта и программы трансляции по своему собственному усмотрению. Исполнитель имеет право сообщать Заказчику о произведенных модификациях посредствам размещения соответствующей информации на сайте и/или письмом на адрес электронной почты и/или в чате группы;<br><br>
+												4.4.5.      во время проведения тренинга осуществлять его аудио-, видеофиксацию;<br><br>
+												4.4.6.      отказаться в одностороннем порядке от Договора без возврата денежных средств в случаях:<br><br>
+												4.4.6.1. несоблюдения Заказчиком порядка и срока оплаты;<br><br>
+												4.4.6.2. нарушения Заказчиком раздела 7. Договора, п.п. 4.2., 4.3., 9.2. и п. 9.3. Договора.<br><br>
+												4.5. Обязанности Исполнителя:		<br><br>
+												4.5.1.      предоставить выбранный и оплаченный Заказчиком Продукт<br><br>
+												4.5.2.      информировать Заказчика о дополнительных условиях и предстоящих изменениях в порядке проведения курса (расписании, переносе занятий и т.д.) путем размещения соответствующей информации на сайте и/или письмом на адрес электронной почты;<br><br>
+
+												<br><br>
+
+												5. ОТВЕТСТВЕННОСТЬ СТОРОН		<br><br>
+
+												5.1.   Стороны за нарушение условий данного Договора несут ответственность в соответствии с действующим законодательством Украины.		<br><br>
+												5.2.   Исполнитель не несет ответственность за нарушение условий Договора в случае предоставления Заказчиком недостоверной и/или неполной информации касательно себя во время оформления заказа, в т.ч. контактной информации (e-mail, телефон и т.п.), а также в случае не предоставления Заказчиком новой контактной информации (e-mail, телефон).		<br><br>
+												5.3.   В случае неполучения Заказчиком Продукта не по вине Исполнителя или отстранения Заказчика от участия в тренинге в связи с нарушением Договора и/или Правил, средства, оплаченные Заказчиком за Продукт, не возвращаются.		<br><br>
+												5.4.   Исполнитель несет ответственность за нарушение условий Договора, исключительно в случае, если ненадлежащее исполнение произошло по его вине.		<br><br>
+												5.5.   Исполнитель не несет ответственности за модификацию программы тренинга и изменения расписания занятий, а также за качество каналов связи общего пользования, с помощью которых обеспечивается доступ к Продуктам.		<br><br>		<br><br>
+
+												6. ФОРС-МАЖОР		<br><br>
+												6.1.   Стороны освобождаются от ответственности за частичное или полное неисполнение обязанностей по данному Договору, если это неисполнение произошло в следствии наступления, действия и последствий форс-мажорных обстоятельств, которые возникли после заключения Договора и к которым Стороны относят: наводнение, пожар, землетрясение, взрыв, шторм, оседание почв, эпидемии и другие явления природы, а также войну или военные действия, выключение электроэнергии, перебои в работе сети Интернет и другие обстоятельства, возникшие не по воле Сторон и которые препятствуют выполнению условий данного Договора.		<br><br>
+												6.2.   Сторона должна уведомить другую Сторону про действие форс-мажорных обстоятельств не позднее нежели через один день со дня их возникновения или со дня, когда возникла возможность осуществить такое уведомление, путем размещения соответствующей информации на http://intensive.jazov.com или путем уведомления средствами электронной или телефонной связи.		<br><br>
+												6.3.   После прекращения (устранения) форс-мажорных обстоятельств, Исполнитель может предоставить Заказчику доступ к электронной версии тренинга в сети Интернет или ссылку для его скачивания или перенести проведение тренинга на другую дату. В этом случае будет считаться, что Исполнитель исполнил свои обязательства по данному Договору надлежащим способом.
+												<br><br>		<br><br>
+												7. ГАРАНТИИ СТОРОН		<br><br>
+
+												7.1.   Исполнитель, соблюдая качество оказываемых услуг, не гарантирует абсолютную бесперебойность или безошибочность в оказании услуг.		<br><br>
+												7.2.   За исключением гарантий, прямо указанных в тексте Договора, Исполнитель не предоставляет никаких иных прямых или подразумеваемых гарантий по Договору и прямо отказывается от каких-либо гарантий или условий в отношении не нарушения прав соответствия услуг конкретным целям Заказчика.		<br><br>
+												7.3.   Исполнитель не является учебным заведением, не занимается образовательной (педагогической) деятельностью.<br><br>
+												7.4.   Соглашаясь с условиями и принимая условия настоящего Договора путем оплаты Продукта, Заказчик заверяет Исполнителя и гарантирует, что:		<br><br>
+												7.4.1.   Заказчик указал достоверные данные, в том числе его персональные данные, при регистрации на сайте, а также при оформлении платежных документов по оплате Продукта.		<br><br>
+												7.4.2.   Не будет использовать курс Исполнителя в целях подстрекательства других участников курса к использованию каких-либо продуктов или услуг, в том числе конкурентных.		<br><br>
+												7.4.3.   Заказчик заключает Договор добровольно, при этом Заказчик:		<br><br>
+												полностью ознакомился с условиями настоящего Договора;<br>
+												полностью понимает предмет Договора (оферты);<br>
+												полностью понимает значение и последствия своих действий в отношении заключения и исполнения Договора.<br><br>
+												7.4.4.   Заказчик обладает всеми правами и полномочиями, необходимыми для заключения и исполнения Договора.		<br><br>
+												<br><br>		<br><br>
+												8. СРОК ДЕЙСТВИЯ ДОГОВОРА		<br><br>
+												8.1.   Договор вступает в силу с момента его заключения (п. 3.3. Договора) и действует до полного и надлежащего исполнения Сторонами обязательств по нему или его расторжения, что наступит ранее.		<br><br><br><br>		<br><br>
+
+												9. ЗАКЛЮЧИТЕЛЬНЫЕ ПОЛОЖЕНИЯ		<br><br>
+												9.1.   Стороны дают свое согласие и не выступают против использования и обработки их персональных данных в соответствии с Законом Украины «О защите персональных данных».		<br><br>
+												9.2.   Авторские права на материалы, которые предоставляются по данному Договору, принадлежат Исполнителю. Не разрешается их копировать, воспроизводить, распространять или использовать без предварительного разрешения Исполнителя. Заказчик признает и соглашается с тем, что все права, наименование и прибыль от всех прав интеллектуальной собственности на Продукты Исполнителя, все используемые авторские разработки и материалы принадлежат Исполнителю (соответствующему тренеру, организации и т.д.). За исключением прав пользования, предусмотренных настоящим Договором, передаваемые Заказчику материалы, знания, разработки не предоставляют каких-либо прав интеллектуальной собственности на них, а также прав пользования кроме как для личных не коммерческих целей. Все права сохраняются за Исполнителем.		<br><br>
+												9.3.   Заказчик обязуется указывать авторство и/или давать ссылку на Исполнителя (в сети интернет активную гиперссылку на сайт по адресу: http://jazov.com) при любом письменном или устном упоминании или использовании Продуктов, в том числе материалов и информации, полученных на тренинге.		<br><br>
+												9.4.   Стороны согласились, что обмен или возврат Продукта, который является предметом Договора, не допускается. В случае заключения Договора, Заказчик подтверждает факт предоставления необходимой информации касательно Продукта.		<br><br>
+												9.5.   Расхождения, которые возникают во время исполнения данного Договора, подлежат разрешению путем переговоров. В случае не достижения согласия между Сторонами, спор рассматривается в судебном порядке.		<br><br>
+												9.6.    В случае если одно или более положений Договора являются по какой-либо причине недействительными, не имеющими юридической силы, такая недействительность не оказывает влияния на действительность любого другого положения Договора, которые остаются в силе.		<br><br>
+												9.7.   Указание Заказчиком адреса e-mail и номера телефона означает предоставление разрешения на отправку писем и/или SMS-сообщений, в т.ч. рекламного характера.<br><br>
+												9.8.   Любые уведомления, согласования по Договору, в том числе заявки Заказчика, касающиеся предоставления Продуктов, и ответы Исполнителя на эти заявки, направляются одной Стороной другой Стороне по электронной почте:		<br><br>
+												а) на адрес электронной почты Заказчика (e-mail), с которого была направлена заявка или который был указан Заказчиком при оформлении заказа, или в сообщении об их замене, с адреса электронной почты Исполнителя, если получателем является Заказчик;		<br><br>
+												б) на адрес электронной почты Исполнителя, с адреса электронной почты Заказчика, с которого была направлена заявка или указанного им при оформлении заказа, или в сообщении об их замене, если получателем является Исполнитель.		<br><br>
+												9.9.   По данному Договору Стороной Исполнителя выступает: Физическое лицо-предприниматель Пилипенко Игорь Александрович.		<br><br>
+												9.10.   Стороны согласовали, что к отношениям, которые возникли между ними на основании Договора, применяется материальное право Украины.		<br><br>
+												9.11.   С Заказчиками — нерезидентами Украины все споры, разногласия или требования, возникающие или касающиеся настоящего Договора или в связи с ним, в том числе его нарушения, прекращения (расторжения) или недействительности подлежат разрешению в Международном коммерческом арбитражном суде при Торгово-промышленной палате Украины (далее – «Суд»). Место проведения заседаний Суда – г. Киев, Украина. Рассмотрение дела Судом проводится при участии трех арбитров на основе процессуального права Украины в соответствии с законом Украины «О международном коммерческом арбитраже», регламентом Суда и с применением к спорным правоотношениям права Украины. Язык судопроизводства – государственный язык Украины.		<br><br>
+												<br><br>
+											</div>
+										</div>
+
+										<div class="window garant">
+											<span class="head garant">100% Гарантии возврата</span>
+											<div class="close-btn"></div>
+											<div class="rest">
+												7. ГАРАНТИИ СТОРОН		<br><br>
+
+												7.1.   Исполнитель, соблюдая качество оказываемых услуг, не гарантирует абсолютную бесперебойность или безошибочность в оказании услуг.		<br><br>
+												7.2.   За исключением гарантий, прямо указанных в тексте Договора, Исполнитель не предоставляет никаких иных прямых или подразумеваемых гарантий по Договору и прямо отказывается от каких-либо гарантий или условий в отношении не нарушения прав соответствия услуг конкретным целям Заказчика.		<br><br>
+												7.3.   Исполнитель не является учебным заведением, не занимается образовательной (педагогической) деятельностью.<br><br>
+												7.4.   Соглашаясь с условиями и принимая условия настоящего Договора путем оплаты Продукта, Заказчик заверяет Исполнителя и гарантирует, что:		<br><br>
+												7.4.1.   Заказчик указал достоверные данные, в том числе его персональные данные, при регистрации на сайте, а также при оформлении платежных документов по оплате Продукта.		<br><br>
+												7.4.2.   Не будет использовать курс Исполнителя в целях подстрекательства других участников курса к использованию каких-либо продуктов или услуг, в том числе конкурентных.		<br><br>
+												7.4.3.   Заказчик заключает Договор добровольно, при этом Заказчик:		<br><br>
+												полностью ознакомился с условиями настоящего Договора;<br>
+												полностью понимает предмет Договора (оферты);<br>
+												полностью понимает значение и последствия своих действий в отношении заключения и исполнения Договора.<br><br>
+												7.4.4.   Заказчик обладает всеми правами и полномочиями, необходимыми для заключения и исполнения Договора.		<br><br>
+												<br><br>		<br><br>
+												8. СРОК ДЕЙСТВИЯ ДОГОВОРА		<br><br>
+												8.1.   Договор вступает в силу с момента его заключения (п. 3.3. Договора) и действует до полного и надлежащего исполнения Сторонами обязательств по нему или его расторжения, что наступит ранее.		<br><br><br><br>		<br><br>
+
+												9. ЗАКЛЮЧИТЕЛЬНЫЕ ПОЛОЖЕНИЯ		<br><br>
+												9.1.   Стороны дают свое согласие и не выступают против использования и обработки их персональных данных в соответствии с Законом Украины «О защите персональных данных».		<br><br>
+												9.2.   Авторские права на материалы, которые предоставляются по данному Договору, принадлежат Исполнителю. Не разрешается их копировать, воспроизводить, распространять или использовать без предварительного разрешения Исполнителя. Заказчик признает и соглашается с тем, что все права, наименование и прибыль от всех прав интеллектуальной собственности на Продукты Исполнителя, все используемые авторские разработки и материалы принадлежат Исполнителю (соответствующему тренеру, организации и т.д.). За исключением прав пользования, предусмотренных настоящим Договором, передаваемые Заказчику материалы, знания, разработки не предоставляют каких-либо прав интеллектуальной собственности на них, а также прав пользования кроме как для личных не коммерческих целей. Все права сохраняются за Исполнителем.		<br><br>
+												9.3.   Заказчик обязуется указывать авторство и/или давать ссылку на Исполнителя (в сети интернет активную гиперссылку на сайт по адресу: http://jazov.com) при любом письменном или устном упоминании или использовании Продуктов, в том числе материалов и информации, полученных на тренинге.		<br><br>
+												9.4.   Стороны согласились, что обмен или возврат Продукта, который является предметом Договора, не допускается. В случае заключения Договора, Заказчик подтверждает факт предоставления необходимой информации касательно Продукта.		<br><br>
+												9.5.   Расхождения, которые возникают во время исполнения данного Договора, подлежат разрешению путем переговоров. В случае не достижения согласия между Сторонами, спор рассматривается в судебном порядке.		<br><br>
+												9.6.    В случае если одно или более положений Договора являются по какой-либо причине недействительными, не имеющими юридической силы, такая недействительность не оказывает влияния на действительность любого другого положения Договора, которые остаются в силе.		<br><br>
+												9.7.   Указание Заказчиком адреса e-mail и номера телефона означает предоставление разрешения на отправку писем и/или SMS-сообщений, в т.ч. рекламного характера.<br><br>
+												9.8.   Любые уведомления, согласования по Договору, в том числе заявки Заказчика, касающиеся предоставления Продуктов, и ответы Исполнителя на эти заявки, направляются одной Стороной другой Стороне по электронной почте:		<br><br>
+												а) на адрес электронной почты Заказчика (e-mail), с которого была направлена заявка или который был указан Заказчиком при оформлении заказа, или в сообщении об их замене, с адреса электронной почты Исполнителя, если получателем является Заказчик;		<br><br>
+												б) на адрес электронной почты Исполнителя, с адреса электронной почты Заказчика, с которого была направлена заявка или указанного им при оформлении заказа, или в сообщении об их замене, если получателем является Исполнитель.		<br><br>
+												9.9.   По данному Договору Стороной Исполнителя выступает: Физическое лицо-предприниматель Пилипенко Игорь Александрович.		<br><br>
+												9.10.   Стороны согласовали, что к отношениям, которые возникли между ними на основании Договора, применяется материальное право Украины.		<br><br>
+												9.11.   С Заказчиками — нерезидентами Украины все споры, разногласия или требования, возникающие или касающиеся настоящего Договора или в связи с ним, в том числе его нарушения, прекращения (расторжения) или недействительности подлежат разрешению в Международном коммерческом арбитражном суде при Торгово-промышленной палате Украины (далее – «Суд»). Место проведения заседаний Суда – г. Киев, Украина. Рассмотрение дела Судом проводится при участии трех арбитров на основе процессуального права Украины в соответствии с законом Украины «О международном коммерческом арбитраже», регламентом Суда и с применением к спорным правоотношениям права Украины. Язык судопроизводства – государственный язык Украины.		<br><br>
+												<br><br>
+											</div>
+										</div>
+
+										<div class="window partnership">
+											<span class="head partnership">Партнерская программа</span>
+											<div class="close-btn"></div>
+											<div class="rest">
+												4. ПРАВА И ОБЯЗАННОСТИ СТОРОН		<br><br>
+												4.1. Права Заказчика:		<br><br>
+												4.1.1.  	выбрать любой из предложенных Продуктов;		<br><br>
+												4.1.2.      получать от Исполнителя всю необходимую информацию, связанную с Продуктом в порядке и на условиях согласно Договору;		<br><br>
+												4.1.3.      отказаться от Продукта до его оплаты / первого платежа при рассрочке;		<br><br>
+												4.1.4.  	получить оплаченный Продукт;		<br><br>
+												4.1.5.  	в одностороннем порядке отказаться от данного Договора в случаях, предусмотренных Договором и действующим законодательством Украины. Такой отказ не обязывает Исполнителя вернуть средства, оплаченные за Продукты, за исключением случаев, когда отказ произошел в связи с нарушением Исполнителем условий Договора.		<br><br>
+												4.2. Обязанности Заказчика:		<br><br>
+												4.2.1.  	оплатить выбранный Продукт в порядке и сроки, указанные в п. 2 Договора;		<br><br>
+												4.2.2.  	придерживаться Правил, инструкций Исполнителя и условий данного Договора;		<br><br>
+												4.2.3.      предоставить информацию Исполнителю для связи в порядке п. 3.1. Договора;		<br><br>
+												4.2.4.      уведомить Исполнителя про изменение контактной информации (e-mail, телефон) по средствам электронной почты;		<br><br>
+												4.2.5.      обеспечить надлежащую работу технических средств для получения Продукта;		<br><br>
+												4.2.6.      не нарушать авторские права Исполнителя путем распространения (передачи, размещения в сети Интернет и т.п.) какой-либо информации, полученной Заказчиком<br><br>
+												4.3. Заказчик обязуется не выполнять следующих действий:		<br><br>
+												4.3.1.      осуществлять видео-, аудиозапись курса;		<br><br>
+												4.3.2.      распространять видео-, аудиозапись курса любым из возможных способов;		<br><br>
+												4.3.3.      распространять материалы Продуктов в виде расшифровки, то есть перевода аудио или видео материалов в текстовый формат, и перевода на другие языки;		<br><br>
+												4.3.4.      использовать получаемую от Исполнителя информацию в коммерческих целях, путем пересказа или распространения знаний и основ, полученных от Исполнителя;		<br><br>
+												4.3.5.      использовать получаемую от Исполнителя информацию и знания, включая (без ограничения) в целях создания подобного и/или конкурентного продукта или сервиса или с целью получения коммерческой или финансовой выгоды;		<br><br>
+												4.3.6.      организовывать или проводить собственные тренинги или занятия на базе тренингов (вебинаров и т.п.) Исполнителя;		<br><br>
+												4.3.7.      осуществлять действия, направленные на нарушение нормального функционирования и проведения курса;		<br><br>
+												4.3.8.      передавать и/или предоставлять доступ или делать программу трансляции тренинга доступной каким-либо третьим лицам;		<br><br>
+												4.3.9.      допускать распространения недостоверной, ложной информации, информации, порочащей честь, достоинство, деловую репутацию Исполнителя, тренеров и других лиц, а также информации, побуждающей и призывающей к межнациональной, этнической расовой нетерпимости, розни, войне, смене государственного строя стран, информации, распространение которой запрещено действующим законодательством Украины;		<br><br>
+												4.3.10.      осуществлять иные действия, не предусмотренные Договором и Правилами, но содержащие состав уголовного либо административного правонарушения, либо нарушающих права и законные интересы Исполнителя или третьих лиц.		<br><br>
+												4.4. Права Исполнителя:		<br><br>
+												4.4.1.  	самостоятельно определять цену Продукта;		<br><br>
+												4.4.2.      вносить изменения в расписание занятий согласно п. 1.2. Договора;		<br><br>
+												4.4.3.      отстранить Заказчика от участия в тренинге в случае нарушения условий Договора и Правил;<br><br>
+												4.4.4.      обновлять содержание, функциональные возможности и пользовательский интерфейс сайта и программы трансляции по своему собственному усмотрению. Исполнитель имеет право сообщать Заказчику о произведенных модификациях посредствам размещения соответствующей информации на сайте и/или письмом на адрес электронной почты и/или в чате группы;<br><br>
+												4.4.5.      во время проведения тренинга осуществлять его аудио-, видеофиксацию;<br><br>
+												4.4.6.      отказаться в одностороннем порядке от Договора без возврата денежных средств в случаях:<br><br>
+												4.4.6.1. несоблюдения Заказчиком порядка и срока оплаты;<br><br>
+												4.4.6.2. нарушения Заказчиком раздела 7. Договора, п.п. 4.2., 4.3., 9.2. и п. 9.3. Договора.<br><br>
+												4.5. Обязанности Исполнителя:		<br><br>
+												4.5.1.      предоставить выбранный и оплаченный Заказчиком Продукт<br><br>
+												4.5.2.      информировать Заказчика о дополнительных условиях и предстоящих изменениях в порядке проведения курса (расписании, переносе занятий и т.д.) путем размещения соответствующей информации на сайте и/или письмом на адрес электронной почты;<br><br>
+
+												<br><br>
+
+												5. ОТВЕТСТВЕННОСТЬ СТОРОН		<br><br>
+
+												5.1.   Стороны за нарушение условий данного Договора несут ответственность в соответствии с действующим законодательством Украины.		<br><br>
+												5.2.   Исполнитель не несет ответственность за нарушение условий Договора в случае предоставления Заказчиком недостоверной и/или неполной информации касательно себя во время оформления заказа, в т.ч. контактной информации (e-mail, телефон и т.п.), а также в случае не предоставления Заказчиком новой контактной информации (e-mail, телефон).		<br><br>
+												5.3.   В случае неполучения Заказчиком Продукта не по вине Исполнителя или отстранения Заказчика от участия в тренинге в связи с нарушением Договора и/или Правил, средства, оплаченные Заказчиком за Продукт, не возвращаются.		<br><br>
+												5.4.   Исполнитель несет ответственность за нарушение условий Договора, исключительно в случае, если ненадлежащее исполнение произошло по его вине.		<br><br>
+												5.5.   Исполнитель не несет ответственности за модификацию программы тренинга и изменения расписания занятий, а также за качество каналов связи общего пользования, с помощью которых обеспечивается доступ к Продуктам.		<br><br>		<br><br>
+
+												6. ФОРС-МАЖОР		<br><br>
+												6.1.   Стороны освобождаются от ответственности за частичное или полное неисполнение обязанностей по данному Договору, если это неисполнение произошло в следствии наступления, действия и последствий форс-мажорных обстоятельств, которые возникли после заключения Договора и к которым Стороны относят: наводнение, пожар, землетрясение, взрыв, шторм, оседание почв, эпидемии и другие явления природы, а также войну или военные действия, выключение электроэнергии, перебои в работе сети Интернет и другие обстоятельства, возникшие не по воле Сторон и которые препятствуют выполнению условий данного Договора.		<br><br>
+												6.2.   Сторона должна уведомить другую Сторону про действие форс-мажорных обстоятельств не позднее нежели через один день со дня их возникновения или со дня, когда возникла возможность осуществить такое уведомление, путем размещения соответствующей информации на http://intensive.jazov.com или путем уведомления средствами электронной или телефонной связи.		<br><br>
+												6.3.   После прекращения (устранения) форс-мажорных обстоятельств, Исполнитель может предоставить Заказчику доступ к электронной версии тренинга в сети Интернет или ссылку для его скачивания или перенести проведение тренинга на другую дату. В этом случае будет считаться, что Исполнитель исполнил свои обязательства по данному Договору надлежащим способом.
+												<br><br>		<br><br>
+											</div>
+										</div>
+										<div class="row wrapper">
+											<div class="col-sm-3 col-md-3 col-lg-3 igor"></div>
+											<div class="col-sm-9 col-md-9 col-lg-9 C">© Игорь Джазов. Все права защищены. ФЛП Пилпиенко Игорь Александрович.<br>
+												ЕДРПОУ № 3177602454. Любое копирование материалов разрешено только с согласия<br> правообладателей.</div>
+											</div>
+											<div class="row footer">
+												<div class="link first col-md-3 col-sm-3">Политика конфиденциальности</div>
+												<div class="link second col-md-3 col-sm-3">Договор публичной оферты</div>
+												<div class="link third col-md-3 col-sm-3"> 100% Гарантия возврата</div>
+												<div class="link fourth col-md-3 col-sm-3">Партнерская программа</div>
+
+											</div>
+										</footer>
+										<div class="overlay"></div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- Load CSS -->
+	<script>
+		function loadCSS(hf) {
+			var ms=document.createElement("link");ms.rel="stylesheet";
+			ms.href=hf;document.getElementsByTagName("head")[0].appendChild(ms);
+		}
+		/*loadCSS("libs/animate/animate.css"); //Load Libs CSS: Animate CSS
+		loadCSS("_header.css");              //Header Styles (compress & paste to header after release)
+		loadCSS("_main.css");                //User Styles: Main
+		loadCSS("_media.css");  
+		loadCSS("_fonts.css")             //User Styles: Media*/
+	</script>
+
+	<!-- Load CSS compiled without Bootstrap & Header styles (after release) -->
+	<script>var ms=document.createElement("link");ms.rel="stylesheet";
+		 ms.href="compiled.min.css";document.getElementsByTagName("head")[0].appendChild(ms);
+	</script>
+
+	<!-- Load Scripts -->
+	<script>var scr = {"scripts":[
+		{"src" : "libs/modernizr/modernizr.js", "async" : false},
+		{"src" : "libs/jquery/jquery-1.11.2.min.js", "async" : false},
+		{"src" : "libs/waypoints/waypoints.min.js", "async" : false},
+		{"src" : "libs/animate/animate-css.js", "async" : false},
+		{"src" : "libs/plugins-scroll/plugins-scroll.js", "async" : false},
+		{"src" : "js/common.js", "async" : false}
+		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+	</script>
+
+</body>
+</html>
