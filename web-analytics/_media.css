@@ -539,9 +539,16 @@ footer .wrapper .igor {
     background: url(img/igor.png) no-repeat 50% 50%;
 }
 
+footer .wrapper .C >br{
+    display: none;
+}
+
 footer .wrapper .C {
     font-size: 16px;
     margin-top: 1.5em;
+    margin-left: 6em;
+    padding-left: 0;
+    text-align: center;
 }
 
 }
@@ -571,6 +578,10 @@ footer .wrapper .C {
     .For-whom .row .businessman {
         padding-bottom: 3em;
     }
+
+    footer .wrapper .C {
+    margin-left: 0em;
+}
 }
 
 @media only screen and (max-width : 625px) {

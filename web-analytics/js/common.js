@@ -4,7 +4,10 @@ $(function() {
 	var display_width=$(window).width()
 	var display_height=$(window).height()
 	var width = $('.timer-element:first>[id^=timer-number-]:first').width()
-	console.log(width);
+	
+
+
+console.log(width);
 	console.log(display_height);
 
 $('.timer-element:first ').css(
@@ -230,7 +233,7 @@ $('.timer-element:first ').css(
 
 	$('.box_1').on('click',function(){
 
-if(display_width>1025){
+if(display_width>1025 ){
 		if(close1==true){
 			$('.possible .box_1').css(
 				'height', '245px'
