@@ -163,7 +163,7 @@
     }
 
     .just .row {
-    width: 101%;
+    width: 100%;
 }
 .just .up_first {
     margin-bottom: 0.5em;
@@ -215,7 +215,7 @@ display: none;
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
     .what-can .row {
-        width: 101%;
+        width: 100%;
     }
 
     
