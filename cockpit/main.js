@@ -14,7 +14,7 @@ var timerId;
 			    $('header .mainBlock .cockpit .elements .blockHaw .background').css({
 					top: (minV + Math.random() * (maxV - minV)) +'px'
 				});
-			},1200);
+			},1400);
 
 			console.log("start");
 		}

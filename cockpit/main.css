@@ -220,6 +220,6 @@ header .mainBlock .cockpit .elements .blockHaw .background{
     width: 166px;
     height: 166px;
     margin: -15px auto;
-    transition: 1200ms linear all;
+    transition: 900ms linear all;
     transition-timing-function: cubic-bezier(0.4,0,0.2,1);
 }
