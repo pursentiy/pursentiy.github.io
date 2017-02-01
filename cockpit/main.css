@@ -1,0 +1,225 @@
+@font-face {
+	font-family: "RalewayLight";
+	src: url("fonts/Raleway-Light.ttf");
+}
+
+@font-face {
+	font-family: "RalewayExtraLight";
+	src: url("fonts/Raleway-ExtraLight.ttf");
+}
+
+body{
+	margin:0;
+}
+
+header .circleButton {
+	position: absolute;
+	top:32.5VH;
+	left:5%;
+	width:50px;
+	height: 50px;
+	background: #f5962e;
+	border-radius: 50%;
+	cursor:pointer;
+	box-shadow: 0 0px 10px rgba(0,0,0,0.5);
+	transition: all ease 601ms;
+	transition-timing-function: cubic-bezier(0.4,0,0.2,1);
+	transform: scale(1)
+
+}
+
+header .circleButton:hover{
+	transform: scale(1.2)
+}
+
+
+
+header .circleButton .plus{
+	text-align: center;
+	font-family: "RobotoRegular", sans-serif;
+	color: white;
+	font-size: 3em;
+	transition: all ease 600ms;
+}
+
+header .circleButton:hover .plus{
+	transform: rotate(180deg);
+}
+
+header .firstBlock {
+	width:100%;
+	height:35VH;
+	background: #03324d;
+}
+
+header .secondBlock {
+	width:100%;
+	height:65VH;
+	background: #EEEEEF;
+}
+
+header .mainBlock{
+	position: absolute;
+	width:70%;
+	top:15VH;
+	left: 0; 
+	right: 0; 
+	margin-left: auto; 
+	margin-right: auto; 
+	height:610px;
+	background:white;
+	margin:0px auto;
+	box-shadow: 0 0px 13px rgba(0,0,0,0.5)
+}
+
+header .mainBlock .cockpit{
+	width:90%;
+	margin:0px auto;
+	font-family: RalewayExtraLight;
+	font-size:3em;
+	text-align: center;
+	padding-top:8%;
+}
+
+header .mainBlock .cockpit .elements{
+	display: flex;
+	justify-content: space-around;
+	padding-top: 10%;
+}
+
+header .mainBlock .cockpit .elements div[class^="block"]{
+	width:172px;
+	height:172px;
+	font-size:20px !important;
+	vertical-align: bottom;
+}
+
+header .mainBlock .cockpit .elements div[class^="block"] .text{
+	margin-top: 5%;
+	font-family: RalewayLight;
+}
+
+header .mainBlock .cockpit .elements .blockHaw{
+	background-size: contain;
+}
+
+
+
+header .mainBlock .cockpit .elements .blockPitch{
+	position: relative;
+	z-index: 1;
+	background: url(img/round.png) no-repeat center;
+}
+
+header .mainBlock .cockpit .elements .blockPitch .arrow {
+	position: relative;
+	z-index: 2;
+	background: url(img/arrow.png) no-repeat center;
+	background-size: contain;
+	width: 19%;
+	height: 79%;
+	background-size: contain;
+	margin: 24px auto;
+}
+
+header .mainBlock .cockpit .elements .blockPitch .background{
+	position: relative;
+	background: url(img/horizon.png) no-repeat center;
+	top: -119px;
+	z-index: 1;
+	background-size: contain;
+	width: 51%;
+	height: 51%;
+	margin: -15px auto;
+}
+
+header .mainBlock .cockpit .elements .blockRoll{
+	position: relative;
+	z-index: 1;
+	background: url(img/round.png) no-repeat center;
+}
+
+header .mainBlock .cockpit .elements .blockRoll .arrow {
+	position: relative;
+	z-index: 2;
+	background: url(img/arrow.png) no-repeat center;
+	background-size: contain;
+	width: 19%;
+	height: 79%;
+	background-size: contain;
+	margin: 24px auto;
+}
+
+header .mainBlock .cockpit .elements .blockRoll .background{
+	position: relative;
+	background: url(img/horizon.png) no-repeat center;
+	top: -119px;
+	z-index: 1;
+	background-size: contain;
+	width: 51%;
+	height: 51%;
+	margin: -15px auto;
+}
+
+header .mainBlock .cockpit .elements .blockHaw{
+	position: relative;
+
+}
+
+header .mainBlock .cockpit .elements .blockHaw .cirle{
+	position: relative;
+	width: 172px;
+	height: 172px;
+	z-index: 2;
+	background: url(img/round.png) no-repeat center;
+	background-size: cover;
+	transition: 900ms linear all;
+	transition-timing-function:cubic-bezier(0.4,0,0.2,1);
+
+}
+
+header .mainBlock .cockpit .elements .blockHaw .arrow {
+	position: relative;
+	z-index: 3;
+	background: url(img/arrow.png) no-repeat center;
+	background-size: contain;
+	width: 31px;
+	height: 112px;
+	background-size: contain;
+	margin: -134px auto;
+	/* left: 3px; */
+}
+
+header .mainBlock .cockpit .elements .blockHaw{
+	width:172px;
+	height:172px;
+	position: absolute;
+	background: white;
+	border-radius: 50%;
+
+	z-index: 2
+}
+
+header .mainBlock .cockpit .elements .blockHaw .backgroundWrapper{
+    width: 143px;
+    position: relative;
+    top: -3px;
+    left: 13.6px;
+    height: 143px;
+    border-radius: 50%;
+    overflow: hidden;
+    /* border: 1px solid red; */
+}
+header .mainBlock .cockpit .elements .blockHaw .background{
+    position: relative;
+    background: url(img/krug.png) no-repeat center;
+    top: 8px;
+    right: 10.6px;
+    z-index: 1;
+    background-size: contain;
+    width: 166px;
+    height: 166px;
+    margin: -15px auto;
+    transition: 1200ms linear all;
+    transition-timing-function: cubic-bezier(0.4,0,0.2,1);
+}
