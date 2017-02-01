@@ -1,5 +1,5 @@
 $(function() {
-	var minH = -95, maxH = 95, click = 0, minV=-15, maxV=34;
+	var minH = -95, maxH = 95, click = 0, minV=-15, maxV=34, minHow=0, maxHow=361;
 
 var timerId;
 
@@ -7,7 +7,7 @@ var timerId;
 		click++;
 /* Вертикальное отклонение*/
 		if(click%2!=0){
-			timerId = setInterval(function() {
+			timerIdRoll = setInterval(function() {
 				$('header .mainBlock .cockpit .elements .blockHaw .cirle').css({
 					transform: 'rotate('+(minH + Math.random() * (maxH - minH)) +'deg)'
 				});
@@ -15,6 +15,13 @@ var timerId;
 					top: (minV + Math.random() * (maxV - minV)) +'px'
 				});
 			},1400);
+
+			timerIdHow = setInterval(function() {
+             $('header .mainBlock .cockpit .elements .blockRoll .background').css({
+					transform: 'rotate('+(minHow + Math.random() * (maxHow - minHow)) +'deg)'
+				});
+
+			},2200);
 
 			console.log("start");
 		}
@@ -25,13 +32,18 @@ var timerId;
 		
 		if(click%2==0){
 			
-			clearInterval(timerId);
+			clearInterval(timerIdRoll);
+		    clearInterval(timerIdHow);
 			$('header .mainBlock .cockpit .elements .blockHaw .cirle').css({
 					transform: 'rotate(0deg)'
 				});
 			$('header .mainBlock .cockpit .elements .blockHaw .background').css({
 					top: '8px'
 				});
+             $('header .mainBlock .cockpit .elements .blockRoll .background').css({
+					transform: 'rotate(0deg)'
+				});
+
 		}
 	});
 
