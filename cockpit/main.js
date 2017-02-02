@@ -1,5 +1,8 @@
 $(function() {
 
+	var minP=-45, maxP=45, minPC=58, maxPC=99, minH = -95, maxH = 95, click = 0, minV=-15, maxV=34, minHow=0, maxHow=361;
+
+
 //Меню
 $('.button_toggle').on('click',function(){
 				$('.main_navigation').toggleClass('open');
@@ -77,8 +80,6 @@ $('#fourth').on('click',function(){
 
 
 
-	var minH = -95, maxH = 95, click = 0, minV=-15, maxV=34, minHow=0, maxHow=361;
-
 var timerId;
 
 	$('.circleButton').on('click',function(){ 
@@ -101,6 +102,15 @@ var timerId;
 
 			},2200);
 
+				timerIdPitch = setInterval(function() {
+				$('header .mainBlock1 .cockpit .elements .blockPitch .arrow').css({
+					transform: 'rotate('+(minP + Math.random() * (maxP - minP)) +'deg)'
+				});
+			    $('header .mainBlock1 .cockpit .elements .blockPitch .circle').css({
+					left: (minPC + Math.random() * (maxPC - minPC)) +'px'
+				});
+			},1700);
+
 			console.log("start");
 		}
 	});
@@ -112,6 +122,7 @@ var timerId;
 			
 			clearInterval(timerIdRoll);
 		    clearInterval(timerIdHow);
+		    clearInterval(timerIdPitch);
 			$('header .mainBlock1 .cockpit .elements .blockHaw .cirle').css({
 					transform: 'rotate(0deg)'
 				});
@@ -120,6 +131,12 @@ var timerId;
 				});
              $('header .mainBlock1 .cockpit .elements .blockRoll .background').css({
 					transform: 'rotate(0deg)'
+				});
+             $('header .mainBlock1 .cockpit .elements .blockPitch .arrow').css({
+					transform: 'rotate(0deg)'
+				});
+			    $('header .mainBlock1 .cockpit .elements .blockPitch .circle').css({
+					left: '78px'
 				});
 
 		}
