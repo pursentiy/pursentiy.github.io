@@ -58,7 +58,8 @@ header .secondBlock {
 	background: #EEEEEF;
 }
 
-header .mainBlock{
+header .mainBlock1{
+	display: block;
 	position: absolute;
 	width:70%;
 	top:15VH;
@@ -72,7 +73,7 @@ header .mainBlock{
 	box-shadow: 0 0px 13px rgba(0,0,0,0.5)
 }
 
-header .mainBlock .cockpit{
+header .mainBlock1 .cockpit{
 	width:90%;
 	margin:0px auto;
 	font-family: RalewayExtraLight;
@@ -81,37 +82,37 @@ header .mainBlock .cockpit{
 	padding-top:8%;
 }
 
-header .mainBlock .cockpit .elements{
+header .mainBlock1 .cockpit .elements{
 	display: flex;
 	justify-content: space-around;
 	padding-top: 10%;
 }
 
-header .mainBlock .cockpit .elements div[class^="block"]{
+header .mainBlock1 .cockpit .elements div[class^="block"]{
 	width:172px;
 	height:172px;
 	font-size:20px !important;
 	vertical-align: bottom;
 }
 
-header .mainBlock .cockpit .elements div[class^="block"] .text{
+header .mainBlock1 .cockpit .elements div[class^="block"] .text{
 	margin-top: 5%;
 	font-family: RalewayLight;
 }
 
-header .mainBlock .cockpit .elements .blockHaw{
+header .mainBlock1 .cockpit .elements .blockHaw{
 	background-size: contain;
 }
 
 
 
-header .mainBlock .cockpit .elements .blockPitch{
+header .mainBlock1 .cockpit .elements .blockPitch{
 	position: relative;
 	z-index: 1;
 	background: url(img/round.png) no-repeat center;
 }
 
-header .mainBlock .cockpit .elements .blockPitch .arrow {
+header .mainBlock1 .cockpit .elements .blockPitch .arrow {
 	position: relative;
 	z-index: 2;
 	background: url(img/arrow.png) no-repeat center;
@@ -122,7 +123,7 @@ header .mainBlock .cockpit .elements .blockPitch .arrow {
 	margin: 24px auto;
 }
 
-header .mainBlock .cockpit .elements .blockPitch .background{
+header .mainBlock1 .cockpit .elements .blockPitch .background{
 	position: relative;
 	background: url(img/horizon.png) no-repeat center;
 	top: -119px;
@@ -133,14 +134,14 @@ header .mainBlock .cockpit .elements .blockPitch .background{
 	margin: -15px auto;
 }
 
-header .mainBlock .cockpit .elements .blockRoll{
+header .mainBlock1 .cockpit .elements .blockRoll{
 	position: relative;
 	z-index: 1;
 width: 172px;
 	height: 172px;
 }
 
-header .mainBlock .cockpit .elements .blockRoll .arrow {
+header .mainBlock1 .cockpit .elements .blockRoll .arrow {
     position: relative;
     z-index: 2;
     background: url(img/headingIndicatorAP.png) no-repeat center;
@@ -151,11 +152,11 @@ header .mainBlock .cockpit .elements .blockRoll .arrow {
     margin: 24px auto;
 }
 
-header .mainBlock .cockpit .elements .blockRoll .text{
+header .mainBlock1 .cockpit .elements .blockRoll .text{
 	margin-top:-84% !important;
 }
 
-header .mainBlock .cockpit .elements .blockRoll .background{
+header .mainBlock1 .cockpit .elements .blockRoll .background{
     position: relative;
     background: url(img/headingIndicatorRound.png) no-repeat center;
     top: -152px;
@@ -169,12 +170,12 @@ header .mainBlock .cockpit .elements .blockRoll .background{
 
 }
 
-header .mainBlock .cockpit .elements .blockHaw{
+header .mainBlock1 .cockpit .elements .blockHaw{
 	position: relative;
 
 }
 
-header .mainBlock .cockpit .elements .blockHaw .cirle{
+header .mainBlock1 .cockpit .elements .blockHaw .cirle{
 	position: relative;
 	width: 172px;
 	height: 172px;
@@ -186,7 +187,7 @@ header .mainBlock .cockpit .elements .blockHaw .cirle{
 
 }
 
-header .mainBlock .cockpit .elements .blockHaw .arrow {
+header .mainBlock1 .cockpit .elements .blockHaw .arrow {
 	position: relative;
 	z-index: 3;
 	background: url(img/arrow.png) no-repeat center;
@@ -198,7 +199,7 @@ header .mainBlock .cockpit .elements .blockHaw .arrow {
 	/* left: 3px; */
 }
 
-header .mainBlock .cockpit .elements .blockHaw{
+header .mainBlock1 .cockpit .elements .blockHaw{
 	width:172px;
 	height:172px;
 	background: white;
@@ -207,7 +208,7 @@ header .mainBlock .cockpit .elements .blockHaw{
 	z-index: 2
 }
 
-header .mainBlock .cockpit .elements .blockHaw .backgroundWrapper{
+header .mainBlock1 .cockpit .elements .blockHaw .backgroundWrapper{
     width: 143px;
     position: relative;
     top: -3px;
@@ -217,7 +218,7 @@ header .mainBlock .cockpit .elements .blockHaw .backgroundWrapper{
     overflow: hidden;
     /* border: 1px solid red; */
 }
-header .mainBlock .cockpit .elements .blockHaw .background{
+header .mainBlock1 .cockpit .elements .blockHaw .background{
     position: relative;
     background: url(img/krug.png) no-repeat center;
     top: 8px;
@@ -230,3 +231,187 @@ header .mainBlock .cockpit .elements .blockHaw .background{
     transition: 900ms linear all;
     transition-timing-function: cubic-bezier(0.4,0,0.2,1);
 }
+
+	header .main_navigation{
+		display:block;
+		list-style: none;	
+		position:fixed;
+		top:0;
+		left:0;
+		color:black;
+		background:white;
+		opacity: 0.97;
+	box-shadow: 0 0px 13px rgba(0,0,0,0.5);
+		width:30%;
+		height:100%;
+		text-align: center;
+		transform: translateX(-110%);
+		transition: transform 0.6s ease;
+		z-index: 100;
+	}
+
+	header .main_navigation ul li{
+		font-size: 1.5em;
+    font-family: RalewayExtraLight;
+    padding: 25px 15px;
+    	transition: 0.6s ease;
+
+	}
+
+	header .main_navigation ul li:hover{
+		background: #eeeeef;
+	}
+
+	header .main_navigation ul {
+    list-style: none;
+    cursor: pointer;
+    margin-top: 50px;
+    -webkit-padding-start: 0px;
+    -o-padding-start: 0px;
+    -moz-padding-start: 0px;
+    -ms-padding-start: 0px;
+}
+
+	.button_toggle{
+		position:fixed;
+		width:40px;
+		height:36px;
+		right:30px;
+		top:30px;
+		background: transparent;
+		z-index:321;
+	}
+
+	.button_toggle  span {
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		background:#f5962e;
+		margin-top:12px;
+		transition: all 0.1s;
+
+	}
+
+	input[type="checkbox"]{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		opacity: 0;
+		cursor: pointer;
+		margin-top:0px;
+
+	}
+
+	input[type="checkbox"]:checked + span:after{
+		transform: rotate(-45deg) translate(-4px, 16px);
+		-o-transform:rotate(-45deg) translate(-4px, 16px) !important; 
+		-moz-transform: rotate(-45deg) translate(-4px, 16px) !important; 
+		-ms-transform: rotate(-45deg) translate(-4px, 16px) !important; 
+		-webkit-transform: rotate(-45deg) translate(-4px, 16px) !important; 
+	}
+
+	input[type="checkbox"]:checked + span:before{
+		transform: rotate(45deg) translate(-1px, -12px);
+		-o-transform: rotate(45deg) translate(-1px, -12px) !important; 
+		-moz-transform: rotate(45deg) translate(-1px, -12px) !important; 
+		-ms-transform: rotate(45deg) translate(-1px, -12px) !important; 
+		-webkit-transform: rotate(45deg) translate(-1px, -12px) !important; 
+	}
+
+	input[type="checkbox"]:checked + span{
+		background: transparent;
+	}
+
+	.button_toggle span:before, .button_toggle span:after {
+		content: "";
+		position: absolute;
+		width: 40px;
+		height: 2px;
+		background: #f5962e;
+		transition: all 0.3s;
+	}
+
+	.button_toggle span:before{
+		top:12px;
+	}
+
+	.button_toggle span:after{
+
+		top:-12px;	
+	}
+
+	header .main_navigation.open{
+		transform: translateX(0%);
+	}
+
+	header .mainBlock2{
+		display: none;
+	position: absolute;
+	width:70%;
+	top:15VH;
+	left: 0; 
+	right: 0; 
+	margin-left: auto; 
+	margin-right: auto; 
+	height:610px;
+	background:white;
+	margin:0px auto;
+	box-shadow: 0 0px 13px rgba(0,0,0,0.5)
+}
+
+	header .mainBlock2 #map{
+		width:100%;
+		height:100%;
+		background: url(img/test1.png) no-repeat center;
+		background-size: cover;
+	}
+
+		header .mainBlock3{
+		display: none;
+	position: absolute;
+	width:70%;
+	top:15VH;
+	left: 0; 
+	right: 0; 
+	margin-left: auto; 
+	margin-right: auto; 
+	height:610px;
+	background:white;
+	margin:0px auto;
+	box-shadow: 0 0px 13px rgba(0,0,0,0.5)
+}
+
+	header .mainBlock3 #map{
+		width:100%;
+		height:100%;
+		background: url(img/test2.png) no-repeat center;
+		background-size: cover;
+	}
+
+		header .mainBlock4{
+		display: none;
+	position: absolute;
+	width:70%;
+	top:15VH;
+	left: 0; 
+	right: 0; 
+	margin-left: auto; 
+	margin-right: auto; 
+	height:610px;
+	background:white;
+	margin:0px auto;
+	box-shadow: 0 0px 13px rgba(0,0,0,0.5)
+}
+
+	header .mainBlock4 #map{
+		width:100%;
+		height:100%;
+		background: url(img/test3.png) no-repeat center;
+		background-size: cover;
+	}
+
+
+
+
+
