@@ -43,7 +43,7 @@ var timerId, timerIdRoll, timerIdHow, timerIdPitch;
 
 //Меню
 $('.button_toggle').on('click',function(){
-	$('.main_navigation').toggleClass('open');
+	$('.wrapper').toggleClass('open');
 	$('.button_toggle').toggleClass('open');
 });
 
