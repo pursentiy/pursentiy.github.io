@@ -75,9 +75,9 @@ display: flex;
 width:140px;
 height:140px;
 margin:0px auto;
-background: url(img/photo.jpg) no-repeat 65% 6%;
+background: url(img/photo.jpg) no-repeat 50% 25%;
 border-radius: 50%;
-background-size: 170%;
+background-size: 140%;
 }
 
 .above1 .description .first{
