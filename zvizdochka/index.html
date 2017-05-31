@@ -23,20 +23,35 @@
 		}
 
 		.heart{
-			width:450px;
-			height:450px;
+			width:250px;
+			height:250px;
 			background: url("heart-icon.png") no-repeat center;
-			background-size: cover;
+	background-size: cover;
 			
 			margin: 0px auto;
-			margin-top: 200px;
+			margin-top: 50px;
+			transition: 0.5s ease-out;
 		}
 	</style>
 </head>
 <body>
 	<div class="main">
 		Прости меня!
-		<div class='heart'></div>
+		<div class='heart' id="test"></div>
 	</div>
+	<script type="text/javascript">
+	var size = 250;
+		test.onclick = function() {
+			console.log('test');
+    sizing();
+     
+   }
+
+   function sizing(){
+   	test.style.width= size + 20 + 'px';
+   	test.style.height= size + 20 + 'px';
+   	size+=20;
+   }
+	</script>
 </body>
 </html>
