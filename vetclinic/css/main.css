@@ -1,0 +1,110 @@
+@font-face{
+	font-family: "GOTHIC";
+	src:url("css/GOTHIC.TTF")  format("truetype");
+}
+
+.flex{
+	display: flex;
+	justify-content: space-around;
+}
+
+.change{
+	font-size: 0.9em;
+}
+
+.doctors{
+	display: flex;
+	justify-content: center;
+}
+
+
+.text .grid-10{
+	width:700px;
+	height:786px;
+	background: url(img/text.jpg) no-repeat center;
+	background-size: cover; 
+}
+
+.text .grid-5 img{
+	border-radius: 10px;
+}
+
+
+.wrapper .grids .main{
+	text-align: center !important;
+}
+
+.wrapper .grids .main h4{
+	color: #fafafa;
+	text-shadow: #427391 2px 2px 0, #427391 -2px -2px 0, 
+	#427391 -2px 2px 0, #427391 2px -2px 0;
+}
+
+.wrapper .grids .main .red{
+	font-size: 20px;
+	color:#CD396B;
+}
+
+.wrapper .grids .main .greyOne{
+	background: #EFEFEF;
+	border-radius: 15px;
+	font-size: 27px;
+}
+
+
+.textDomodedovo{
+	text-align: justify;
+}
+.contacts{
+	text-align: center;
+}
+
+.contacts .telephone{
+	font-size: 27px;
+}
+
+.threeD li a{  
+	width:120px;
+	background-color:  #427391;
+	border-radius: 5px;  
+	text-shadow: 0 -1px 0 rgba(0,0,0,.8);  
+	color: #eee;  
+	margin-top: 5px;
+	padding: 5px 5px;
+	text-decoration: none;  
+	border: 1px solid #427391;  
+	font: bold 14px Arial, Helvetica;  
+}
+
+.threeD li a:hover{
+	background-color: #427191;   
+	background-image: linear-gradient(#427191, #427191);  
+}
+
+.threeD li a:active{
+	background: #254b63;  
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.7) inset;  
+
+}
+.threeD li a span{
+	width: 58px;
+	text-align: center;
+	border: 1px dashed white;  
+	display: inline-block;  
+	text-align: center;
+	padding: 10px 15px;
+	color:white; 
+	cursor: pointer;  
+	background-color: #427391;   
+}
+
+.threeD li a:active span{
+	background-color:#254b63;    
+	background-image: linear-gradient(#254b63, #254b63);  
+}
+
+.map{
+	width:500px;
+	height:400px;
+	margin:0px auto;
+}
