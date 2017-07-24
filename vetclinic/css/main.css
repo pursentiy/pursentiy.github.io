@@ -3,6 +3,25 @@
 	src:url("css/GOTHIC.TTF")  format("truetype");
 }
 
+#bhr {
+    background: #EFEFEF;
+    border-radius:10px;
+ top: 93%;
+    display: block;
+    font-size: 20px;
+    padding: 13px 15px;
+    position: fixed;
+    right: 5px;
+    text-decoration: none;
+    color: black;
+    transition: 0.5s ease-out;
+}
+
+#bhr:hover {
+    color: white;
+    background: #427391;
+}
+
 .flex{
 	display: -webkit-box;
 	display: -ms-flexbox;

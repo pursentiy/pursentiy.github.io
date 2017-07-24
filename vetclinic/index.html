@@ -35,7 +35,8 @@
                       <!--===============================================================  Logo, social and menu =====================================================================================--> 
 
                       <body>
-                       <div class="wrapper">
+                <a id="bhr" href="#">Поднять наверх</a>
+                        <div class="wrapper">
                          <div class="grids top">
                           <div class="grid-6 grid">	
                             <img src="img/aa.png" alt="something" />
@@ -200,8 +201,7 @@
               </div>
 
               <div class="grid-4 grid">
-                <h5>Lorem ipsum</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+                <img src="img/O4.png" alt="demo-image" style="width:100%; ">
               </div>
 
               <div class="grid-4 grid">
@@ -209,8 +209,7 @@
               </div>
 
               <div class="grid-4 grid">
-               <h5>Lorem ipsum</h5>
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+               <img src="img/O2.png" alt="demo-image" style="width:100%">
              </div>
 
            </div><!--end of grids-->
@@ -225,8 +224,7 @@
             </div>
 
             <div class="grid-4 grid">
-              <h5>Lorem ipsum</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+          <img src="img/O5.png" alt="demo-image" style="width:100%">
             </div>
 
             <div class="grid-4 grid">
@@ -234,8 +232,7 @@
            </div>
 
            <div class="grid-4 grid">
-             <h5>Lorem ipsum</h5>
-             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+            <img src="img/O3.png" alt="demo-image" style="width:100%">
            </div>
 
          </div><!--end of grids-->
@@ -374,13 +371,13 @@
                   var ms=document.createElement("link");ms.rel="stylesheet";
                   ms.href=hf;document.getElementsByTagName("head")[0].appendChild(ms);
                 }
-   //loadCSS("css/eve-styles.css"); //Load Libs CSS: Animate CSS
-  //loadCSS("css/main.css");              //Header Styles (compress & paste to header after 
-   //loadCSS("css/inuit.css");                //User Styles: Main
+   loadCSS("css/eve-styles.css"); //Load Libs CSS: Animate CSS
+  loadCSS("css/main.css");              //Header Styles (compress & paste to header after 
+   loadCSS("css/inuit.css");                //User Styles: Main
  </script>
 
  <script>var ms=document.createElement("link");ms.rel="stylesheet";
-  ms.href="compiled.min.css";document.getElementsByTagName("head")[0].appendChild(ms);
+  //ms.href="compiled.min.css";document.getElementsByTagName("head")[0].appendChild(ms);
 </script>
 
 
@@ -395,6 +392,33 @@
     mousewheel: true
   });
  });
+ </script>
+
+<script>
+  // JavaScript Document
+  $(document).ready(function(){
+  // появление/затухание кнопки #back-top
+  $(function (){
+    // прячем кнопку #back-top
+    $("#bhr").hide();
+
+    $(window).scroll(function (){
+      if ($(this).scrollTop() > 100){
+        $("#bhr").fadeIn();
+      } else{
+       bhr.style.display = "none";
+      }
+    });
+
+    // при клике на ссылку плавно поднимаемся вверх
+    $("#bhr").click(function (){
+      $("body,html").animate({
+        scrollTop:0
+      }, 800);
+      return false;
+    });
+  });
+});
 </script>
 
 </body>

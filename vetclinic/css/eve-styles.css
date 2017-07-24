@@ -23,7 +23,7 @@ you´ve downloaded.
 	MAIN
 	\*------------------------------------*/
 	html{font-family: Arial, sans-serif;color: #888;}
-	body{background:url(../img/bg.jpg) repeat; font-family:GOTHIC !important;}
+	body{background:#fff; font-family:GOTHIC !important;}
 
 	.social {text-align: right; position: relative;  margin: 4px 0;    padding-top: 6px;}
 	.social img {margin-bottom: 0;}
