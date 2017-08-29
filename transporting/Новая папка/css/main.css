@@ -41,22 +41,6 @@ h1 {
   .orange:hover {
     background: #ff4d00; }
 
-.imgHead {
-  width: 100%;
-  height: 20px;
-  margin-top: 25px;
-  background: url(../img/numberW.png) no-repeat center;
-  -webkit-background-size: contain;
-          background-size: contain; }
-
-.imgBot {
-  width: 100%;
-  height: 20px;
-  padding: 12px 0;
-  background: url(../img/numberW.png) no-repeat center;
-  -webkit-background-size: contain;
-          background-size: contain; }
-
 body {
   font-size: 16px;
   min-width: 320px;
@@ -65,10 +49,8 @@ body {
   overflow-x: hidden;
   margin: 0;
   text-align: center; }
-
-html, body {
-  margin: 0;
-  overflow-x: hidden; }
+  body .mainSection {
+    width: 100%; }
 
 .menu {
   background-image: -webkit-gradient(linear, left top, right top, from(#ed5f25), to(#65C4DF));
@@ -102,10 +84,8 @@ html, body {
     left: 185px;
     width: 220px;
     height: 126px;
-    -webkit-animation: ship-travel 10s linear;
-            animation: ship-travel 10s linear;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
+    -webkit-animation: ship-trave 16s linear infinite;
+            animation: ship-trave 16s linear infinite;
     background: url(../img/VVV.png) no-repeat center;
     -webkit-background-size: cover;
             background-size: cover;
@@ -116,11 +96,9 @@ html, body {
     height: 72px;
     top: 383px;
     right: 271px;
-    -webkit-animation: car-travel 13s linear;
-            animation: car-travel 13s linear;
+    -webkit-animation: car-trave 18s linear infinite;
+            animation: car-trave 18s linear infinite;
     background: url(../img/VVVV.png) no-repeat center;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
     -webkit-background-size: cover;
             background-size: cover;
     z-index: 100; }
@@ -330,9 +308,7 @@ html, body {
 .section6 .syringe {
   background: url(../img/syringe.png) no-repeat 50% 10%;
   -webkit-background-size: contain;
-          background-size: contain;
-  position: relative;
-  top: 2px; }
+          background-size: contain; }
 
 .section7 {
   height: 150px; }
@@ -360,8 +336,7 @@ html, body {
   padding: 30px; }
 
 .section8 .row > div div {
-  width: 230px;
-  margin: 0 auto;
+  width: 100%;
   height: 200px;
   background: #65C4DF;
   -webkit-border-radius: 10px;
@@ -532,78 +507,3 @@ html, body {
 
 .wrapperMenu {
   display: none; }
-
-@media screen and (max-width: 1883px) {
-  .menu {
-    margin-top: -19px; } }
-
-@media screen and (max-width: 1507px) {
-  .section9 .blocks .block1 {
-    font-size: 16px; } }
-
-@media screen and (max-width: 1315px) {
-  .section6 .syringe {
-    position: inherit !important; } }
-
-@media screen and (max-width: 1207px) {
-  .section9 .blocks .block1 {
-    font-size: 14px; } }
-
-@media screen and (max-width: 1000px) {
-  .scrollup {
-    font-size: 35px;
-    padding: 20px 30px !important; }
-  .wrapperMenu {
-    display: block !important; }
-  .menu {
-    display: none !important; }
-  .flex {
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap; }
-  .orange {
-    font-size: 25px; }
-  .section1 .row > div span {
-    font-size: 25px; }
-  .section1 .row > div div {
-    width: 30%;
-    margin: 0 auto; }
-  .section2 .dotes2 {
-    display: none; }
-  .section2 .row span {
-    font-size: 25px;
-    padding-top: 30px; }
-  .section2 form {
-    font-size: 2em; }
-    .section2 form .info {
-      font-size: 1.5em; }
-    .section2 form::-webkit-input-placeholder {
-      font-size: 1.5em; }
-  .section2 .submit {
-    font-size: 1.5em !important; }
-  .section3 {
-    font-size: 1.3em; }
-    .section3 .blockFirst {
-      padding: 15px 10px !important; }
-  .section6 .row > div span {
-    font-size: 25px; }
-  .section6 .row > div div {
-    width: 30%;
-    margin: 0 auto; }
-  .section6 .syringe {
-    display: none; }
-  .section6 h1 {
-    padding-left: 0; }
-  .section8 .row > div span {
-    font-size: 25px; }
-  .section8 .chip {
-    display: none; }
-  .section8 h1 {
-    padding-left: 0; }
-  .section9 .block1 {
-    width: 100% !important;
-    font-size: 18px !important; }
-  .section9 .block2 {
-    margin: 0 40px !important; }
-  .section10 {
-    margin: -15px; } }
