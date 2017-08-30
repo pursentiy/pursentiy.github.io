@@ -1,0 +1,42 @@
+User-agent: *
+Sitemap: http://www.vetuslugi.su/sitemap.xml
+Disallow: /img/ochered.jpg
+Disallow: /img/2.jpg
+Disallow: /img/555.png
+Disallow: /img/44.png
+Disallow: /img/a.png
+Disallow: /img/a1.png
+Disallow: /img/a2.png
+Disallow: /img/a3.png
+Disallow: /img/777.jpg
+Disallow: /img/778.jpg
+Disallow: /img/plavmrt.png
+Disallow: /img/plavdoc.png
+Disallow: /img/plavpop4.png
+Disallow: /img/obyzat.jpg
+Disallow: /img/pasport.jpg
+Disallow: /img/kart1.jpg
+Disallow: /img/plavstar.png
+Disallow: /img/plavstar1.png 
+Disallow: /img/plavstar3.png   
+Disallow: /img/plavpop4.png
+Disallow: /img/plavsvidet.png
+Disallow: /img/plavsvidet2.png
+Disallow: /img/plavpasport3.png
+Disallow: /img/plavlab3.png
+Disallow: /img/prais.jpg
+Disallow: /img/ptici11.jpg
+Disallow: /img/uprsmall.jpg
+Disallow: /img/kartza.jpg
+Disallow: /img/kartva.jpg
+Disallow: /img/kartuza.jpg
+Disallow: /img/kartuva.jpg
+Disallow: /img/kartua.jpg
+Disallow: /img/kartsza.jpg
+Disallow: /img/kartsva.jpg
+Disallow: /img/kartsa.jpg
+Disallow: /img/plavhor.png  
+
+    
+ 
+

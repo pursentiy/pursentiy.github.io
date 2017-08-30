@@ -1,0 +1,66 @@
+/*                      
+#test{
+	background: url(../img/test.jpg) no-repeat center !important;
+	background-size: contain !important;
+}
+*/
+
+.white{
+	color: #ffffff !important;
+}
+
+.markup{
+    background: #fff;
+    border-radius: 15px;
+    text-align: center;
+    width: 70%;
+    margin: 0px auto;
+} 
+
+.flexslider p {
+    color: white !important;
+}
+
+.town{
+    color: white;
+}
+
+.town h1{
+    padding-bottom: 30px;
+}
+
+h2{
+    color: white !important;
+}
+
+.text, .mdiv{
+    border-radius: 15px;
+}
+
+.fixed{
+    position: fixed;
+    width: 41.5%;
+    z-index: 1000;
+}
+
+@media (max-width: 1080px){
+
+    .fixed{
+        position: fixed;
+        width: 51.5%;
+        z-index: 1000;
+    }
+}
+
+@media (max-width: 860px){
+
+    .fixed{
+        position: inherit;
+        width: auto;
+        z-index: 1000;
+    }
+
+    .town{
+        font-size: 29px;
+    } 
+}
