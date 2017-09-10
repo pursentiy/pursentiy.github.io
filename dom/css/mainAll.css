@@ -1,3 +1,8 @@
+#ind{
+	    background: url(../img/fonmoskSmall.jpg) no-repeat 50% 0%, #021341;
+	    
+}
+
 @font-face {
 	font-family: 'CenturyGothic';
 	src: url('fonts/CenturyGothic.eot?#iefix') format('embedded-opentype'),  url('fonts/CenturyGothic.woff') format('woff'), url('fonts/CenturyGothic.ttf')  format('truetype'), url('fonts/CenturyGothic.svg#CenturyGothic') format('svg');
@@ -37,10 +42,6 @@ color:black;
 	display: flex;
 	-ms-flex-pack: distribute;
 	justify-content: space-around;
-}
-
-#ind{
-	    background: url(../img/fonmosk.jpg);
 }
 
 .image{

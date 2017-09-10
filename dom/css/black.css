@@ -5,6 +5,14 @@
 }
 */
 
+.noselect {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
 .white{
 	color: #ffffff !important;
 }
@@ -63,4 +71,20 @@ h2{
     .town{
         font-size: 29px;
     } 
+
+    .smallOne{
+        font-size: 10px
+    }
+}
+
+@media (max-width: 500px){
+   .smallOne{
+    font-size: 7px
+}
+}
+
+@media (max-width: 400px){
+   .smallOne{
+    font-size: 6px
+}
 }
