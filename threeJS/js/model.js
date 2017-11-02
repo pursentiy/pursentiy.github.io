@@ -6,7 +6,7 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
 
-var  geometry = new THREE.BoxGeometry( 2,2,2 );
+var  geometry = new THREE.BoxGeometry( 1,1,1 );
 var cubeMaterials = 
 [
 new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load('img/crate.jpg'), side: THREE.DoubleSide}),
@@ -26,8 +26,8 @@ camera.position.x = 0;
 camera.position.y = 0;
 
 var update = function(){
-  cube.rotation.x += 0.01;
-  cube.rotation.y += 0.005;
+  cube.rotation.x += 0.001;
+  cube.rotation.y += 0.001;
 };
 
 controls = new THREE.OrbitControls(camera, renderer.domElement);
