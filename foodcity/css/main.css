@@ -85,6 +85,12 @@ body {
       padding: 4.5px 12.5px;
       float: left; }
 
+      @-moz-document url-prefix()
+{
+      .menu ul .item6 .cart {
+      height: 27px;
+}
+
 .row {
   display: -webkit-box;
   display: -webkit-flex;
