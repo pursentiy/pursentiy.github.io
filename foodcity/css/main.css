@@ -366,3 +366,23 @@ body {
   .add_info {
     width: auto;
     padding: 0 50px; } }
+
+@-moz-document url-prefix() {
+  .menu ul .item6 .cart {
+    height: 27px; }
+  hr {
+    float: left; }
+  .post_full .post_text .share_button {
+    height: 18px; }
+  .comments_section1 .comment .comment_name {
+    margin-top: 544px; } }
+
+@supports (-ms-ime-align: auto) {
+  .post_full .post_text .button {
+    width: 264px;
+    margin-top: 34px; } }
+
+@media all and (-ms-high-contrast: none) {
+  .post_full .post_text .button {
+    width: 264px;
+    margin-top: 50px; } }
