@@ -4,10 +4,11 @@ $(document).ready(function(){
   var elements = document.getElementsByClassName('item');
   var colorChange = document.getElementById('color');
   var colorUnderline = document.getElementById('underline');
-  var sideBar = document.getElementsByClassName('side_bar'), li = document.getElementById('main_page'), liSize = li.getBoundingClientRect();
+  var sideBar = document.getElementsByClassName('side_bar'),
+   li = document.getElementById('crack'), liSize = li.getBoundingClientRect();
   let test = window.getComputedStyle(li, null);
   if(window.innerWidth >= 1203){
-    sideBar[0].style.width = liSize.right - 1.6*test.paddingRight.substr(0,2) + 'px';
+    sideBar[0].style.width = liSize.left + 0.9*test.paddingRight.substr(0,2) + 'px';
   }
   
   $(".owl-carousel").owlCarousel({
