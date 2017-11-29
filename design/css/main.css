@@ -397,11 +397,13 @@ input[type="checkbox"] {
 
 @media screen and (max-width: 1503px) {
   .main_menu ul li {
-    font-size: 15px; }
-  .photo_wrapper .side_bar .text .wrapper .second {
-    font-size: 1em; }
-  .photo_wrapper .side_bar .text .wrapper .first {
-    font-size: 2em; } }
+    font-size: 14px; }
+  .photo_wrapper .side_bar .text {
+    padding-top: 100px; }
+    .photo_wrapper .side_bar .text .wrapper .second {
+      font-size: 1em; }
+    .photo_wrapper .side_bar .text .wrapper .first {
+      font-size: 2em; } }
 
 @media screen and (max-width: 1303px) {
   .main_menu ul li {
