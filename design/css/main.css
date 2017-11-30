@@ -745,11 +745,12 @@ input[type="checkbox"] {
         float: inherit; }
         .photo_wrapper .side_bar .text .wrapper {
           text-align: center !important;
-          padding-top: 90px; }
+          padding-top: 90px;
+          padding-right: 0; }
           .photo_wrapper .side_bar .text .wrapper:first-child {
-            margin-right: 30px; }
+            margin-right: 0px; }
           .photo_wrapper .side_bar .text .wrapper:last-child {
-            margin-right: 30px; }
+            margin-right: 0px; }
           .photo_wrapper .side_bar .text .wrapper:last-child {
             padding-top: 30px;
             padding-bottom: 30px; }
