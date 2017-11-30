@@ -746,6 +746,10 @@ input[type="checkbox"] {
         .photo_wrapper .side_bar .text .wrapper {
           text-align: center !important;
           padding-top: 90px; }
+          .photo_wrapper .side_bar .text .wrapper:first-child {
+            margin-right: 30px; }
+          .photo_wrapper .side_bar .text .wrapper:last-child {
+            margin-right: 30px; }
           .photo_wrapper .side_bar .text .wrapper:last-child {
             padding-top: 30px;
             padding-bottom: 30px; }
