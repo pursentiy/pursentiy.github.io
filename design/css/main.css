@@ -661,7 +661,9 @@ input[type="checkbox"] {
 
 @media screen and (max-width: 601px) {
   .hexagon_wrapper .over {
-    width: 300px; } }
+    width: 300px; }
+  .hexLinkOff span {
+    top: 36% !important; } }
 
 @media (max-width: 600px) {
   .hex h1 {
@@ -804,6 +806,9 @@ input[type="checkbox"] {
         font-size: 1.3em !important; } }
 
 @media screen and (max-width: 703px) {
+  .hexLinkOff span {
+    font-size: 1em;
+    top: 37%; }
   .contact_wrapper .side_contacts .form {
     width: 300px; } }
 
