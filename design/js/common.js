@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
 
-  var elements = document.getElementsByClassName('item');
+ var elements = document.getElementsByClassName('item');
   var colorChange = document.getElementById('color');
   var colorUnderline = document.getElementById('underline');
   var sideBar = document.getElementsByClassName('side_bar'),
@@ -11,6 +11,19 @@ $(document).ready(function(){
     sideBar[0].style.width = liSize.left + 0.9*test.paddingRight.substr(0,2) + 'px';
   }
   
+  /*
+  $(".owl-carousel").owlCarousel({
+    loop:true,
+    autoplay: true,
+    autoplayTimeout: 23000,
+    margin:10,
+    nav:false,
+    dots: true,
+    items: 1,
+  });
+  */
+  
+
   $(".owl-carousel").owlCarousel({
     loop:true,
     autoplay: true,
@@ -22,19 +35,42 @@ $(document).ready(function(){
   });
 
 
-
   $('.button_toggle').on('click',function(){
     $('.main_navigation').toggleClass('open');
     $('.close_menu').toggleClass('close');
   });
 
-
+  $('.trigger').on('click',function(){
+    $('.side_bar').toggleClass('closeBar');
+  });
 
 
   var owl = $('.owl-carousel');
+  var owlProj = $('.owl-carousel-proj');
+
+    owlProj.on('changed.owl.carousel', function(event) {
+   var item  = event.page.index;
+   switch (item) {
+    case 0:
+    dotesColoring(item);
+    break;
+    case 1:
+    dotesColoring(item);
+    break;
+    case 2:
+    dotesColoring(item);
+    break;
+    case 3:
+    dotesColoring(item);
+    break;
+    case 4:
+    dotesColoring(item);
+    break;
+  }
+});
 
   owl.on('changed.owl.carousel', function(event) {
-   var item   = event.page.index;
+   var item  = event.page.index;
    switch (item) {
     case 0:
     colorChange.style.color = "#00ff00";
@@ -101,9 +137,7 @@ $(document).ready(function(){
 
 
 
-    document.styleSheets[1].addRule('.owl-theme .owl-dots .owl-dot.active span:before', 'background: "#00ff1b"');
-    document.styleSheets[1].insertRule('.owl-theme .owl-dots .owl-dot.active span:before { background: "#00ff1b" }', 0);
-  /*
+/*
   $(".owl-theme .owl-dots .owl-dot.active span:before").css({
     background: "#00ff1b"
   });
@@ -115,5 +149,7 @@ $(document).ready(function(){
   });
   */
 }
+
+
 
 });
