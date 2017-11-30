@@ -11,6 +11,18 @@ $(document).ready(function(){
     sideBar[0].style.width = liSize.left + 0.9*test.paddingRight.substr(0,2) + 'px';
   }
   
+  var winWidth  = 0;
+$(window).resize(function() {
+  winWidth = $(window).width();
+  console.log(winWidth);
+  if(winWidth <= 1203){
+    sideBar[0].style.width = 100 + '%';
+  }
+  else{
+     sideBar[0].style.width = liSize.left + 0.9*test.paddingRight.substr(0,2) + 'px';
+  }
+});
+
   /*
   $(".owl-carousel").owlCarousel({
     loop:true,
