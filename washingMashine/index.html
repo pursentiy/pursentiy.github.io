@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <div class="overlay">
+    <div class="close"></div>
+  </div>
+
+  <div class="window">
+
+    <div class="photo"></div>
+  </div>
+
+  <header>
+    <div class="menu">
+      <ul>
+        <li class="item1">Работаем с 8:00 до 21:00</li>
+        <li class="item2">Городской ремонт</li>
+        <li class="item3"><a href="tel:+79854150400">+7(985) 415-04-00</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="sub_menu" id="menu">
+      <ul id="links">
+        <li class="item1 toCheck active"><a href="#yak1">Главная</a></li>
+        <li class="item2 toCheck"><a href="#yak2">Цены</a></li>
+        <li class="item3 toCheck"><a href="#yak3">Отзывы</a></li>
+        <li class="item4 toCheck"><a href="#yak4">Вызвать мастера</a></li>
+        <li class="item5 toCheck">Получить скидку 500 рублей</li>
+      </ul>
+    </div>
+  </header>
+
+  <div id="yak1" class="section1">
+    <div class="wash"></div>
+    <div class="filling">
+      <span class="header">Отремонтируем машину
+        за 3 часа и дадим гарантию 3 года. <br>
+      Не устроит качество,вернем деньги.</span>
+      <div class="box">
+        <span>Хотите узнать точную причину поломки?
+          Закажите бесплатную диагностику
+        и получите скидку 500 руб на ремонт</span>
+        <form id="fir">
+          <input type="hidden" name="project_name" value="Стиралка"> 
+          <input type="hidden" name="admin_email" value="test@gmail.com"> 
+          <input type="hidden" name="form_subject" value="Заказ звонка">
+          <input type="text" maxlength="15" placeholder="Ваш номер телефона">
+          <input type="hidden" name="formData" value="Задать вопрос">
+          <input type="submit" class="button" id="submitt" value="Заказать бесплатную диагностику">
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div id="yak2" class="section2">
+    <div class="wrapper">
+      <div class="content">
+        <span class="header">
+          Цены
+        </span>
+        <div class="table">
+          <ul>
+            <li class="item1"><span class="text1">Неисправность</span><span class="text2">Цена</span></li>
+            <li class="item2"><span class="text1">Не сливает воду</span><span class="text2">от 350 руб.</span></li>
+            <li class="item3"><span class="text1">Сильно шумит</span><span class="text2">от 320 руб.</span></li>
+            <li class="item4"><span class="text1">Течет</span><span class="text2">от 300 руб.</span></li>
+            <li class="item5"><span class="text1">Не открывается люк</span><span class="text2">от 280 руб.</span></li>
+            <li class="item6"><span class="text1">Не греет воду</span><span class="text2">от 320 руб.</span></li>
+            <li class="item7"><span class="text1">Не вулючается</span><span class="text2">от 280 руб.</span></li>
+            <li class="item8"><span class="text1">Не заливает воду</span><span class="text2">от 420 руб.</span></li>
+            <li class="item9"><span class="text1">Не отжимает</span><span class="text2">от 350 руб.</span></li>
+            <li class="item10"><span class="text1">Не вращает барабан</span><span class="text2">от 320 руб.</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section3">
+    <div class="filling">
+      <span class="header">Ремонтируем любые
+      марки стиральных машин</span>
+      <div class="boxes">
+        <div class="box1">
+          <div class="items">
+            <span class="head">11</span> 
+            <span>лет</span>
+          </div>
+          <span class="under">На рынке</span>
+        </div>
+        <div class="box2">
+          <div class="items">
+            <span class="head">241</span>
+            <span>машин</span>
+          </div>
+          <span class="under">Отремонтировали</span>
+        </div>
+        <div class="box3">
+          <div class="items">
+            <span class="head">3</span> 
+            <span>года</span>
+          </div>
+          <span class="under">Гарантия</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="section4">
+   <div class="wrapper">
+    <div class="content">
+      <span class="header">Получите косультацию
+      у специалиста</span>
+      <div class="box">
+        <form id="sec">
+
+          <input type="hidden" name="project_name" value="Стиралка"> 
+          <input type="hidden" name="admin_email" value="test@gmail.com"> 
+          <input type="hidden" name="form_subject" value="Заказ звонка"> 
+
+          <input type="text" name="theme" placeholder="Ваш номер телефона">
+          <input type="hidden" name="formData" value="Задать вопрос">
+          <input type="submit" class="button" id="submitt" value="Получить консультацию">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section5">
+  <div class="filling" id="menu1">
+    <span class="header">Мастера с высшим
+    образованием</span>
+    <div class="boxes">
+      <div class="box1">
+      </div>
+      <div class="box2">
+      </div>
+    </div>
+    <div class="button"><a href="#yak4">Вызвать мастера</a></div>
+  </div>
+</div>
+
+<div class="section6">
+ <div class="wrapper">
+  <div class="content">
+    <span class="header">Используем только
+    оригинальные запчасти</span>
+    <div class="box">
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="section7">
+  <div class="filling">
+    <span class="header">Даём гарантию до 3х лет
+    на выполненые работы</span>
+    <div class="box">
+    </div>
+  </div>
+</div>
+
+<div class="section8">
+ <div class="wrapper">
+  <div class="content">
+    <span class="header">Если вас не устроит качество,<br>
+    мы просто врнем вам деньги</span>
+  </div>
+</div>
+</div>
+
+<div id="yak3" class="section9">
+  <div class="filling">
+    <div class="box">
+      <span class="header">Отзывы</span>
+      <div class="block1">
+        <div class="photo"></div>
+        <div class="additional">
+          <span class="header">Починили нагрев воды на
+          стиральной машине Siemens</span>
+          <div class="first">
+            <div class="logo"> <div class="embl"></div> </div>
+            <div class="text">
+              <span class="head">C какой проблемой обратились?</span>
+              <span class="light">Стиральная машина Siemens <br>
+              не заканчивает стирку, не греет воду.</span>
+            </div>
+          </div>
+          <div class="second">
+            <div class="logo"> <div class="embl"></div> </div>
+            <div class="text">
+              <span class="head">Выполненные работы:</span>
+              <span class="light">Путем электрических измерений
+                было установлено, что сопротивление
+                нагревательного элемента не
+                соответствует норме.
+                Была произведена замена ТЭНа.
+              Гарантия на данный вид услуги 1 год.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="third">
+        <div id="pop" class="logo pop"> <div class="embl"></div> </div>
+        <div class="text">
+          <span class="head">Прочитайте отзыв клиента:</span>
+          <span class="light">Хочу выразить искреннюю благодарность компании "Городской ремонт".
+            Особенно мастеру Сергею за качественный и недорогой ремонт моей
+            машинки. Все очень понравилось. Побольше бы таких профессиональных
+          ребят, мастеров своего дела.</span>
+          <span class="italic">Полянская О.И., г. Дзержинский, ул. Академика Жукова, 38-21</span>
+        </div>
+      </div>
+      <div class="button" id="review">Показать еще</div>
+    </div>
+
+    <div class="wrap">
+      <div class="box" style="transition: 3s ease; height: 0;">
+        <span class="header">Отзывы</span>
+        <div class="block1">
+          <div class="photo"></div>
+          <div class="additional">
+            <span class="header">Починили нагрев воды на
+            стиральной машине Siemens</span>
+            <div class="first">
+              <div class="logo"> <div class="embl"></div> </div>
+              <div class="text">
+                <span class="head">C какой проблемой обратились?</span>
+                <span class="light">Стиральная машина Siemens <br>
+                не заканчивает стирку, не греет воду.</span>
+              </div>
+            </div>
+            <div class="second">
+              <div class="logo"> <div class="embl"></div> </div>
+              <div class="text">
+                <span class="head">Выполненные работы:</span>
+                <span class="light">Путем электрических измерений
+                  было установлено, что сопротивление
+                  нагревательного элемента не
+                  соответствует норме.
+                  Была произведена замена ТЭНа.
+                Гарантия на данный вид услуги 1 год.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="third">
+          <div id="" class="logo pop"> <div class="embl"></div> </div>
+          <div class="text">
+            <span class="head">Прочитайте отзыв клиента:</span>
+            <span class="light">Хочу выразить искреннюю благодарность компании "Городской ремонт".
+              Особенно мастеру Сергею за качественный и недорогой ремонт моей
+              машинки. Все очень понравилось. Побольше бы таких профессиональных
+            ребят, мастеров своего дела.</span>
+            <span class="italic">Полянская О.И., г. Дзержинский, ул. Академика Жукова, 38-21</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+<div class="section10">
+ <div class="wrapper">
+  <div class="content">
+    <span class="header">Карта с географией работы</span>
+    <span class="under">Работаем с 8:00 до 21:00</span> 
+    <a href="tel:+79854150400">+7(985) 415-04-00</a>
+    <div class="yandex">  </div>
+  </div>
+</div>
+</div>
+
+<div id="yak4" class="section11">
+  <div class="filling">
+    <span class="header">Получите консультацию у специалиста</span>
+    <span class="under">Задайте вопросы прямо сейчас и получите <br>   ответ через несколько минут!</span> 
+    <div class="box">
+      <form method="POST" id="lastForm">
+
+        <input type="hidden" name="project_name" value="Стиралка"> 
+        <input type="hidden" name="admin_email" value="test@gmail.com"> 
+        <input type="hidden" name="form_subject" value="Сообщение"> 
+
+        <input type="text" name="username" placeholder="Ваше имя">
+        <input type="email" name="email" placeholder="Ваш email">
+        <textarea name="textarea" placeholder="Ваше сообщение"></textarea>
+        <input type="hidden" name="formData" value="Задать вопрос">
+        <input type="submit" class="button" id="submitt" value="Задать вопрос">
+        <label class="container">согласие на обработку персональных данных
+          <input type="checkbox" checked="checked">
+          <span class="checkmark"></span>
+        </label>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<div class="section12">
+ <div class="wrapper">
+  <div class="content">
+    <div class="menu">
+      <ul>
+        <li class="item1">Работаем с 8:00 до 21:00</li>
+        <li class="item2">Городской ремонт</li>
+        <li class="item3"><a href="tel:+79854150400">+7(985) 415-04-00</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+
+<script src="js/libs.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>

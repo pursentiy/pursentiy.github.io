@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Document</title>
   <link rel="stylesheet" href="css/main.css">
@@ -46,11 +46,17 @@
       </div>
 
       <div class="form">
-        <form method="POST">
+        <form id="form">
+
+          <input type="hidden" name="project_name" value="great-design"> 
+          <input type="hidden" name="admin_email" value="pursentiy@gmail.com"> 
+          <input type="hidden" name="form_subject" value="Сообщение"> 
+
           <input type="text" name="name" placeholder="Ваше имя">
-          <input type="email" name="_replyto" placeholder="Ваш email">
-          <textarea name="message" placeholder="Ваше сообщение"></textarea>
-          <input type="submit" value="ОТПРАВИТЬ">
+          <input type="email" name="email"  placeholder="Ваш email">
+          <textarea name="textarea" placeholder="Ваше сообщение"></textarea>
+          <input type="hidden" name="formData" value="Заявка с сайта great-design">
+          <input type="submit" id="submit" value="ОТПРАВИТЬ">
         </form>
       </div>
     </div>
@@ -69,16 +75,39 @@
     </div>
   </footer>
   <script src="js/libs.min.js"></script>
-   <script >
-     
-  $('.button_toggle').on('click',function(){
-    $('.main_navigation').toggleClass('open');
-    $('.close_menu').toggleClass('close');
-  });
+  <script >
+$(function () {
+    $('.button_toggle').on('click',function(){
+      $('.main_navigation').toggleClass('open');
+      $('.close_menu').toggleClass('close');
+    });
 
-  $('.trigger').on('click',function(){
-    $('.side_bar').toggleClass('closeBar');
+    $('.trigger').on('click',function(){
+      $('.side_bar').toggleClass('closeBar');
+    });
+
+      $("#form").submit(function () {
+    //Change 
+    var th = $(this);
+    $.ajax({
+      type: "POST",
+      url: "mail.php", //Change 
+      data: th.serialize()
+    }).done(function () {
+      alert("Спасибо за заявку!");
+      setTimeout(function () {
+        // Done Functions 
+        th.trigger("reset");
+      }, 1000);
+    });
+    return false;
   });
-   </script>
-</body>
-</html>
+    });
+  </script>
+  <!-- BEGIN JIVOSITE CODE {literal} -->
+  <script type='text/javascript'>
+    (function(){ var widget_id = 'N7MfdOhi9j';var d=document;var w=window;function l(){
+    var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
+    <!-- {/literal} END JIVOSITE CODE -->
+  </body>
+  </html>

@@ -139,7 +139,7 @@ footer {
   right: 21.5px !important; }
 
 .main_navigation {
-  display: block;
+  display: none;
   list-style: none;
   position: fixed;
   top: 0;
@@ -746,6 +746,10 @@ input[type="checkbox"] {
       width: 400px; } }
 
 @media screen and (max-width: 1203px) {
+.main_navigation {
+  display: block;
+}
+
   .main_menu ul li {
     font-size: 12px;
     padding: 0 40px; } }
