@@ -52,7 +52,12 @@
   <script src="libs/fotorama/fotorama.js"></script>
 
   <!-- Just don’t want to repeat this prefix in every img[src] -->
-
+<link rel="stylesheet" href="libs/animate/animate.css">
+<link rel="stylesheet" href="_header.css">
+<link rel="stylesheet" href="_main.css">
+<link rel="stylesheet" href="_media.css">
+<link rel="stylesheet" href="_fonts.css">
+<link rel="stylesheet" href="main.css">
 </head>
 
 <body style=" min-width:340px">
@@ -107,18 +112,6 @@
   </footer>
 
 
-  <script>
-    function loadCSS(hf) {
-      var ms=document.createElement("link");ms.rel="stylesheet";
-      ms.href=hf;document.getElementsByTagName("head")[0].appendChild(ms);
-    }
-    loadCSS("libs/animate/animate.css"); //Load Libs CSS: Animate CSS
-    loadCSS("_header.css");              //Header Styles (compress & paste to header after release)
-    loadCSS("_main.css");                //User Styles: Main
-    loadCSS("_media.css");               //User Styles: Media
-    loadCSS("_fonts.css");
-      loadCSS("main.css");
-  </script>
 
   <!-- Load CSS compiled without Bootstrap & Header styles (after release) -->
   <script>var ms=document.createElement("link");ms.rel="stylesheet";
