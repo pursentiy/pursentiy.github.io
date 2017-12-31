@@ -1,0 +1,370 @@
+
+
+
+
+
+
+/*СТРАНИЦА 2: Обо мне*/
+body{
+	margin:0px;
+	min-width: 320px;
+}
+
+header{
+	width:100%;
+	height:85px;
+	display: flex;
+	justify-content: space-between;
+}
+
+header .logo{
+	width:132px;
+	height:100%;
+	background:#2c2c2b;
+	margin-left:60px;
+}
+
+header .logo span{
+	display: block;
+	font: normal normal normal 22px/1.45em raleway,sans-serif;
+	color:white;
+	text-align: center;
+	cursor: pointer;
+	font-family: neue_l;
+	letter-spacing: 1.5px;
+}
+
+
+header .logo span.first_text{
+	padding-top: 12.5px;
+}
+
+header .menu{
+	margin-right:60px;
+	display: flex;
+}
+
+header .menu ul{
+	display:flex;
+	list-style: none;
+	align-items: center;
+}
+
+header .menu ul li{
+	cursor: pointer;
+
+	padding:0px 10px 0px 10px;
+	transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-webkit-transition: 0.5s ease;
+	-ms-transition: 0.5s ease;
+	font-family: neue_l;
+	letter-spacing: 1.5px;
+	font: normal normal normal 14px/1.45em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif;
+}
+
+header .menu ul li:hover{
+	color:#0091f9;
+}
+
+header .menu .social{
+	width:110px;
+	height:100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+header .menu [class^="social_"]{
+	width:20px;
+	height:20px;
+	cursor:pointer;
+}
+
+header .menu .social_vk{
+	background:url(img/vk.png) no-repeat center;
+	background-size: cover;
+}
+
+header .menu .social_fb{
+	background:url(img/facebook.png) no-repeat center;
+	background-size: cover;
+}
+
+header .menu .social_in{
+	background:url(img/instagram.png) no-repeat center;
+	background-size: cover;
+}
+
+.main_navigation{
+	display:none;
+}
+
+.wrapper{
+	display: none;
+}
+
+section.photo{
+	width:100%;
+	height:750px;
+	background:url("img/zakat.jpg");
+	background-size: cover;
+}
+
+.photo .description{
+	width:464px;
+	height: 531px;
+	background: white;
+	margin:0px 57%;
+	position: relative;
+	top:15%;
+}
+
+.photo .description .text{
+	display: block;
+	width:300px;
+	height:470px;
+	margin: 0px auto;
+
+	padding-top: 40px;
+	font: normal normal normal 14px/1.4em raleway,sans-serif;
+	color: rgba(94,93,93,1);
+}
+
+footer{
+	width:100%;
+	height:54px;
+	padding-left: 25%;
+}
+
+footer .footer{
+	display: block;
+	font: normal normal normal 15px/1.45em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif;
+	color: rgba(94,93,93,1);
+	padding-top:19.5px;
+
+
+}
+
+.hidden {
+	display: none;
+}
+
+
+
+
+
+
+
+/*СТРАНИЦА 3: Контакты*/
+
+section.background{
+	width:100%;
+	height:750px;
+	background:url("img/clouds.jpg");
+	background-size: cover;
+}
+
+.background .input{
+	width:464px;
+	height: 531px;
+	background: white;
+	margin:0px 57%;
+	position: relative;
+	top:15%;
+}
+
+.background .info{
+	display: inline-block;
+	width:250px;
+	height:340px;
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.1em;
+	color:#ACA9A9;
+	margin-left: 20px;
+}
+
+.background .input{
+
+	margin-right: 20px;
+}
+
+.background .input .under{
+	display: block;
+	width:80%;
+	margin:0px auto;
+	padding-top: 8px;
+}
+
+.background .input .under .bold{
+	font-weight: bold;
+}
+
+.background .input .text{
+	color: rgba(94,93,93,1);
+}
+
+.background .input h2{
+	color: rgba(94,93,93,1);
+}
+
+
+.background .input input{
+	margin:15px 0px 0px 0px;
+	border:1px solid #ACA9A9;
+	outline: none;
+	width:370px;
+	height:23px;
+	color: rgba(94,93,93,1);
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 12px 0px 12px 8px;
+}
+
+.background .input input:first-child{
+	margin-top:25px;
+}
+
+.background .input input[type="submit"]{
+	display:none;
+}
+
+.background .input label{
+
+	position:relative;
+	width:50px;
+	height:23px;
+	background: #0091f9;
+	color: white;
+	margin-top: 30px;
+	padding:7px 15px;
+	top: 28px;
+	left: 0px;
+	cursor:pointer ;
+}
+
+.background .input textarea{
+	padding-left: 5px;
+	width: 370px;
+	position: relative;
+	resize: none;
+	border:1px solid #ACA9A9;
+	outline: none;
+	margin-left: 10px;
+	top: 15px;
+	left: -10px;
+	color: rgba(94,93,93,1);
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*СТРАНИЦА 4: Галерея*/
+
+section.galery{
+	color: rgba(94,93,93,1);
+	font-size: 24px;
+	text-align: center;
+	font-weight: bold;
+	padding-top: 100px;
+	width:100%;
+	height:auto;
+	background: #FAFAFA;
+}
+
+.galery .albums{
+	width:100%;
+	padding-top: 70px;
+
+}
+
+.galery [class$="_album"]{
+	display: inline-block;
+	width:280px;
+	height:250px;
+	background: #ACA9A9;
+	color:white;
+	overflow: hidden;
+	cursor:pointer;
+	margin-bottom: 100px;
+}
+
+.galery .f_album {
+	background: url('img/suna.jpg') no-repeat center;
+	background-size: cover;
+}
+
+.galery .s_album {
+	background: url('img/grina.jpg') no-repeat center;
+	background-size: cover;
+}
+
+.galery .t_album {
+	background: url('img/smert.jpg') no-repeat center;
+	background-size: cover;
+}
+
+.galery .fo_album {
+	background: url('img/zuka.jpg') no-repeat center;
+	background-size: cover;
+}
+
+.galery .z_album {
+	background: url('img/z.jpg') no-repeat center;
+	background-size: cover;
+}
+
+.galery .x_album {
+	background: url('img/x.jpg') no-repeat center;
+	background-size: cover;
+}
+
+.galery .c_album {
+	background: url('img/c.jpg') no-repeat center;
+	background-size: cover;
+}
+
+.galery .v_album {
+	background: url('img/i.jpg') no-repeat center;
+	background-size: cover;
+}
+
+.galery [class$="_album"] .info{
+	padding-top: 20px;
+	width:100%;
+	height:100px;
+	background:#0091f9; 
+	margin-top: 50%;
+	transform: translateY(200%);
+	transition: 0.5s ease-in;
+	text-align: center;
+}
+
+.galery [class$="_album"]:hover .info{
+	transform: translateY(10%);
+}
+
+.galery .albums .description{
+	font-weight: normal;
+	font-size: 20px;
+	text-align: center;
+}
+
+.galery .albums .container{
+	width: 100%;
+}
+
+.wrapAlbum{
+	width: 100%;
+	height: 100%;
+}
+
