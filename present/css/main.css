@@ -1531,8 +1531,12 @@ header .menu {
 
 header {
     height: 145px;
-    flex-direction: column;
-    justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 }
 
 header .logo {
@@ -1563,6 +1567,8 @@ height:50px;
     border-radius: 3px;
         right: 22px;
     top: 23px;
+    -webkit-transition:0.3s ease;
+    -o-transition:0.3s ease;
     transition:0.3s ease;
 }
 
@@ -1584,22 +1590,37 @@ height:50px;
     width: 45%;
     height: 100%;
     text-align: center;
-    transform: translateX(-110%); 
-    transition: transform 0.6s ease;
+    -webkit-transform: translateX(-110%);
+        -ms-transform: translateX(-110%);
+            transform: translateX(-110%); 
+    -webkit-transition: -webkit-transform 0.6s ease; 
+    transition: -webkit-transform 0.6s ease; 
+    -o-transition: transform 0.6s ease; 
+    transition: transform 0.6s ease; 
+    transition: transform 0.6s ease, -webkit-transform 0.6s ease;
     z-index: 100;
     scroll-behavior: 
   }
 
 
   .scroll{
-    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+            transform: translateX(0%);
   }
 
 header .main_navigation ul {
   margin-top:21.5px;
+  display:-webkit-box;
+  display:-ms-flexbox;
   display:flex;
-  justify-content: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-padding-start: 0px;
 }
 
@@ -1610,6 +1631,8 @@ header .main_navigation ul li{
   color:white;
   padding:50px 35px 0px 35px;
   cursor:pointer;
+  -webkit-transition: 0.4s ease;
+  -o-transition: 0.4s ease;
   transition: 0.4s ease;
 }
 
@@ -1636,6 +1659,8 @@ header .main_navigation ul li a{
     height: 2px;
     background: black;
     margin-top:12px;
+    -webkit-transition: all 0.1s;
+    -o-transition: all 0.1s;
     transition: all 0.1s;
     background: white;
   }
@@ -1677,6 +1702,8 @@ header .main_navigation ul li a{
     width: 40px;
     height: 2px;
     background: black;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
     transition: all 0.3s;
         background: white;
   }
@@ -1724,8 +1751,12 @@ header .menu {
 
 header {
     height: 145px;
-    flex-direction: column;
-    justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 }
 
 header .logo {
@@ -1756,6 +1787,8 @@ height:50px;
     border-radius: 3px;
         right: 22px;
     top: 23px;
+    -webkit-transition:0.3s ease;
+    -o-transition:0.3s ease;
     transition:0.3s ease;
 }
 
@@ -1777,22 +1810,37 @@ height:50px;
     width: 45%;
     height: 100%;
     text-align: center;
-    transform: translateX(-110%); 
-    transition: transform 0.6s ease;
+    -webkit-transform: translateX(-110%);
+        -ms-transform: translateX(-110%);
+            transform: translateX(-110%); 
+    -webkit-transition: -webkit-transform 0.6s ease; 
+    transition: -webkit-transform 0.6s ease; 
+    -o-transition: transform 0.6s ease; 
+    transition: transform 0.6s ease; 
+    transition: transform 0.6s ease, -webkit-transform 0.6s ease;
     z-index: 100;
     scroll-behavior: 
   }
 
 
   .scroll{
-    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+            transform: translateX(0%);
   }
 
 header .main_navigation ul {
   margin-top:21.5px;
+  display:-webkit-box;
+  display:-ms-flexbox;
   display:flex;
-  justify-content: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-padding-start: 0px;
 }
 
@@ -1803,6 +1851,8 @@ header .main_navigation ul li{
   color:white;
   padding:50px 35px 0px 35px;
   cursor:pointer;
+  -webkit-transition: 0.4s ease;
+  -o-transition: 0.4s ease;
   transition: 0.4s ease;
 }
 
@@ -1829,6 +1879,8 @@ header .main_navigation ul li a{
     height: 2px;
     background: black;
     margin-top:12px;
+    -webkit-transition: all 0.1s;
+    -o-transition: all 0.1s;
     transition: all 0.1s;
     background: white;
   }
@@ -1870,6 +1922,8 @@ header .main_navigation ul li a{
     width: 40px;
     height: 2px;
     background: black;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
     transition: all 0.3s;
         background: white;
   }
