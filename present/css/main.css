@@ -1703,8 +1703,19 @@ header .menu {
     margin-right: 4px;
 }
 }
+@media screen and (max-width: 1163px){
+.photo .description{
+  display: block;
+  margin:  0 auto;
+  }
 
-@media screen and (max-width: 763px){
+  .background .input{
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1063px){
 
 header {
     height: 145px;
@@ -1879,4 +1890,28 @@ header .main_navigation ul li a{
   a{
   text-decoration: none;
   color: inherit;
+}
+
+@media screen and (max-width: 563px){
+
+  .main_navigation{
+    width: 60%;
+  }
+.photo .description{
+  width: 300px
+  }
+.photo .description .text{
+  padding: 50px 30px;
+}
+.background .input{
+  width: 300px
+}
+
+.background .input input{
+  width: 230px
+}
+
+.background .input textarea{
+  width: 230px
+}
 }
