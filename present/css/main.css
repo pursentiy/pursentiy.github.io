@@ -991,11 +991,18 @@ button.gamma-btn-sspause:before {
 }
 
 .gamma-nav span.gamma-prev:before {
-  content: '\e75d';
+  content: ' ';
+  width: 20px;
+  height: 32px;
+  background: url('../img/arrowL.png') no-repeat center;
 }
 
 .gamma-nav span.gamma-next:before {
-  content: '\e75e';
+  content: ' ';
+  width: 20px;
+  height: 32px;
+  margin-left: -10px;
+  background: url('../img/arrowR.png') no-repeat 50% 50%;
 }
 
 .gamma-img-fly {

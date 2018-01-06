@@ -1,0 +1,24 @@
+a {
+  list-style: none;
+  text-decoration: none; }
+
+body {
+  margin: 0;
+  font-size: 12px;
+  font-family: Helvetica; }
+
+#particles-js {
+  position: relative;
+  background: -webkit-gradient(linear, right top, left top, from(#00051E), to(#041A55));
+  background: -webkit-linear-gradient(right, #00051E, #041A55);
+  background: -o-linear-gradient(right, #00051E, #041A55);
+  background: linear-gradient(to left, #00051E, #041A55); }
+
+.mountain {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100VH;
+  background: url(../img/mountain.png) no-repeat center;
+  -webkit-background-size: cover;
+          background-size: cover; }
