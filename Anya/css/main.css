@@ -5,20 +5,62 @@ a {
 body {
   margin: 0;
   font-size: 12px;
-  font-family: Helvetica; }
+  font-family: Helvetica;
+  min-width: 320px; }
 
 #particles-js {
   position: relative;
-  background: -webkit-gradient(linear, right top, left top, from(#00051E), to(#041A55));
-  background: -webkit-linear-gradient(right, #00051E, #041A55);
-  background: -o-linear-gradient(right, #00051E, #041A55);
-  background: linear-gradient(to left, #00051E, #041A55); }
+  background: -webkit-linear-gradient(135deg, #8AC1EB, #A8F7EA);
+  background: -o-linear-gradient(135deg, #8AC1EB, #A8F7EA);
+  background: linear-gradient(-45deg, #8AC1EB, #A8F7EA);
+  -webkit-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease; }
+  #particles-js:hover {
+    background: -webkit-gradient(linear, right top, left top, from(#00051E), to(#041A55));
+    background: -webkit-linear-gradient(right, #00051E, #041A55);
+    background: -o-linear-gradient(right, #00051E, #041A55);
+    background: linear-gradient(to left, #00051E, #041A55); }
 
-.mountain {
+.base, #mountainMorning, #mountainDay, #mountainSunset, #mountainNight {
   position: absolute;
   z-index: 1;
   width: 100%;
   height: 100VH;
-  background: url(../img/mountain.png) no-repeat center;
+  pointer-events: none;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
+
+#mountainMorning {
+  background: url(../img/mountainMorning.png) no-repeat center;
   -webkit-background-size: cover;
-          background-size: cover; }
+          background-size: cover;
+  opacity: 1; }
+
+#mountainDay {
+  background: url(../img/mountainDay.png) no-repeat center;
+  -webkit-background-size: cover;
+          background-size: cover;
+  opacity: 0; }
+
+#mountainSunset {
+  background: url(../img/mountainSunset.png) no-repeat center;
+  -webkit-background-size: cover;
+          background-size: cover;
+  opacity: 0; }
+
+#mountainNight {
+  background: url(../img/mountainNight.png) no-repeat center;
+  -webkit-background-size: cover;
+          background-size: cover;
+  opacity: 0; }
+
+.footer {
+  position: relative;
+  z-index: 100;
+  width: 100%;
+  height: 90px;
+  background: rgba(4, 22, 62, 0.5);
+  position: absolute;
+  bottom: 0; }

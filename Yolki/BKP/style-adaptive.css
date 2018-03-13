@@ -1,0 +1,475 @@
+@media only screen and (max-width : 768px) {
+	
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+	.w-center {width: 768px;}
+	#promo .main .title {
+		font-size: 50px;
+		line-height: 54px;
+		padding-top: 8px;
+	}
+	#promo .main .title br {
+		display: none;
+	}
+	#promo .main .subtitle {
+		padding-top: 30px;
+	}
+	#promo .akciya .left {
+		padding-left: 35px;
+		width: 550px;
+	}
+	#promo .akciya .left .txt-1 {
+		padding-top: 0px;
+		position: relative;
+		top: -23px;
+		font-size: 50px;
+		line-height: 50px;
+	}
+	#promo .akciya .left .txt-2 {
+		margin-left: 0px;
+		padding-top: 0px;
+		position: relative;
+		top: 33px;
+		left: -140px;
+		font-size: 20px;
+		line-height: 23px;
+	}
+	#promo .akciya .left .days {
+		position: relative;
+		top: -57px;
+	}
+	#promo .akciya .gift {
+		margin-right: -445px;
+	}
+	#details .details .detail-item:before {
+		display: none;
+	}
+	#skidka .title-block {
+		padding-top: 85px;
+	}
+	#skidka .days {
+		margin-top: 50px;
+	}
+	#fir-trees .tree-item, #gallery .img, #benefits .benefit-item {
+		margin-left: 14px;
+		line-height: 14px;
+	}
+	#accessories .wrap ul.tabs li > span {
+		font-size: 18px;
+		line-height: 18px;
+	}	
+	#fairytale .w-center > div > div {
+		font-size: 54px;
+		line-height: 54px;
+		text-align: center !important;
+		text-shadow: 0px 4px 20px rgba(0,0,0,0.4);
+	}
+	#opt{
+		height: auto;
+		background-size: cover;
+		padding-bottom: 70px;
+		padding-top: 100px;
+	}
+	#opt .w-center > div {
+		display: block;
+	}
+	#opt .title-block {
+		font-size: 40px;
+		line-height: 44px;
+		text-align: center !important;
+	}
+	#opt .subtitle {
+		font-size: 21px;
+		line-height: 27px;
+		text-align: center;
+	}
+	.red-form.inline {
+		width: auto;
+		text-align: center !important;
+		padding-top: 50px;
+	}
+	.red-form.inline .subzag {
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 16px;
+	}
+	.red-form.inline .inps {
+		margin-top: 20px;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	.red-form.inline .submit-button {
+		margin-top: 20px;
+		margin-left: 0px;
+	}	
+	#benefits .benefit-item {
+		left: 12px;
+		position: relative;
+	}
+	#questions .left {
+		width: 390px;
+	}
+	#questions .title-block {
+		font-size: 37px;
+		line-height: 42px;
+	}
+	#questions .title-block br {
+		display: none;
+	}
+	#footer .left {
+		width: 180px;
+	}
+	#footer .center {
+		width: 260px;
+		margin-left: 68px;
+	}
+	#cart .left {
+		display: none;
+	}
+	.slideCart.slideUp {
+		left: 0%;
+		margin-left: 0px;
+	}
+}
+
+@media (min-width: 320px) and (max-width: 768px){
+	#snowfall-1, #snowfall-2, #snowfall-3, #snowfall-4, #snowfall-5, #snowfall-6{
+		display: none;
+	}
+	.w-center{
+		width: 100% !important;
+	}
+	#promo .top{
+		text-align: center;
+		height: auto;
+	}
+	#promo .top .left{
+		padding: 0;
+		width: 100%;
+	}
+	#promo .top .left .logo{
+    	font-size: 25px;
+    	line-height: 28px;
+	}
+	#promo .top .right {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    float: none;
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+    padding: 15px 0px 0px 0px;
+    font-size: 0px;
+	}
+	#menu{
+		height: auto;
+	}
+	#menu ul{
+		text-align: center;
+	}
+	#menu ul li a{
+		line-height: 32px;
+	}
+	#promo .main {
+    display: block;
+    margin: 30px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    height: auto;
+    text-align: center;
+	}
+	#promo .main .title{
+		    padding: 5px 5px 0px 5px;
+    text-align: center;
+    font-size: 35px;
+    line-height: 53px;
+	}
+	#promo .main .subtitle{
+		text-align: center;
+		padding: 0 5px;
+	}
+	#promo .akciya .left{
+		    max-width: 760px;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+	}
+#promo .main .button-yellow.gather {
+    max-width: 430px;
+    width: 100%;
+    text-align: center;
+    float: none;
+    display: inline-block;
+}
+	#promo .akciya{
+		position: relative;
+	}
+	#promo .akciya .left .days {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0px 0px 0px 0px;
+    padding: 1px 0px 0px 0px;
+    font-size: 0px;
+    float: right;
+    width: 100%;
+    text-align: center;
+}
+#promo .akciya .left .days > div {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0px 0px 0px 17px;
+       padding: 0px 0px 30px 0px;
+    width: 90%;
+}
+#promo .akciya .left .days .l{
+	float: left;
+}
+#promo .akciya .left .days .n{
+	float: right;
+}
+#details .privilege-items{
+	padding: 0;
+}
+#details .details{
+	padding-top: 30px;
+}
+#details .details .detail-items{
+	height: auto;
+}
+#details .details{
+	background: transparent;
+}
+#details .details .detail-item{
+	position: relative;
+}
+#detail-item{
+	width: 100% !important;	
+	position: relative;
+}
+#details .details .detail-item.right,
+#details .details .detail-item.left{
+	padding: 0;
+}
+#details .details .detail-item#detail-item-1 {
+    width: 100%;
+    top: 0;
+    text-align: center;
+     height: auto;
+    padding: 20px 0;
+    border-bottom: 1px solid;
+}
+#details .details .detail-item#detail-item-2,
+#details .details .detail-item#detail-item-3,
+#details .details .detail-item#detail-item-4,
+#details .details .detail-item#detail-item-5,
+#details .details .detail-item#detail-item-6,
+#details .details .detail-item#detail-item-7,
+#details .details .detail-item#detail-item-8{
+	    width: 100%;
+    top: 0;
+    text-align: center;
+    border-bottom: 1px solid;
+    height: auto;
+    padding: 20px 0;
+
+}
+#skidka .days {
+    display: block;
+    margin: 0 auto;
+    margin-top: 72px;
+    padding: 0px 0px 0px 0px;
+    font-size: 0px;
+    max-width: 650px;
+    width: 100%;
+    text-align: center;
+}
+#skidka{
+	height: auto;
+}
+
+#skidka .days > div.left{
+	width: 100%;
+	max-width: 343px;
+	margin-bottom:  10px;
+}
+#skidka .days > div.right{
+	width: 100%;
+	float: none;
+	    max-width: 340px;margin: 0;
+}
+#opt {
+    width: 100%;
+    max-width: 1920px;
+    height: auto;
+    padding: 15px 0px 0px 0px;
+    margin: 0 auto;
+    margin-top: -2px;
+}
+#opt .w-center > div{
+	height: auto;
+}
+#opt .w-center > div > div {
+    display: inline;
+    vertical-align: middle;
+    height: 100%;
+}
+.red-form.inline {
+    padding: 10px;
+    max-width: 1020px;
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 45px;
+    text-align: left;
+    font-size: 0px;
+    background: #b91825;
+}
+.red-form.inline form{
+	text-align: center;
+}
+.red-form.inline input{
+	margin-left: 0 !important;
+	margin-top: 15px !important;
+}
+#questions {
+    width: 100%;
+    max-width: 1920px;
+    height: auto;
+    padding: 20px 0;
+}
+#questions .left {
+    max-width: 570px;
+    width: 100%;
+    padding: 10px;
+    font-size: 40px;
+}
+#questions .w-center, #questions .left, #questions .right {
+    height: inherit;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    float: none;
+}
+#questions .right{
+	max-width: 370px;
+	width: 100%;
+}
+#questions .button-border{
+	display: inline-block;
+	float: none;
+}
+#opt .title-block {
+    line-height: 35px;
+    font-size: 29px;
+    padding: 10px;
+    text-align: center;
+}
+#opt .subtitle {
+    display: block;
+    padding: 0px 0px 0px 0px;
+    margin: 14px 0px 0px 0px;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+}
+#fairytale .w-center > div > div{
+	text-align: center;
+}
+#cart .left,
+#cart .right{
+	max-width: 470px;
+	width: 100%;
+}
+#cart{
+	height: auto;
+}
+.slideCart{
+	top: -40px;
+}
+.arcticmodal-container_i2{
+	padding: 0;
+}
+#questions .action{
+	top: 10px;
+	float: none;
+}
+.akciya .action{
+	top: 0;
+}
+#promo{
+	background-size: cover;
+	height: auto;
+}
+#footer{
+	text-align: center;
+	height: 350px;
+}
+#footer .center{
+	margin: 0;
+	padding: 10px 0 0 0;
+}
+#footer .right{
+	float: none;
+	padding: 10px 0 0 0;
+	text-align: center;
+}
+#footer .left{
+	padding: 0;
+}
+.red-form{
+	max-width: 370px;
+	width: 100%;
+	padding: 10px;
+}
+#benefits .benefit-item .icon{
+	max-width: 105px;
+	width: 100%;
+}
+#benefits .benefit-item{
+    max-width: 370px;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+#benefits .benefit-items{
+	margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
