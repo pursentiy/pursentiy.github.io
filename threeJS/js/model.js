@@ -28,6 +28,7 @@ camera.position.y = 0;
 var update = function(){
   cube.rotation.x += 0.001;
   cube.rotation.y += 0.001;
+  cube.rotation.z += 2;
 };
 
 controls = new THREE.OrbitControls(camera, renderer.domElement);
