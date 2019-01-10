@@ -1,0 +1,463 @@
+$black: #000000
+$purple: #615078
+$pink: #FCC6C6
+
+.h
+  background: $pink
+  font-family: Nautilus
+  font-size: 59px
+  display: inline
+
+
+input
+  &::-webkit-input-placeholder, &:-ms-input-placeholder, &::-ms-input-placeholder, &::placeholder
+    color: #fff
+    opacity: 1
+    text-align: center
+
+
+body
+  margin: 0
+  font-size: 16px
+  font-family: CenturyGothic
+
+@font-face
+    font-family: "CenturyGothic"
+    src : url("../fonts/CenturyGothic.ttf")
+
+@font-face
+    font-family: "Nautilus"
+    src : url("../fonts/ofont.ru_Nautilus Pompilius.ttf")
+
+a
+  color: $black
+  transition: 0.7s ease
+  &:hover
+    cursor: pointer
+  &:visited, &:link, &:hover, &:active
+    text-decoration: none
+
+.main_navigation
+  display: none
+
+.button_toggle
+  display: none
+
+
+/*******************************************************
+  FIRST PAGE
+  ***************************************************/
+
+.pannel
+  margin-top: 50px
+  .rightSide .input
+    width: 540px
+    height: 340px
+    font-size: 20px
+    color: #fff
+    &::placeholder
+      color: #ffffff
+      text-align: center
+      font-size: 16px
+  .input
+    h3
+      font-family: Nautilus
+      text-align: center
+      font-size: 50px 
+    form
+      display: flex
+      flex-direction: column
+      align-items: center
+    input
+      margin: 5px 0
+      box-shadow: inset 0 -1px 0 0 #fff
+      outline: none !important
+      width: 230px
+      padding: 10px 0
+      height: 23px
+      color: #fff
+      font-size: 20px
+      text-transform: uppercase
+      font-family: CenturyGothic
+      background: transparent
+      border-width: none
+      border-style: none
+      border-color: none
+      border-image: none
+    .btn
+      position: relative
+      width: 138px
+      height: 37px
+      background: #fff
+      color: $purple
+      margin-top: 55px
+      padding: 5px 15px
+      top: 0px
+      left: 0px
+      font-size: 20px
+      font-family: CenturyGothic
+      cursor: pointer
+    p
+      margin: 0
+      margin-top: 9px
+    textarea
+      padding: 9.5px 1px
+      width: 230px
+      box-shadow: inset 0 -1px 0 0 #fff
+      position: relative
+      resize: none
+      outline: none
+      margin-left: 10px
+      top: 15px
+      font-size: 20px
+      left: -6px
+      border: none
+      background: transparent
+      color: #ffffff
+      text-transform: uppercase
+      font-family: CenturyGothic
+
+.logo
+  background: url(../img/logo.png) no-repeat center
+  background-size: contain
+  width: 219.5px
+  height: 137px
+  position: absolute
+  top: 50px
+  left: 50px
+
+.social
+  width: 165px
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  .item
+    width: 30px
+    height: 30px
+    margin: 20px 0
+  .tw
+    background: url(../img/tw.png) no-repeat 50% 0%
+    background-size: contain 
+  .fb
+    background: url(../img/fb.png) no-repeat 50% 0%
+    background-size: contain 
+  .inst
+    background: url(../img/in.png) no-repeat 50% 0%
+    background-size: contain 
+  .yout
+    background: url(../img/you.png) no-repeat 50% 0%
+    background-size: contain 
+
+.pannel
+  position: absolute
+  z-index: 10
+  right: 0
+  top: 50%
+  transform: translateY(-50%)
+  height: 620px
+  width: 1000px
+  background: $purple
+  transition:  .7s cubic-bezier(.77,0,.175,1), opacity 1.7s linear, .7s cubic-bezier(.77,0,.175,1)
+  cursor: pointer
+  display: flex
+  .leftSide
+    height: 620px
+    width: 90px
+    background: $purple
+  .rightSide
+    margin: 0 auto
+    padding-right: 45px
+
+.wrapMain
+  width: 1400px
+  margin-left: 12%
+
+header 
+  width: 1400px
+  margin-left: 12%
+  display: flex
+  align-items: center
+  position: relative
+  justify-content: flex-end
+  ul
+    display: flex
+    left: 35px
+    li
+      padding: 23px 35px 23px 35px
+      margin: 45px 0
+      font-size: 17.5px
+      list-style: none
+      text-transform: uppercase
+      transition: .3s ease-out
+      cursor: pointer
+      color: $purple
+      &:hover
+        box-shadow: inset 0 -1px 0 0 $purple
+      &:last-child
+        padding: 23px 0 23px 35px
+
+.carousel
+  width: 100%
+  margin: 0 auto
+  position: relative
+  .goldLine
+    width: 1150px
+    height: 708px
+    position: absolute
+  .lineGold1
+    background: url(../img/goldAbove.png) no-repeat center
+    background-size: cover
+    z-index: 4
+    top: -38%
+    left: -24%
+  .lineGold2
+    background: url(../img/goldBeneath.png) no-repeat center
+    background-size: cover
+    top: -21%
+    left: -28%
+  .label
+    font-size: 59px
+    position: absolute
+    display: flex
+    flex-direction: column
+    top: 50%
+    right: -10%
+    z-index: 4
+    transform: translateY(-50%)
+    span
+      background: $pink
+      font-family: Nautilus
+      &:first-child
+        margin-left: 30px 
+
+
+  .item
+    .wrap
+      margin-left: 0
+      .image
+        background: #3c166e8c
+        text-align: center
+        font-size: 10em
+
+.owl-theme 
+  .owl-dots
+    .owl-dot span
+      width: 22px
+      height: 22px
+      background: transparent
+      border: 4px solid $purple
+    .owl-dot.active span
+      background: $purple
+  .owl-nav.disabled+.owl-dots
+    margin-top: -85px
+    position: relative
+
+#fp-nav
+  position: absolute
+  left: 0px
+  right: 0
+  width: 165px
+  bottom: 0px
+  height: 80px
+  margin-top: 0 !important
+  display: flex
+  justify-content: center
+  ul
+    width: 30px
+    border: 4px solid $purple
+    height: 70px
+    border-radius: 20px
+    li
+      margin-left: 8px
+      a.active 
+        span
+          background: $purple
+
+.second .about
+  display: flex
+  flex-direction: column
+  justify-content: center
+  padding-top: 140px
+  h2
+    margin: 0 auto
+  .wrap 
+    margin-top: 60px
+    display: flex
+    justify-content: center
+    .photo
+      width: 730px
+      height: 550px
+      margin-right: 145px
+      background: $pink
+    .header
+      width: 600px
+      margin: 85px 0
+      font-size: 65px
+    p
+      width: 500px
+      font-size: 25px
+
+.portfolio
+  display: flex
+  flex-direction: column
+  padding-top: 174px
+  .wrapper-owl-portfolio
+    margin-top: 100px
+    width: 100%
+    height: 650px
+
+@media screen and (max-width: 1883px)
+
+  .carousel
+    .wrapper-owl
+      width: 70%
+      margin: 0 auto
+
+@media screen and (max-width: 1400px)
+  .wrapMain
+    width: 100%
+
+@media screen and (max-width: 763px)
+  .wrapMain
+    margin-left: 0
+
+  .logo
+    position: initial
+    margin: 0 auto
+    padding: 20px 0
+    z-index: 100
+
+  .social
+    position: initial
+    flex-direction: row
+    transform: translateY(0)
+    align-items: center
+    margin: 0 auto
+    .item
+      padding: 0 20px
+      margin: 20px
+  
+  header
+    ul
+      display: none
+    
+  .pannel
+    position: initial
+    width: 100%
+    height: 460px
+    transform: translateY(0)
+    .leftSide
+      height: 360px 
+
+
+  .carousel
+    display: flex
+    flex-direction: column
+    .goldenLine
+      width: 609px
+      height: 508px
+    .label
+      position: initial
+      transform: translateY(0)
+      font-size: 25px
+      display: inline
+      margin: 20px auto
+      span
+        margin-left: 0 !important
+
+  .main_navigation
+    display: block
+    list-style: none
+    position: fixed
+    top: 0
+    left: 0
+    background: rgba(96, 80, 120, 0.68)
+    width: 45%
+    height: 100%
+    text-align: center
+    transform: translateX(-110%)
+    transition: transform 0.6s ease
+    z-index: 100
+  .scroll
+    transform: translateX(0%)
+  .main_navigation ul
+    margin-top: 21.5px
+    display: flex
+    justify-content: center
+    flex-direction: column
+    -webkit-padding-start: 0px
+    li
+      font-size: 15px
+      font-family: CenturyGothic
+      list-style: none
+      color: white
+      padding: 50px 35px 0px 35px
+      cursor: pointer
+      transition: 0.4s ease
+      a
+        color: white
+        letter-spacing: 1.5px
+        text-transform: uppercase
+  .button_toggle
+    display: block
+    position: fixed
+    width: 40px
+    height: 36px
+    right: 30px
+    top: 35px
+    background: transparent
+    z-index: 321
+    span
+      position: absolute
+      width: 100%
+      height: 2px
+      background: black
+      margin-top: 12px
+      transition: all 0.1s
+      background: white
+  input[type="checkbox"]
+    position: absolute
+    width: 100%
+    height: 100%
+    z-index: 1
+    opacity: 0
+    cursor: pointer
+    margin-top: 0px
+    &:checked + span
+      &:after
+        transform: rotate(-45deg) translate(-4px, 16px)
+        -o-transform: rotate(-45deg) translate(-4px, 16px) !important
+        -moz-transform: rotate(-45deg) translate(-4px, 16px) !important
+        -ms-transform: rotate(-45deg) translate(-4px, 16px) !important
+        -webkit-transform: rotate(-45deg) translate(-4px, 16px) !important
+      &:before
+        transform: rotate(45deg) translate(-1px, -12px)
+        -o-transform: rotate(45deg) translate(-1px, -12px) !important
+        -moz-transform: rotate(45deg) translate(-1px, -12px) !important
+        -ms-transform: rotate(45deg) translate(-1px, -12px) !important
+        -webkit-transform: rotate(45deg) translate(-1px, -12px) !important
+      background: transparent
+  .button_toggle span
+    &:before, &:after
+      content: ""
+      position: absolute
+      width: 40px
+      height: 2px
+      background: black
+      transition: all 0.3s
+      background: white
+    &:before
+      top: 12px
+    &:after
+      top: -12px
+  
+  #fp-nav
+    top: 90%
+
+@media screen and (orientation: landscape)
+  .main_navigation ul li
+    padding: 30px 35px 0px 35px !important
