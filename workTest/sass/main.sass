@@ -7,6 +7,7 @@ $pink: #FCC6C6
   font-family: Nautilus
   font-size: 59px
   display: inline
+  margin: 0 auto
 
 
 input
@@ -317,42 +318,60 @@ header
       width: 70%
       margin: 0 auto
 
+
 @media screen and (max-width: 1400px)
   .wrapMain
     width: 100%
 
-@media screen and (max-width: 763px)
-  .wrapMain
-    margin-left: 0
-
-  .logo
-    position: initial
-    margin: 0 auto
-    padding: 20px 0
-    z-index: 100
-
-  .social
-    position: initial
-    flex-direction: row
-    transform: translateY(0)
-    align-items: center
-    margin: 0 auto
-    .item
-      padding: 0 20px
-      margin: 20px
   
+@media screen and (max-width: 1300px)
+  
+  .second
+    .about
+      padding-top: 100px
+      .wrap
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        .photo
+          margin: 0 auto
+        p
+          width: 70%
+          margin: 50px auto
+          text-align: center
+        .header
+          width: auto
+          font-size: 50px
+          margin: 0 auto
+          text-align: center
+        .photo
+          height: 300px
+
+@media screen and (max-width: 1025px)
+  .goldLine
+    display: none
+
   header
     ul
       display: none
     
   .pannel
-    position: initial
-    width: 100%
+    width: 70%
     height: 460px
-    transform: translateY(0)
+    right: 0
     .leftSide
-      height: 360px 
+      height: 460px
+      width: 40px
+    .rightSide
+      padding-right: 0
+      .input
+        width: 300px
 
+  .owl-theme .owl-dots .owl-dot span 
+    width: 15px
+    height: 15px
+    background: transparent
+    border: 2.5px solid #615078
 
   .carousel
     display: flex
@@ -458,6 +477,90 @@ header
   #fp-nav
     top: 90%
 
+  .wrapMain
+    margin-left: 0
+
+  .second
+    .about
+      padding-top: 50px
+      margin-top: 20px
+      .h
+        position: initial
+        transform: translateY(0)
+        font-size: 25px
+        display: inline
+      .wrap
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        .photo
+          margin: 0 auto
+          height: 200px
+          width: 70%
+        p
+          width: 70%
+          margin: 25px auto
+          font-size: 25px
+          text-align: center
+        .header
+          width: auto
+          font-size: 35px
+          margin: 0 auto
+          text-align: center
+        .photo
+          height: 300px
+
+  .logo
+    position: initial
+    margin: 0 auto
+    padding: 20px 0
+    z-index: 100
+
+  .social
+    position: initial
+    flex-direction: row
+    transform: translateY(0)
+    align-items: center
+    margin: 0 auto
+    .item
+      padding: 0 20px
+      margin: 20px
+
+  .second 
+    .about
+      .wrap
+        flex-direction: column  
+        .header
+          width: 90%
+          margin: 0 auto
+        .wrap
+          height: auto
+          width: 90%
+          margin: 0 auto
+
+  .third
+    .portfolio
+      padding-top: 50px
+      margin-top: 20px
+
+
 @media screen and (orientation: landscape)
   .main_navigation ul li
     padding: 30px 35px 0px 35px !important
+
+@media screen and (max-width: 553px)
+  .carousel 
+    .label
+      font-size: 16px
+    .wrapper-owl
+      width: 98%
+
+  .pannel
+    .leftSide
+      width: 25px
+
+  .second 
+    .about
+     .wrap p
+        width: 90%
+        margin: 0 auto
