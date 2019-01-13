@@ -51,8 +51,8 @@ a
 
 .pannel
   margin-top: 50px
+  box-shadow: -12px 10px 49px -20px rgba(0,0,0,0.62)
   .rightSide .input
-    width: 540px
     height: 340px
     font-size: 20px
     color: #fff
@@ -71,7 +71,7 @@ a
       align-items: center
     input
       margin: 5px 0
-      box-shadow: inset 0 -1px 0 0 #fff
+      box-shadow: inset 0 -1px 0 0 $purple
       outline: none !important
       width: 230px
       padding: 10px 0
@@ -101,22 +101,6 @@ a
     p
       margin: 0
       margin-top: 9px
-    textarea
-      padding: 9.5px 1px
-      width: 230px
-      box-shadow: inset 0 -1px 0 0 #fff
-      position: relative
-      resize: none
-      outline: none
-      margin-left: 10px
-      top: 15px
-      font-size: 20px
-      left: -6px
-      border: none
-      background: transparent
-      color: #ffffff
-      text-transform: uppercase
-      font-family: CenturyGothic
 
 .logo
   background: url(../img/logo.png) no-repeat center
@@ -159,27 +143,60 @@ a
   right: 0
   top: 50%
   transform: translateY(-50%)
-  height: 620px
-  width: 1000px
-  background: $purple
+  height: 500px
+  width: 400px
   transition:  .7s cubic-bezier(.77,0,.175,1), opacity 1.7s linear, .7s cubic-bezier(.77,0,.175,1)
   cursor: pointer
+  margin-top: 0
   display: flex
+  .wrap
+    width: 100%
+    height: 100%
   .leftSide
-    height: 620px
+    position: absolute
+    height: 500px
     width: 90px
     background: $purple
+    left: -90px
+    z-index: -2
+    top: 0
+    transition:  .7s cubic-bezier(.77,0,.175,1), opacity 1.7s linear, .7s cubic-bezier(.77,0,.175,1)
   .rightSide
     margin: 0 auto
-    padding-right: 45px
+    width: 100%
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    background: url(../img/pannelBackground1.jpg) no-repeat center
+    background-size: cover
+    position: relative
+    z-index: 1
+    .strip
+      width: 100%
+      height: 35VH
+      background: url(../img/strips3.png) no-repeat center
+      background-size: contain
+      position: absolute
+      bottom: 0
+      left: 0
+    h1
+      margin-block-start: 0
+      text-align: center
+      font-family: Nautilus
+      font-size: 34px
+      color: $purple
 
 .wrapMain
   width: 1400px
   margin-left: 12%
 
+.pannelAppear
+  transform: translateX(90px)
+
 header 
   width: 1400px
-  margin-left: 12%
   display: flex
   align-items: center
   position: relative
@@ -187,6 +204,7 @@ header
   ul
     display: flex
     left: 35px
+    margin-block-end: 0
     li
       padding: 23px 35px 23px 35px
       margin: 45px 0
@@ -205,6 +223,9 @@ header
   width: 100%
   margin: 0 auto
   position: relative
+  .wrapper-owl
+    width: 85%
+    margin: 0 auto
   .goldLine
     width: 1150px
     height: 708px
@@ -315,13 +336,40 @@ header
 
   .carousel
     .wrapper-owl
-      width: 70%
-      margin: 0 auto
+      width: 85%
 
+@media screen and (max-width: 1633px)
+
+  .wrapMain
+    margin-left: 8%
+
+  .carousel
+    .wrapper-owl
+      width: 75%
+
+  .label
+    font-size: 50px !important
+
+@media screen and (max-width: 1553px)
+
+  .wrapMain
+    margin-left: 6%
+
+  .carousel
+    .wrapper-owl
+      width: 65%
 
 @media screen and (max-width: 1400px)
   .wrapMain
     width: 100%
+    margin-left: 5%
+
+  .carousel
+    .wrapper-owl
+      width: 58%
+
+  .label
+    font-size: 42px !important
 
   
 @media screen and (max-width: 1300px)
@@ -564,3 +612,26 @@ header
      .wrap p
         width: 90%
         margin: 0 auto
+
+.pulse
+  margin: 38px
+  display: block
+  width: 32px
+  height: 32px
+  border-radius: 50%
+  background: $purple
+  cursor: pointer
+  box-shadow: 0 0 0 rgb(97, 80, 120)
+  animation: pulse 2s infinite
+  &:hover
+    animation: none
+
+@keyframes pulse
+  0%
+    box-shadow: 0 0 0 0 rgba(97, 80, 120, 0.61)
+
+  70%
+    box-shadow: 0 0 0 20px rgba(97, 80, 120, 0)
+
+  100%
+    box-shadow: 0 0 0 0 rgba(97, 80, 120, 0)

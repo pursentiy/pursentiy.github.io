@@ -35,13 +35,13 @@
     <section class="section first">
       <div class="logo">
       </div>
-      <header>
+      <header class="headerMenu" id="headerMenu">
         <ul>
           <li> <a href="#">о нас</a> </li>
           <li> <a href="#">цены</a> </li>
           <li> <a href="#">портфолио</a> </li>
           <li> <a href="#">отзывы</a> </li>
-          <li> <a href="#">контакты</a> </li>
+          <li> <a href="#" class="test">КОНТАКТЫ</a> </li>
         </ul>
       </header>
 
@@ -52,29 +52,34 @@
           <div class="goldLine lineGold1"></div>
           <div class="goldLine lineGold2"></div>
           <div class="pannel forms">
-            <div class="leftSide"></div>
-            <div class="rightSide form">
-              <div class="input">
-                <h1><span>Заказать лучшую</span><br> <span>свадьбу</span> </h1>
-                <form id="form">
-
-
-                  <input type="hidden" name="project_name" value="Ветсельхоз">
-                  <input type="hidden" name="admin_email" value="vetklinika@hotmail.com">
-                  <input type="hidden" name="form_subject" value="Заказ звонка">
-
-                  <input class="username" type="text" name="username" placeholder="ИМЯ">
-                  <input class="email" type="text" name="email" placeholder="EMAIL">
-                  <p></p>
-                  <input class="text" type="text" name="theme" placeholder="ТЕЛЕФОН">
-                  <textarea style="resize:none" class="message" name="textarea" rows="1" placeholder="ТЕЕЕЕЕСТ"></textarea>
-                  <input type="hidden" name="formData" value="Заявка с сайта Ветсельхоз">
-                  <input type="submit" class="btn" id="submitt" value="Отправить">
-                </form>
-              </div>
+            <div class="wrap">
+                <div class="rightSide form">
+                    <div class="input">
+                      <h1><span>Заказать лучшую</span><br> <span>свадьбу</span> </h1>
+                      <form id="form">
+      
+      
+                        <input type="hidden" name="project_name" value="Ветсельхоз">
+                        <input type="hidden" name="admin_email" value="vetklinika@hotmail.com">
+                        <input type="hidden" name="form_subject" value="Заказ звонка">
+      
+                        <input class="username" type="text" name="username" placeholder="ИМЯ">
+                        <p></p>
+                        <input class="text" type="text" name="theme" placeholder="ТЕЛЕФОН">
+                        <input type="hidden" name="formData" value="Заявка с сайта Ветсельхоз">
+                        <!-- <input type="submit" class="btn" id="submitt" value="Отправить"> -->
+                        <span class="pulse"></span>
+                        
+                      </form>
+                      <div class="strip"></div>
+                    </div>
+                  </div>
+                <div class="leftSide"></div>
+                
             </div>
+
           </div>
-          <div class="label h"> <span>Мы создаем свадьбы,</span> <span>о которых слогают легенды</span></div>
+          <div id="mainLabel"  class="label h"> <span>Мы создаем свадьбы,</span> <span>о которых слогают легенды</span></div>
           <div class="social">
             <div class="item tw"></div>
             <div class="item fb"></div>
