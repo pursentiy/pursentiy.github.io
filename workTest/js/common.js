@@ -4,10 +4,16 @@ $(document).ready(function () {
     const updateCssStyles = 768;
     const pannelWidth = 400;
 
+
+    const settingCssMobile = (e) => {
+        let owlCarouselRect = document.getElementById("owlCarouselRect");
+        let sizeOwlCarouselRect = owlCarouselRect.getBoundingClientRect();
+        $(".pannel").css({"right": -$(window).width() + sizeOwlCarouselRect.right -  $(".pannel ").width() + "px" });
+    }
+
     $('.button_toggle').on('click', function () {
         $('.main_navigation').toggleClass('scroll');
         $('.wrapper').toggleClass('wrapper_small');
-
     });
 
     $("#owl-demo-review").owlCarousel({
@@ -34,10 +40,42 @@ $(document).ready(function () {
         singleItem: true
     });
 
+
+    lightGallery(document.getElementById('imageGallery'), {
+        subHtmlSelectorRelative: true
+    }); 
+    
+    $('#imageGallery').lightSlider({
+        gallery:true,
+        item:1,
+        loop:true,
+        thumbItem:4,
+        slideMargin:0,
+        enableDrag: false,
+        currentPagerPosition:'left',
+        onSliderLoad: function(el) {
+            el.lightGallery({
+                selector: '#imageGallery .lslide'
+            });
+        }   
+    });  
+
     $(document).ready(function () {
+        fpNav = document.getElementById("fp-nav");
+        owlDots = document.getElementsByClassName("owl-dots");
+    
+        header = document.getElementById("headerMenu");
+        sizeHeader = header.getBoundingClientRect();
+    
+        owlStageOuter = document.getElementsByClassName("owl-stage-outer")[0];
+        sizeOwlStageOuter = owlStageOuter.getBoundingClientRect();
+    
+    
+        owlCarouselRect = document.getElementById("owlCarouselRect");
+        sizeOwlCarouselRect = owlCarouselRect.getBoundingClientRect();
+
         if ($(window).width() < disableFullpageRes) {
-            // do any 480 width stuff here, or simply do nothing
-            return;
+            settingCssMobile();
         } else {
             $('#fullpage').fullpage({
                 'verticalCentered': false,
@@ -66,28 +104,29 @@ $(document).ready(function () {
                     $('#staticImg').toggleClass('moveUp', index == 4 && direction == 'up');
                 }
             });
+
+            
         }
 
-        let offsetWidth;
-
-        let fpNav = document.getElementById("fp-nav");
-        let owlDots = document.getElementsByClassName("owl-dots");
-
-        let header = document.getElementById("headerMenu");
-        let sizeHeader = header.getBoundingClientRect();
-
-        let owlStageOuter = document.getElementsByClassName("owl-stage-outer")[0];
-        let sizeOwlStageOuter = owlStageOuter.getBoundingClientRect();
-
-
-        let owlCarouselRect = document.getElementById("owlCarouselRect");
-        let sizeOwlCarouselRect = owlCarouselRect.getBoundingClientRect();
         const settingCss = (e) => {
             //первая прокрутка
+            var offsetWidth;
 
+            let fpNav = document.getElementById("fp-nav");
+            let owlDots = document.getElementsByClassName("owl-dots");
+        
+            let header = document.getElementById("headerMenu");
+            let sizeHeader = header.getBoundingClientRect();
+        
+            let owlStageOuter = document.getElementsByClassName("owl-stage-outer")[0];
+            let sizeOwlStageOuter = owlStageOuter.getBoundingClientRect();
+        
+        
+            let owlCarouselRect = document.getElementById("owlCarouselRect");
+            let sizeOwlCarouselRect = owlCarouselRect.getBoundingClientRect();
             //let cssProp = $(window).width() - owlCarouselRect.clientWidth - sizeOwlCarouselRect.right;
             //  console.log(fpNav.clientHeight);
-            if ($(window).width() > updateCssStyles) {
+            if ($(window).width() > disableFullpageRes) {
                 if ($(window).width() > disableFullpageRes) {
                     $(fpNav).css({ "top": sizeOwlCarouselRect.bottom - fpNav.clientHeight + $(".owl-dots").height() + "px", "width": sizeOwlStageOuter.left + "px" });
                     $(owlDots[0]).css({ "margin-top": -fpNav.clientHeight + "px" });
@@ -101,11 +140,18 @@ $(document).ready(function () {
 
                 $(".pannel").css({ "margin-top": +fpNav.clientHeight / 4 + "px" });
               //  $(".pannel").css({ "right": -$(window).width() + sizeOwlStageOuter.right - $(".pannel").width() + "px" });
-
+              $(".pannel").css({ "right": -$(window).width() + sizeOwlCarouselRect.right + "px" });
                 const setPannelWidth = (width) => {
                     $(".pannel").css({ "width": width + 'px',  "right": -$(window).width() + sizeOwlCarouselRect.right - width + 'px'});
                     $("#mainLabel").css({ "right": -$(window).width() + sizeOwlCarouselRect.right + $('.leftSide').width() + 90  + "px" });
+                };
+                const setPannelHeight = (e) => {
+                    if($(owlStageOuter).height() < $(".pannel ").height())
+                    {
+                        $(".pannel ").css({"height": $(owlStageOuter).height() - 30 + "px"});
+                    }
                 }
+                setPannelHeight();
                 $(".owl-stage-outer").width()
                 //setting pannel width accodring to state
                 const liHeader = $(".headerMenu li");
@@ -122,9 +168,10 @@ $(document).ready(function () {
 
             }
             else {
-                $(".pannel").css({ "right": -$(window).width() + sizeOwlCarouselRect.right + "px" });
+              //  $(".pannel").css({ "right": -$(window).width() + sizeOwlCarouselRect.right + "px" });
             }
         }
+
 
         let fromOnclick = false;
         $(".pannel").click(function () {
@@ -134,7 +181,7 @@ $(document).ready(function () {
                 fromOnclick = true;
             }
             else {
-                $(".pannel").css({ "right": -$(window).width() + sizeOwlCarouselRect.right - offsetWidth + "px" });
+                $(".pannel").css({ "right": -$(window).width() + sizeOwlCarouselRect.right -  $(".pannel ").width() + "px" });
                 $(".leftSide").toggleClass("pannelAppear");
                 fromOnclick = false
             }
@@ -148,10 +195,5 @@ $(document).ready(function () {
         });
 
         settingCss();
-
     });
-
-
-
-
 });

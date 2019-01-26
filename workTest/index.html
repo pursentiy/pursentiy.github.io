@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="libs/fullPage.js-master/jquery.fullPage.css">
   <link rel="stylesheet" href="libs/OwlCarousel/owl.carousel.min.css">
   <link rel="stylesheet" href="libs/OwlCarousel/owl.theme.default.min.css">
+  <link rel="stylesheet" href="libs/lightgallery.js-master/lightgallery.css">
+  <link rel="stylesheet" href="libs/lightSlider/lightslider.css">
   <link rel="stylesheet" href="sass/main.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -51,34 +53,7 @@
         <div class="carousel" id="owlCarouselRect">
           <div class="goldLine lineGold1"></div>
           <div class="goldLine lineGold2"></div>
-          <div class="pannel forms">
-            <div class="wrap">
-                <div class="rightSide form">
-                    <div class="input">
-                      <h1><span>Заказать лучшую</span><br> <span>свадьбу</span> </h1>
-                      <form id="form">
-      
-      
-                        <input type="hidden" name="project_name" value="Ветсельхоз">
-                        <input type="hidden" name="admin_email" value="vetklinika@hotmail.com">
-                        <input type="hidden" name="form_subject" value="Заказ звонка">
-      
-                        <input class="username" type="text" name="username" placeholder="ИМЯ">
-                        <p></p>
-                        <input class="text" type="text" name="theme" placeholder="ТЕЛЕФОН">
-                        <input type="hidden" name="formData" value="Заявка с сайта Ветсельхоз">
-                        <!-- <input type="submit" class="btn" id="submitt" value="Отправить"> -->
-                        <span class="pulse"></span>
-                        
-                      </form>
-                      <div class="strip"></div>
-                    </div>
-                  </div>
-                <div class="leftSide"></div>
-                
-            </div>
 
-          </div>
           <div id="mainLabel"  class="label h"> <span>Мы создаем свадьбы,</span> <span>о которых слогают легенды</span></div>
           <div class="social">
             <div class="item tw"></div>
@@ -112,7 +87,30 @@
             </div>
           </div>
         </div>
+        <div class="pannel forms">
+          <div class="wrap">
+              <div class="rightSide form">
+                  <div class="input">
+                    <h1><span>Заказать лучшую</span><br> <span>свадьбу</span> </h1>
+                    <form id="form">
+                      <input type="hidden" name="project_name" value="Ветсельхоз">
+                      <input type="hidden" name="admin_email" value="vetklinika@hotmail.com">
+                      <input type="hidden" name="form_subject" value="Заказ звонка">
+                      <input class="username" type="text" name="username" placeholder="ИМЯ">
+                      <p></p>
+                      <input class="text" type="text" name="theme" placeholder="ТЕЛЕФОН">
+                      <input type="hidden" name="formData" value="Заявка с сайта Ветсельхоз">
+                      <!-- <input type="submit" class="btn" id="submitt" value="Отправить"> -->
+                      <span class="pulse"></span>
+                    </form>
+                    <div class="strip"></div>
+                  </div>
+                </div>
+              <div class="leftSide"></div>
+              
+          </div>
 
+        </div>
       </div>
     </section>
 
@@ -136,6 +134,37 @@
     <section class="section third">
       <div class="portfolio">
         <h3 class="h">Портфолио</h3>
+
+        <ul id="imageGallery">
+          <li data-thumb="img/carusel1.png" data-src="img/carusel1.png">
+            <img src="img/carusel1.png" />
+          </li>
+          <li data-thumb="img/carusel2.png" data-src="img/carusel2.png">
+            <img src="img/carusel2.png" />
+          </li>
+          <li data-thumb="img/carusel3.png" data-src="img/carusel3.png">
+            <img src="img/carusel3.png" />
+          </li>
+          <li data-thumb="img/carusel1.png" data-src="img/carusel1.png">
+            <img src="img/carusel1.png" />
+          </li>
+          <li data-thumb="img/carusel2.png" data-src="img/carusel2.png">
+            <img src="img/carusel2.png" />
+          </li>
+          <li data-thumb="img/carusel3.png" data-src="img/carusel3.png">
+            <img src="img/carusel3.png" />
+          </li>
+          <li data-thumb="img/carusel1.png" data-src="img/carusel1.png">
+            <img src="img/carusel1.png" />
+          </li>
+          <li data-thumb="img/carusel2.png" data-src="img/carusel2.png">
+            <img src="img/carusel2.png" />
+          </li>
+          <li data-thumb="img/carusel3.png" data-src="img/carusel3.png">
+            <img src="img/carusel3.png" />
+          </li>
+        </ul>
+
         <div class="wrapper-owl-portfolio">
           <div id="owl-demo-review-portfolio" class="owl-carousel owl-theme">
             <div class="item first">
@@ -161,9 +190,9 @@
             </div>
           </div>
         </div>
+        
       </div>
     </section>
-
   </div>
 
 
@@ -172,6 +201,12 @@
 
   </footer>
   <script src="libs/jquery/jquery-1.11.2.min.js"></script>
+  <script src="libs/lightSlider/lightslider.js">  </script>
+   <script src="libs/lightgallery.js-master/lightgallery.min.js"></script>
+  <script src="libs/lightgallery.js-master/lg-autoplay.js"></script>
+  <script src="libs/lightgallery.js-master/lg-fullscreen.js"></script>
+  <script src="libs/lightgallery.js-master/lg-pager.js"></script>
+  <script src="libs/lightgallery.js-master/lg-thumbnail.js"></script>
   <script src="libs/fullPage.js-master/fullpage.js"></script>
   <script src="libs/fullPage.js-master/jquery.fullPage.js"></script>
   <script src="libs/OwlCarousel/owl.carousel.min.js">  </script>
