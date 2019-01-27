@@ -2,6 +2,12 @@ $black: #000000
 $purple: #615078
 $pink: #FCC6C6
 
+$marginTopMax: 60px
+$marginTopMin: 40px
+
+::-webkit-input-placeholder
+    color: #fff
+
 .h
   background: $pink
   font-family: Nautilus
@@ -16,6 +22,7 @@ $pink: #FCC6C6
   position: relative
   margin-block-start: 0
   margin-block-end: 0
+  color: #200524
   font-family: Nautilus
   z-index: 2
   &:before
@@ -81,91 +88,6 @@ a
   FIRST PAGE
   ***************************************************/
 
-.pannel
-  margin-top: 50px
-  box-shadow: -12px 10px 49px -20px rgba(0,0,0,0.62)
-  .rightSide .input
-    height: 340px
-    font-size: 20px
-    color: #fff
-    &::placeholder
-      color: #ffffff
-      text-align: center
-      font-size: 16px
-  .input
-    h3
-      font-family: Nautilus
-      text-align: center
-      font-size: 50px 
-    form
-      display: flex
-      flex-direction: column
-      align-items: center
-    input
-      margin: 5px 0
-      box-shadow: inset 0 -1px 0 0 $purple
-      outline: none !important
-      width: 230px
-      padding: 10px 0
-      height: 23px
-      color: #fff
-      font-size: 20px
-      text-transform: uppercase
-      font-family: CenturyGothic
-      background: transparent
-      border-width: none
-      border-style: none
-      border-color: none
-      border-image: none
-    .btn
-      position: relative
-      width: 138px
-      height: 37px
-      background: #fff
-      color: $purple
-      margin-top: 55px
-      padding: 5px 15px
-      top: 0px
-      left: 0px
-      font-size: 20px
-      font-family: CenturyGothic
-      cursor: pointer
-    p
-      margin: 0
-      margin-top: 9px
-
-#imageGallery
-  li
-    width: 300px !important
-    img
-      width: 100% !important
-
-.social
-  width: 165px
-  position: absolute
-  top: 50%
-  transform: translateY(-50%)
-  display: flex
-  flex-direction: column
-  justify-content: center
-  align-items: center
-  .item
-    width: 30px
-    height: 30px
-    margin: 20px 0
-  .tw
-    background: url(../img/tw.png) no-repeat 50% 0%
-    background-size: contain 
-  .fb
-    background: url(../img/fb.png) no-repeat 50% 0%
-    background-size: contain 
-  .inst
-    background: url(../img/in.png) no-repeat 50% 0%
-    background-size: contain 
-  .yout
-    background: url(../img/you.png) no-repeat 50% 0%
-    background-size: contain 
-
 .button
   display: block
   width: 80px
@@ -220,7 +142,7 @@ header
 
 .first
   width: 100%
-  height: 75VH
+  height: 930px
   background: url(../img/8050.jpg) no-repeat center
   background-size: cover
   display: flex
@@ -250,12 +172,13 @@ header
   a
     margin-top: 25px
     font-size: 16px
+    text-align: center
     border: 2px solid #A176FF
     background: transparent
   hr
     width: 30px
     border: 1px solid #200524
-    margin: 15px auto 25px auto
+    margin: 15px 0 25px 0
   p
     display: block
     margin-block-start: 0em
@@ -263,11 +186,18 @@ header
 
 .second
   width: 100%
-  height: 25VH
+  height: 280px
   display: flex
   flex-direction: row
+  box-shadow: 0px 4px 41px 2px rgba(32,5,36,0.38)
+  .firstBut
+    border: 2px solid #A176FF
+    background: transparent
+    color: #fff
   >div
     padding: 50px
+    p
+      font-size: 20px
   h2
     font-size: 30px
     margin-block-start: 0em
@@ -280,39 +210,97 @@ header
     width: 30%
     background: #200524
     color: #fff
+    display: flex
+    align-items: center
   .yellow
+    display: flex
+    align-items: center
+    color: #fff
     width: 70%
-    background: url(../img/fon_pod_gradient_2_22-02.jpg) no-repeat center
+    background: url(../img/fon_pod_gradient_2-02.jpg) no-repeat center
     background-size: cover
+    .wrap
+      width: 670px
+
+.fifthAndHalf
+  .wrap
+    margin: $marginTopMax auto
+    h2
+      width: 220px
+      margin: 0 auto
+      display: block
+      padding-bottom: $marginTopMax 
+      &:before
+        bottom: 75%
+    #imageGallery
+      li
+        height: 400px
+        overflow: hidden
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        img
+          height: 100%
+          display: block
+          margin: auto
+
+.lSAction
+  display: none !important
+
 
 .third .about
   display: flex
   flex-direction: column
   justify-content: center
   padding-top: 40px
+  background: url(../img/33.jpg) no-repeat center
+  background-size: cover
   h2
     margin: 0 auto
+  .wrapper
+    margin: 0 auto
+  .hed
+    font-size: 20px
+    text-align: justify
+    margin: 0 auto
+    margin: $marginTopMax auto
+    width: 1200px
   .wrap 
-    margin-top: 60px
     display: flex
-    justify-content: center
+    justify-content: space-around
+    position: relative
+    width: 1200px
     .photo
-      width: 730px
-      height: 550px
+      width: 1567px
+      height: 450px
       margin-right: 145px
-      background: $pink
+      background: url(../img/126b466637396c83dd07fda8bd6a5147_1.jpg)
+      background-size: cover
+      position: relative
     .header
-      width: 600px
-      margin: 85px 0
-      font-size: 65px
-    p
-      width: 500px
-      font-size: 25px
+      margin: 0px 0 $marginTopMax 0
+      font-size: 40px
+      text-align: center
+    .p
+      display: block
+      font-size: 20px
+      margin-block-start: 0
+      text-align: center
+      margin-block-end: 0
+      margin: 0 auto
+    .signature
+      width: 200px
+      height: 150px
+      background: url(../img/6-06.png) no-repeat center
+      background-size: contain
+      margin: 40px auto $marginTopMax auto
 
 .fourth
-  padding-top: 50px
+  padding-top: $marginTopMax
   background: url(../img/onas.jpg) no-repeat center
   background-size: cover
+  box-shadow: 0px 4px 41px 2px rgba(32,5,36,0.38)
   hr
     width: 30px
     border: 1px solid #200524
@@ -328,18 +316,24 @@ header
     padding: 0 30px
     text-align: center
   .after
-    margin-bottom: 50px
+    margin-bottom: $marginTopMax
+    width: 1200px
+    font-weight: bold
+    font-size: 16px
+    color: #200524
+    padding: 0
   .facts
     display: flex
     flex-direction: row
-    justify-content: center
+    justify-content: space-between
     flex-wrap: wrap
-    width: 60%
+    width: 1300px
     margin: 0 auto
     .fact
       display: flex
       flex-direction: row
       margin: 50px 
+      font-size: 18px
       .number
         font-size: 50px
         text-shadow: 6px -1px 0px #A176FF
@@ -363,7 +357,7 @@ header
     width: 100%
     height: 650px
 .review
-  background: url(../img/fon_pod_gradient_2_22-02.jpg) no-repeat center
+  background: url(../img/fon_pod_gradient_2-02.jpg) no-repeat center
   background-size: cover
   color: #fff
   hr
@@ -378,13 +372,14 @@ header
     margin-block-start: 0em
     margin-block-end: 0em
     font-family: Nautilus
+    color: #fff
   .underHead
     font-size: 17px
     margin-block-start: 0em
     margin-block-end: 0em
     text-align: center
   .textReview
-    width: 550px
+    width: 1200px
     margin: 0 auto
     text-align: center
     font-style: italic
@@ -416,9 +411,9 @@ header
   .occupation
     font-size: 9px
     text-align: center
-    padding-bottom: 110px
+    padding-bottom: 92px
   .owl-theme .owl-dots
-    padding-bottom: 30px
+    padding-bottom: 70px
     .owl-dot span
       border: 2px solid #fff
       width: 14px
@@ -430,24 +425,43 @@ header
   margin: 0 auto
   display: flex
   justify-content: center
+  background: #200524
+  color: #fff
+  .pseudo
+    position: relative
+    &:before
+      content: ""
+      position: absolute
+      bottom: 15%
+      left: 0
+      right: 0
+      height: 70%
+      width: 2px
+      background: #a176ff26
+      z-index: 1
+  .email
+    text-decoration: underline
   p
     margin-block-start: 0em
     margin-block-end: 0em
   .text
     display: flex
+    justify-content: space-around
+    width: 90%
     .description
       display: flex
       flex-direction: column
       justify-content: flex-start
       align-content: center
-      padding-right: 65px
+      position: relative
       .logoSmall
-        width: 190px
-        height: 50px
-        background: red
+        width: 100px
+        height: 60px
+        background: url(../img/logo_3.png) no-repeat center
+        background-size: contain
         margin: 0
         margin-bottom: 30px
-        margin-top: 62px
+        margin-top: $marginTopMax
       .text
         width: 250px
         text-align: justify
@@ -457,29 +471,34 @@ header
         width: 190px
         padding: 15px 0
         border-radius: 25px
-        background: red
+        background: #a176ff26
+        color: #fff
         text-align: center
     .adress
+      width: 250px
+      padding-left: 100px
       .border
-        padding-left: 60px 
-        border-left: 1px solid black
+        display: flex
+        flex-direction: column
+        a
+          display: inline
+          color: #fff
+        p
+          width: 197px
       .con 
         font-size: 27px
         margin-block-start: 0em
         margin-block-end: 0em
         padding-bottom: 30px
-        padding-top: 70px
-        padding-left: 60px 
+        padding-top: $marginTopMax
       .telephone
         padding-top: 25px
-      .email
-        display: block
       .sd
         margin-top: 25px
     .social
-      padding-left: 60px 
       width: 216px
       margin-top: 30px
+      margin-bottom: $marginTopMax
       position: initial
       transform: translate(0)
       flex-direction: row
@@ -489,21 +508,196 @@ header
         &:first-child
           margin-left: 0
   .form
+    padding-left: 100px
+    width: 250px
     .con 
       font-size: 27px
       margin-block-start: 0em
       margin-block-end: 0em
       padding-bottom: 20px
-      padding-top: 70px
+      padding-top: $marginTopMax
     form
       input
-        width: 600px
-        padding: 7px
+        width: 232px
+        padding: 12px
         outline: none
         margin-top: 10px
-        background: red
+        background: #a176ff26
         border: none
         color: white
+      .wrap
+        position: relative  
+        width: 232px
+        .text
+          width: 100%
+        .btn
+          width: 50px
+          right: 0
+          position: absolute
+          top: 0
+          margin-top: 0
+
+body .send-button
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+
+@keyframes icon-animation
+  0%
+    transform: rotate(0deg) scale(1)
+
+  33%
+    transform: rotate(-120deg) scale(4)
+
+  66%
+    transform: rotate(-240deg) scale(4)
+
+  100%
+    transform: rotate(-360deg) scale(1)
+
+
+@keyframes input-shadow
+  0%
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2)
+
+  40%
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2)
+
+  50%
+    box-shadow: none
+
+  70%
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2)
+
+  100%
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2)
+
+
+.icon-wrapper-animation
+  animation: icon-animation 1.5s linear
+  transition: color 0.6s ease
+  color: #66bb6a
+
+.clicked
+  transform: translate(-50%, calc(-50% + 1px)) !important
+  transition: transform 0.15s ease
+  animation: input-shadow 0.15s ease
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2)
+  > .text
+    transform: translateY(1px)
+    transition: transform 0.15s ease-out
+
+
+body
+  .send-button
+    background-color: translate
+    width: 50px
+    height: 45px
+    cursor: pointer
+    user-select: none
+    left: 240px
+    transition: transform 0.15s
+    .text
+      position: absolute
+      left: 10px
+      font-size: 22px
+      font-size: 2.2rem
+      letter-spacing: 1px
+      line-height: 45px
+      font-family: "Roboto"
+      font-weight: 700
+      color: #f8bbd0
+      text-transform: uppercase
+    .icon-wrapper
+      position: absolute
+      bottom: -10px
+      width: 50px
+      height: 33px
+      border-radius: 50%
+      line-height: 45px
+      color: #f8bbd0
+      [class*="icon-"]
+        position: absolute
+        bottom: 20px
+        width: 50px
+        height: 23px
+        transition: color 0.6s ease
+      .icon-1
+        background: url(../img/freelance.png) no-repeat center
+        background-size: contain
+        transform: rotate(15deg)
+        font-size: 23px
+        font-size: 2.3rem
+        opacity: 1
+      .icon-2
+        background: url(../img/tick_1.png) no-repeat center
+        background-size: contain
+        opacity: 0
+        font-size: 25px
+        font-size: 2.5rem
+
+footer 
+  position: absolute
+  width: 100%
+  height: 50px
+  background: #200524
+  border-top: 2px solid #a176ff26
+  z-index: 5
+  color: #fff
+  .wrap
+    display: flex
+    align-items: center
+    position: absolute
+    justify-content: space-between
+    width: 100%
+    height: 80px
+    background: #200524
+    p
+      position: relative
+  .up
+    width: 50px
+    height: 100%
+    position: absolute
+    right: 50px
+    #scrollUp
+      height: 50px
+      width: 100%
+      background: #a176ff26
+      position: absolute
+      bottom: 0
+      display: flex
+      justify-content: center
+      align-items: center
+      border-radius: 5px 5px 0 0
+      .arrow
+        width: 50%
+        height: 25px
+        background: url(../img/back.png) no-repeat center
+        background-size: contain
+  ul
+    color: #fff
+    display: flex
+    align-items: center
+    margin-block-start: 0
+    margin-block-end: 0
+    margin-top: 0
+    padding-inline-start: 0px
+    li
+      margin: 0 35px
+      font-size: 17.5px
+      padding: 0 2px
+      padding-bottom: 5px
+      list-style: none
+      font-family: CenturyGothic
+      text-transform: uppercase
+      transition: .3s ease-out
+      cursor: pointer
+      color: #fff
+      a
+        color: #fff
+      &:hover
+        box-shadow: inset 0 -3px 0 0 #a176ff46
 
 .carousel
   width: 100%
@@ -588,11 +782,88 @@ header
 .scroll
     transform: translateX(0%)
 
-@media screen and (max-width: 1883px)
+@media screen and (device-aspect-ratio: 2880/1600) 
 
-  .carousel
-    .wrapper-owl
-      width: 85%
+  .first
+    height: 75VH
+
+  .second
+    height: 25VH
+
+@media screen and (device-aspect-ratio: 2304/1440) 
+
+  .first
+    height: 75VH
+
+  .second
+    height: 25VH
+
+@media screen and (device-aspect-ratio: 1980/1080) 
+
+  .first
+    height: 75VH
+
+  .second
+    height: 25VH
+
+@media screen and (device-aspect-ratio: 1600/900) 
+
+  .first
+    height: 75VH
+
+  .second
+    height: 25VH
+
+@media screen and (device-aspect-ratio: 1440/900) 
+
+  .first
+    height: 75VH
+
+  .second
+    height: 25VH
+  
+  .second > div p
+    font-size: 18px
+
+@media screen and (device-aspect-ratio: 1366/768) 
+
+  .first
+    height: 75VH
+
+  .second
+    height: 25VH
+
+  header
+    .wrap
+      padding-top: 0
+    .logo
+      width: 120px
+
+  .second h2
+    font-size: 21px
+
+  .second > div p
+    font-size: 15.5px
+
+@media screen and (device-aspect-ratio: 1280/800) 
+
+  .first
+    height: 75VH
+
+  .second
+    height: 25VH
+
+  header
+    .wrap
+      padding-top: 0
+    .logo
+      width: 120px
+
+  .second h2
+    font-size: 21px
+
+  .second > div p
+    font-size: 15.5px
 
 @media screen and (max-width: 1633px)
 
@@ -606,14 +877,22 @@ header
   .label
     font-size: 50px !important
 
-@media screen and (max-width: 1553px)
+@media screen and (max-width: 1568px)
 
-  .wrapMain
-    margin-left: 6%
+  header .logo
+    width: 150px
 
-  .carousel
-    .wrapper-owl
-      width: 65%
+  .first
+    height: 700px
+
+  .second
+    height: 240px
+  
+  .second > div p
+    font-size: 16px 
+
+  .fourth .facts
+    width: 80%
 
 @media screen and (max-width: 1400px)
   .wrapMain
@@ -627,8 +906,51 @@ header
   .label
     font-size: 42px !important
 
-  
+@media screen and (max-width: 1350px)
+
+  .third
+    .about
+      .hed
+        width: 1000px
+      .wrap
+        width: 1000px
+        .photo
+          height: 480px
+        .header
+          font-size: 30px
+
+  #imageGallery
+    li
+      height: 300px !important
+
+
 @media screen and (max-width: 1300px)
+
+  .second > div p
+    font-size: 15px 
+
+  .bottomMenu
+    display: none
+  
+  .fourth .after
+    width: 50%
+
+  .contacts .text 
+    flex-wrap: wrap
+    justify-content: center
+    width: 100%
+    .pseudo:last-child:before
+      display: none
+    .description
+      padding-right: 100px
+    .form
+      width: 700px
+      padding-left: 0
+      padding-bottom: 50px
+      input
+        width: 676px
+      .wrap
+        width: 676px
   
   .second
     .about
@@ -652,6 +974,50 @@ header
           height: 300px
 
 @media screen and (max-width: 1215px)
+
+  .second
+    flex-direction: column
+    height: 485px
+    .black
+      width: 100%
+      justify-content: center
+      padding: 50px 0
+      .wrap
+        width: 70%
+    .yellow
+      width: 100%
+      padding: 50px 0
+      justify-content: center
+      .wrap
+        width: 70%
+
+  .third
+    .about
+      .hed
+        width: 70%
+      .wrap
+        width: 70%
+        margin: 0 auto
+        flex-direction: column
+        .photo
+          width:  450px
+          height: 300px
+          margin: 0 auto
+        .header
+          font-size: 30px
+          margin-top: $marginTopMax
+
+  .fourth 
+    .facts
+      width: 70%
+      margin: 0 auto
+      justify-content: center
+    .after
+      width: 70%
+
+  .review .textReview
+    width: 70%
+
   header ul li
     font-size: 14px
     padding: 23px 25px 23px 25px
@@ -660,13 +1026,27 @@ header
   header ul li
     font-size: 12px
 
+  #imageGallery
+    li
+      height: 250px !important
+
+
 @media screen and (max-width: 1025px)
   .goldLine
     display: none
 
   header
+    .wrap
+      padding-top: 0
     ul
       display: none
+
+  .logo
+    position: initial
+    margin: 0 auto
+    padding: 0px 0
+    padding-top: 15px
+    z-index: 100
     
   .pannel
     width: 400px
@@ -823,12 +1203,6 @@ header
         .photo
           height: 300px
 
-  .logo
-    position: initial
-    margin: 0 auto
-    padding: 20px 0
-    z-index: 100
-
   .social
     position: initial
     flex-direction: row
@@ -856,11 +1230,118 @@ header
       padding-top: 50px
       margin-top: 20px
 
+@media screen and (max-width: 916px)
+
+  .headerLine
+    font-size: 35px
+  
+  .fourth .facts
+    width: 99%
+
+  #imageGallery
+    li
+      height: 200px !important  
+
 @media screen and (orientation: landscape)
   .main_navigation ul li
     padding: 30px 35px 0px 35px !important
 
+@media screen and (max-width: 800px)
+
+  .bottomMenu
+    display: none
+
+  .contacts .text 
+    flex-direction: column
+    justify-content: center
+    width: 100%
+    .pseudo:before
+      display: none
+    .description
+      width: 100%
+      padding: 0
+      margin: 0 auto
+      justify-content: center
+      align-items: center
+    .adress
+      width: 250px
+      padding: 0 50px
+      margin: 0 auto
+      justify-content: center
+      align-items: center
+    .form
+      width: 250px
+      margin: 0 auto
+      padding-left: 0
+      padding-bottom: 50px
+      .con
+        padding-top: 20px
+      input
+        width: 226px
+      .wrap
+        width: 226px
+
+  footer
+    p
+      margin: 0 auto
+    .up
+      display: none
+
+@media screen and (max-width: 750px)
+
+  .main_navigation
+    width: 50%
+  
+  .third .about .hed
+    text-align: center
+    width: 75%
+    font-size: 14px
+
+  .third .about .wrap .p
+    font-size: 14px
+    width: 75%
+    text-align: center
+
+  .fourth .facts
+    width: 50%
+
+  .second
+    height: 540px
+
 @media screen and (max-width: 653px)
+
+  .main_navigation
+    width: 60%
+
+  .first .wrap
+    margin-left: 50px
+
+  header .logo
+    margin-left: 50px 
+
+  .first
+    .head
+      font-size: 35px
+      &:before
+        width: 90%
+    .wrap
+      font-size: 20px
+
+  .third
+    .about
+      .wrap
+        width: 100%
+        flex-direction: column
+        .photo
+          width: 290px
+          height: 200px
+        .header
+          font-size: 24px
+          margin-top: $marginTopMax
+
+  .review .textReview
+    width: 298px
+
   .wrapMain
     display: none
 
@@ -873,11 +1354,24 @@ header
       display: none
 
 @media screen and (max-width: 553px)
+
+  .main_navigation
+    width: 70%  
+
+  .headerLine
+    font-size: 30px
+
+  .contacts .text .adress
+    padding: 0
+
   .carousel 
     .label
       margin: 20px !important
     .wrapper-owl
       width: 98%
+
+  .second
+    height: 560px
 
   .h
     font-size: 20px !important
@@ -917,3 +1411,22 @@ header
 
   100%
     box-shadow: 0 0 0 0 rgba(97, 80, 120, 0)
+
+@media screen and (max-width: 423px)
+
+  .first .wrap
+    margin-left: 15px
+
+  .fifthAndHalf .wrap h2
+    width: 146px
+
+  header .logo
+    margin-left: 15px 
+    height: 115px
+    padding-top: 0
+
+  .second
+    height: 590px
+    h2
+      font-size: 25px
+

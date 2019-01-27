@@ -1,0 +1,800 @@
+$black: #000000
+$purple: #615078
+$pink: #FCC6C6
+
+.h
+  background: $pink
+  font-family: Nautilus
+  font-size: 59px
+  display: inline
+  margin: 0 auto
+
+section
+  overflow: hidden
+
+input
+  &::-webkit-input-placeholder, &:-ms-input-placeholder, &::-ms-input-placeholder, &::placeholder
+    color: #fff
+    opacity: 1
+    text-align: center
+
+
+body
+  margin: 0
+  font-size: 16px
+  font-family: CenturyGothic
+  min-width: 320px
+
+@font-face
+    font-family: "CenturyGothic"
+    src : url("../fonts/CenturyGothic.ttf")
+
+@font-face
+    font-family: "Nautilus"
+    src : url("../fonts/ofont.ru_Nautilus Pompilius.ttf")
+
+a
+  color: $black
+  transition: 0.7s ease
+  &:hover
+    cursor: pointer
+  &:visited, &:link, &:hover, &:active
+    text-decoration: none
+
+.main_navigation
+  display: none
+
+.button_toggle
+  display: none
+
+
+/*******************************************************
+  FIRST PAGE
+  ***************************************************/
+
+.pannel
+  margin-top: 50px
+  box-shadow: -12px 10px 49px -20px rgba(0,0,0,0.62)
+  .rightSide .input
+    height: 340px
+    font-size: 20px
+    color: #fff
+    &::placeholder
+      color: #ffffff
+      text-align: center
+      font-size: 16px
+  .input
+    h3
+      font-family: Nautilus
+      text-align: center
+      font-size: 50px 
+    form
+      display: flex
+      flex-direction: column
+      align-items: center
+    input
+      margin: 5px 0
+      box-shadow: inset 0 -1px 0 0 $purple
+      outline: none !important
+      width: 230px
+      padding: 10px 0
+      height: 23px
+      color: #fff
+      font-size: 20px
+      text-transform: uppercase
+      font-family: CenturyGothic
+      background: transparent
+      border-width: none
+      border-style: none
+      border-color: none
+      border-image: none
+    .btn
+      position: relative
+      width: 138px
+      height: 37px
+      background: #fff
+      color: $purple
+      margin-top: 55px
+      padding: 5px 15px
+      top: 0px
+      left: 0px
+      font-size: 20px
+      font-family: CenturyGothic
+      cursor: pointer
+    p
+      margin: 0
+      margin-top: 9px
+
+.logo
+  background: url(../img/logo.png) no-repeat center
+  background-size: contain
+  width: 219.5px
+  height: 137px
+  position: absolute
+  top: 50px
+  left: 50px
+
+#imageGallery
+  li
+    width: 300px !important
+    img
+      width: 100% !important
+
+.social
+  width: 165px
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  .item
+    width: 30px
+    height: 30px
+    margin: 20px 0
+  .tw
+    background: url(../img/tw.png) no-repeat 50% 0%
+    background-size: contain 
+  .fb
+    background: url(../img/fb.png) no-repeat 50% 0%
+    background-size: contain 
+  .inst
+    background: url(../img/in.png) no-repeat 50% 0%
+    background-size: contain 
+  .yout
+    background: url(../img/you.png) no-repeat 50% 0%
+    background-size: contain 
+
+.pannel
+  position: absolute
+  z-index: 10
+  right: 0
+  top: 50%
+  transform: translateY(-50%)
+  height: 500px
+  width: 400px
+  transition:  .7s cubic-bezier(.77,0,.175,1), opacity 1.7s linear, .7s cubic-bezier(.77,0,.175,1)
+  cursor: pointer
+  margin-top: 0
+  display: flex
+  .wrap
+    width: 100%
+    height: 100%
+  .leftSide
+    position: absolute
+    height: 100%
+    width: 90px
+    background: $purple
+    left: -90px
+    z-index: -2
+    top: 0
+    transition:  .7s cubic-bezier(.77,0,.175,1), opacity 1.7s linear, .7s cubic-bezier(.77,0,.175,1)
+  .rightSide
+    margin: 0 auto
+    width: 100%
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    background: url(../img/pannelBackground1.jpg) no-repeat center
+    background-size: cover
+    position: relative
+    z-index: 1
+    .strip
+      width: 100%
+      height: 35VH
+      background: url(../img/strips3.png) no-repeat center
+      background-size: contain
+      position: absolute
+      bottom: 0
+      left: 0
+    h1
+      margin-block-start: 0
+      text-align: center
+      font-family: Nautilus
+      font-size: 34px
+      color: $purple
+
+.wrapMain
+  width: 1400px
+  margin-left: 12%
+
+.pannelAppear
+  transform: translateX(90px)
+
+header 
+  width: 1400px
+  display: flex
+  align-items: center
+  position: relative
+  justify-content: flex-end
+  ul
+    display: flex
+    left: 35px
+    margin-block-end: 0
+    li
+      padding: 23px 35px 23px 35px
+      margin: 45px 0
+      font-size: 17.5px
+      list-style: none
+      text-transform: uppercase
+      transition: .3s ease-out
+      cursor: pointer
+      color: $purple
+      &:hover
+        box-shadow: inset 0 -1px 0 0 $purple
+      &:last-child
+        padding: 23px 0 23px 35px
+
+.carousel
+  width: 100%
+  margin: 0 auto
+  position: relative
+  .wrapper-owl
+    width: 85%
+    margin: 0 auto
+  .goldLine
+    width: 1150px
+    height: 708px
+    position: absolute
+  .lineGold1
+    background: url(../img/goldAbove.png) no-repeat center
+    background-size: cover
+    z-index: 4
+    top: -38%
+    left: -24%
+  .lineGold2
+    background: url(../img/goldBeneath.png) no-repeat center
+    background-size: cover
+    top: -21%
+    left: -28%
+  .label
+    font-size: 59px
+    position: absolute
+    display: flex
+    flex-direction: column
+    top: 50%
+    right: -10%
+    z-index: 4
+    transform: translateY(-50%)
+    span
+      background: $pink
+      font-family: Nautilus
+      &:first-child
+        margin-left: 30px 
+
+
+  .item
+    .wrap
+      margin-left: 0
+      .image
+        background: rgba(60, 22, 110, 0.5490196078431373)
+        text-align: center
+        font-size: 10em
+
+.owl-theme 
+  .owl-dots
+    .owl-dot span
+      width: 22px
+      height: 22px
+      background: transparent
+      border: 4px solid $purple
+    .owl-dot.active span
+      background: $purple
+  .owl-nav.disabled+.owl-dots
+    margin-top: -85px
+    position: relative
+
+#fp-nav
+  position: absolute
+  left: 0px
+  right: 0
+  width: 165px
+  bottom: 0px
+  height: 80px
+  margin-top: 0 !important
+  display: flex
+  justify-content: center
+  ul
+    width: 30px
+    border: 4px solid $purple
+    height: 70px
+    border-radius: 20px
+    li
+      margin-left: 8px
+      a.active 
+        span
+          background: $purple
+
+.second .about
+  display: flex
+  flex-direction: column
+  justify-content: center
+  padding-top: 140px
+  h2
+    margin: 0 auto
+  .wrap 
+    margin-top: 60px
+    display: flex
+    justify-content: center
+    .photo
+      width: 730px
+      height: 550px
+      margin-right: 145px
+      background: $pink
+    .header
+      width: 600px
+      margin: 85px 0
+      font-size: 65px
+    p
+      width: 500px
+      font-size: 25px
+
+.portfolio
+  display: flex
+  flex-direction: column
+  padding-top: 174px
+  .wrapper-owl-portfolio
+    margin-top: 100px
+    width: 100%
+    height: 650px
+.review
+  background: url(../img/review.jpg) no-repeat center
+  background-size: cover
+  .head
+    padding-top: 70px
+    padding-bottom: 15px
+    font-size: 27px
+    text-align: center
+    margin-block-start: 0em
+    margin-block-end: 0em
+  .underHead
+    font-size: 17px
+    margin-block-start: 0em
+    margin-block-end: 0em
+    text-align: center
+  .hr
+     width: 30px
+     border: 1px solid red
+     margin: 30px auto
+  .textReview
+    width: 550px
+    margin: 0 auto
+    text-align: center
+    font-style: italic
+  .profileImage
+    width: 100px
+    height: 100px
+    background: url(../img/avatar.jpg) no-repeat center
+    background-size: cover
+    margin: 50px auto
+    margin-bottom: 20px
+    border-radius: 50%
+  .name
+    font-size: 17px
+    text-align: center
+    margin-bottom: 8px
+  .occupation
+    font-size: 9px
+    text-align: center
+    padding-bottom: 110px
+  .owl-theme .owl-dots
+    padding-bottom: 30px
+    .owl-dot span
+      border: 2px solid red
+      width: 14px
+      height: 14px
+    .owl-dot.active span
+      background: red
+
+.contacts
+  margin: 0 auto
+  width: 600px
+  p
+    margin-block-start: 0em
+    margin-block-end: 0em
+  .text
+    display: flex
+    .description
+      display: flex
+      flex-direction: column
+      justify-content: flex-start
+      align-content: center
+      padding-right: 65px
+      .logoSmall
+        width: 190px
+        height: 50px
+        background: red
+        margin: 0
+        margin-bottom: 30px
+        margin-top: 62px
+      .text
+        width: 250px
+        text-align: justify
+        margin: 0
+        padding-bottom: 30px
+      .button
+        width: 190px
+        padding: 15px 0
+        border-radius: 25px
+        background: red
+        text-align: center
+    .adress
+      .border
+        padding-left: 60px 
+        border-left: 1px solid black
+      .con 
+        font-size: 27px
+        margin-block-start: 0em
+        margin-block-end: 0em
+        padding-bottom: 30px
+        padding-top: 70px
+        padding-left: 60px 
+      .telephone
+        padding-top: 25px
+      .email
+        display: block
+      .sd
+        margin-top: 25px
+    .social
+      padding-left: 60px 
+      width: 216px
+      margin-top: 30px
+      position: initial
+      transform: translate(0)
+      flex-direction: row
+      align-items: center
+      .item
+        margin: 0 12px
+        &:first-child
+          margin-left: 0
+  .form
+    .con 
+      font-size: 27px
+      margin-block-start: 0em
+      margin-block-end: 0em
+      padding-bottom: 20px
+      padding-top: 70px
+    form
+      input
+        width: 600px
+        padding: 7px
+        outline: none
+        margin-top: 10px
+        background: red
+        border: none
+        color: white
+        
+    
+
+
+@media screen and (max-width: 1883px)
+
+  .carousel
+    .wrapper-owl
+      width: 85%
+
+@media screen and (max-width: 1633px)
+
+  .wrapMain
+    margin-left: 8%
+
+  .carousel
+    .wrapper-owl
+      width: 75%
+
+  .label
+    font-size: 50px !important
+
+@media screen and (max-width: 1553px)
+
+  .wrapMain
+    margin-left: 6%
+
+  .carousel
+    .wrapper-owl
+      width: 65%
+
+@media screen and (max-width: 1400px)
+  .wrapMain
+    width: 100%
+    margin-left: 5%
+
+  .carousel
+    .wrapper-owl
+      width: 62%
+
+  .label
+    font-size: 42px !important
+
+  
+@media screen and (max-width: 1300px)
+  
+  .second
+    .about
+      padding-top: 100px
+      .wrap
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        .photo
+          margin: 0 auto
+        p
+          width: 70%
+          margin: 50px auto
+          text-align: center
+        .header
+          width: auto
+          font-size: 50px
+          margin: 0 auto
+          text-align: center
+        .photo
+          height: 300px
+
+@media screen and (max-width: 1215px)
+  header ul li
+    font-size: 14px
+
+@media screen and (max-width: 1115px)
+  header ul li
+    font-size: 12px
+
+@media screen and (max-width: 1025px)
+  .goldLine
+    display: none
+
+  header
+    ul
+      display: none
+    
+  .pannel
+    width: 400px
+    height: 460px
+    right: 0
+    .leftSide
+      width: 40px
+      left: -40px
+    .rightSide
+      padding-right: 0
+      .input
+        width: 300px
+
+  .owl-theme .owl-dots .owl-dot span 
+    width: 15px
+    height: 15px
+    background: transparent
+    border: 2.5px solid #615078
+
+  .carousel
+    display: flex
+    flex-direction: column
+    .goldenLine
+      width: 609px
+      height: 508px
+    .label
+      position: initial
+      transform: translateY(0)
+      font-size: 25px
+      display: inline
+      margin: 20px auto
+      span
+        margin-left: 0 !important
+
+  .main_navigation
+    display: block
+    list-style: none
+    position: fixed
+    top: 0
+    left: 0
+    background: rgba(96, 80, 120, 0.68)
+    width: 45%
+    height: 100%
+    text-align: center
+    transform: translateX(-110%)
+    transition: transform 0.6s ease
+    z-index: 100
+  .scroll
+    transform: translateX(0%)
+  .main_navigation ul
+    margin-top: 21.5px
+    display: flex
+    justify-content: center
+    flex-direction: column
+    -webkit-padding-start: 0px
+    li
+      font-size: 15px
+      font-family: CenturyGothic
+      list-style: none
+      color: white
+      padding: 50px 35px 0px 35px
+      cursor: pointer
+      transition: 0.4s ease
+      a
+        color: white
+        letter-spacing: 1.5px
+        text-transform: uppercase
+  .button_toggle
+    display: block
+    position: fixed
+    width: 40px
+    height: 36px
+    right: 30px
+    top: 35px
+    background: transparent
+    z-index: 321
+    span
+      position: absolute
+      width: 100%
+      height: 2px
+      background: black
+      margin-top: 12px
+      transition: all 0.1s
+      background: white
+  input[type="checkbox"]
+    position: absolute
+    width: 100%
+    height: 100%
+    z-index: 1
+    opacity: 0
+    cursor: pointer
+    margin-top: 0px
+    &:checked + span
+      &:after
+        transform: rotate(-45deg) translate(-4px, 16px)
+        -o-transform: rotate(-45deg) translate(-4px, 16px) !important
+        -moz-transform: rotate(-45deg) translate(-4px, 16px) !important
+        -ms-transform: rotate(-45deg) translate(-4px, 16px) !important
+        -webkit-transform: rotate(-45deg) translate(-4px, 16px) !important
+      &:before
+        transform: rotate(45deg) translate(-1px, -12px)
+        -o-transform: rotate(45deg) translate(-1px, -12px) !important
+        -moz-transform: rotate(45deg) translate(-1px, -12px) !important
+        -ms-transform: rotate(45deg) translate(-1px, -12px) !important
+        -webkit-transform: rotate(45deg) translate(-1px, -12px) !important
+      background: transparent
+  .button_toggle span
+    &:before, &:after
+      content: ""
+      position: absolute
+      width: 40px
+      height: 2px
+      background: black
+      transition: all 0.3s
+      background: white
+    &:before
+      top: 12px
+    &:after
+      top: -12px
+  
+  #fp-nav
+    top: 90%
+
+  .wrapMain
+    margin-left: 0
+
+  .second
+    .about
+      padding-top: 50px
+      margin-top: 20px
+      .h
+        position: initial
+        transform: translateY(0)
+        font-size: 25px
+        display: inline
+      .wrap
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        .photo
+          margin: 0 auto
+          height: 200px
+          width: 70%
+        p
+          width: 70%
+          margin: 25px auto
+          font-size: 25px
+          text-align: center
+        .header
+          width: auto
+          font-size: 35px
+          margin: 0 auto
+          text-align: center
+        .photo
+          height: 300px
+
+  .logo
+    position: initial
+    margin: 0 auto
+    padding: 20px 0
+    z-index: 100
+
+  .social
+    position: initial
+    flex-direction: row
+    transform: translateY(0)
+    align-items: center
+    margin: 0 auto
+    .item
+      padding: 0 20px
+      margin: 20px
+
+  .second 
+    .about
+      .wrap
+        flex-direction: column  
+        .header
+          width: 90%
+          margin: 0 auto
+        .wrap
+          height: auto
+          width: 90%
+          margin: 0 auto
+
+  .third
+    .portfolio
+      padding-top: 50px
+      margin-top: 20px
+
+@media screen and (orientation: landscape)
+  .main_navigation ul li
+    padding: 30px 35px 0px 35px !important
+
+@media screen and (max-width: 653px)
+  .wrapMain
+    display: none
+
+  .pannel 
+    display: none
+    position: initial
+    margin-top: 20px
+    transform: translateY(0)
+    .leftSide
+      display: none
+
+@media screen and (max-width: 553px)
+  .carousel 
+    .label
+      margin: 20px !important
+    .wrapper-owl
+      width: 98%
+
+  .h
+    font-size: 20px !important
+
+  .pannel
+    width: 310px
+    height: 380px
+    .leftSide
+      width: 25px
+      left: -25px
+
+  .second 
+    .about
+     .wrap p
+        width: 90%
+        margin: 0 auto
+
+.pulse
+  margin: 38px
+  display: block
+  width: 32px
+  height: 32px
+  border-radius: 50%
+  background: $purple
+  cursor: pointer
+  box-shadow: 0 0 0 rgb(97, 80, 120)
+  animation: pulse 2s infinite
+  &:hover
+    animation: none
+
+@keyframes pulse
+  0%
+    box-shadow: 0 0 0 0 rgba(97, 80, 120, 0.61)
+
+  70%
+    box-shadow: 0 0 0 20px rgba(97, 80, 120, 0)
+
+  100%
+    box-shadow: 0 0 0 0 rgba(97, 80, 120, 0)

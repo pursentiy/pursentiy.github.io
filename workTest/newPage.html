@@ -8,10 +8,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="libs/OwlCarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="libs/OwlCarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="libs/lightgallery.js-master/lightgallery.css">
+    <link rel="stylesheet" href="libs/lightSlider/lightslider.css">
     <link rel="stylesheet" href="sass/main.css">
+    <style>
+
+
+        #loader-wrapper{
+                position:fixed;
+                top:0;
+                left:0;
+                width:100%;
+                height:100%;
+                z-index:1000;
+            
+            }
+            
+            #loader{
+                display: block;
+                position: relative;
+                left:50%;
+                top:50%;
+                width:150px;
+                height: 150px;
+                margin:-75px 0 0 -75px;
+                border-radius: 50%;
+                border:3px solid transparent;
+                border-top-color:#A176FF; 
+                  -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+                      animation: spin 2s linear infinite; 
+                      z-index: 10001;
+            }
+            
+            #loader:before{
+                content:"";
+                position: absolute;
+                top:5px;
+                left:5px;
+                right:5px;
+            bottom:5px;
+            border-radius: 50%;
+            border:3px solid transparent;
+            border-top-color:#a883b7;
+              -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+                      animation: spin 3s linear infinite; /
+            }
+            
+            #loader:after{
+                content:"";
+                position: absolute;
+                top:15px;
+                left:15px;
+                right:15px;
+            bottom:15px;
+            border-radius: 50%;
+            border:3px solid transparent;
+            border-top-color:#773987;
+              -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+                      animation: spin 1.5s linear infinite; /
+            }
+            
+            @-webkit-keyframes spin {
+              0%   {-webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+                  -ms-transform: rotate(0deg);  /* IE 9 */
+                      transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */ }
+              100% { -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+                  -ms-transform: rotate(360deg);  /* IE 9 */
+                      transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */  }
+            }
+            @keyframes spin {
+              0%   {-webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+                  -ms-transform: rotate(0deg);  /* IE 9 */
+                      transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */ }
+              100% { -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+                  -ms-transform: rotate(360deg);  /* IE 9 */
+                      transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */  }
+            }
+            
+            #loader-wrapper .loader-section{
+                position:fixed;
+                top:0px;
+                width:51%;
+                height:100%;
+                background:#200524;
+                z-index:1000;
+            }
+            
+            #loader-wrapper .loader-section.section-left{
+            left:0;
+            }
+            
+            #loader-wrapper .loader-section.section-right{
+            right:0;
+            }
+            
+            /*Loaded styles*/
+            .loaded #loader-wrapper .loader-section.section-left{
+                -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+                  -ms-transform: translateX(-100%);  /* IE 9 */
+                      transform: translateX(-100%);
+                      -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+                      transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+            }
+            
+            .loaded #loader-wrapper .loader-section.section-right{
+                -webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+                  -ms-transform: translateX(100%);  /* IE 9 */
+                      transform: translateX(100%);
+                      -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+                      transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+            }
+            
+            .loaded #loader{
+                opacity:0;
+                -webkit-transition: all 0.3s ease-out;  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+                      transition: all 0.3s  ease-out; 
+            }
+            
+            .loaded #loader-wrapper{
+                visibility: hidden;
+                    -webkit-transform: translateY(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+                  -ms-transform: translateY(-100%);  /* IE 9 */
+                      transform: translateY(-100%);
+            
+                      -webkit-transition: all 0.3s 1s ease-out;  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+                      transition: all 0.3s 1s ease-out;
+            }
+            
+            </style>
 </head>
 
 <body>
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
     <div class="main_navigation">
         <ul>
             <li><a href="#">О нас</a></li>
@@ -28,6 +160,9 @@
             <span class="transform"></span>
         </div>
     </div>
+
+
+
 
     <header>
         <div class="wrap">
@@ -47,22 +182,23 @@
             <span class="head">Wedding Creative</span>
             <hr>
             <span>Мы создаем свадьбы, <br> о которых слогают легенды</span>
-            <a class="button" class="button" href="">Смотреть</a>
+            <a class="button" href="">Смотреть</a>
         </div>
 
     </div>
     <div class="second">
         <div class="black">
             <div class="wrap">
-                <h2>Презентация</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                <a class="button" class="button" href="">Смотреть</a>
+                <h2>Акция 10%</h2>
+                <p>Успей заказать самую потрясающую и креативную свадьбу со скидкой в 10%</p>
+                <a class="button firstBut" href="">Заказать</a>
             </div>
         </div>
         <div class="yellow">
             <div class="wrap">
-                <h2>Презентация</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br> eiusmod tempor</p>
+                <h2>Нами реализованы более 1500 свадеб</h2>
+                <p>На данный момент, более 12 лет успешно проводим самое яркие свадьбы и обручили более 1500 влюбленных
+                    пар.</p>
                 <a class="button" href="">Смотреть</a>
             </div>
         </div>
@@ -71,17 +207,24 @@
     <div class="third">
         <div class="about">
             <h2 class="headerLine">Наш руководитель</h2>
-            <div class="wrap">
-                <div class="photo"></div>
-                <div class="text">
-                    <p> УAловите свое руки мощные вдохновениевкладывает в ваши УAловите свое руки мощные
-                        вдохновениевкладывает
-                        в ваши </p>
-                    <div class="header">Slogan kakoyta nash
-                        ochen krytoy yasina</div>
-                    <p> УAловите свое руки мощные вдохновениевкладывает в ваши УAловите свое руки мощные
-                        вдохновениевкладывает
-                        в ваши </p>
+            <div class="wrapper">
+                <div class="hed"> УAловите свое руки мощные вдохновениевкладывает в ваши УAловите свое руки мощные
+                    вдохновениевкладываетУAловите свое руки мощные вдохновениевкладывает в ваши УAловите свое руки свое
+                    руки мощные вдохновениевкладывает в ваши УAловите свое руки мощные вдохновениевкладываетУAловите
+                    свое руки мощные вдохновениевкладывает в ваши УAловите свое руки
+                </div>
+                <div class="wrap">
+                    <div class="photo"></div>
+                    <div class="text">
+
+                        <div class="header">Slogan kakoyta nash
+                            ochen krytoy yasina</div>
+                        <div class="p"> УAловите свое руки мощные вдохновениевкладывает в ваши УAловите свое руки
+                            мощные
+                            вдохновениевкладывает
+                            в ваши </div>
+                        <div class="signature"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -89,28 +232,29 @@
 
     <div class="fourth">
         <div class="wrap">
-            <h2 class="headerLine">О нас</h2>
+            <h2 class="headerLine">9 фактов о нас</h2>
             <hr>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.</p>
+            <p>Wedding Creative – свадебное агентство, которое помогает верить в чудо.</p>
             <div class="facts">
                 <div class="fact">
                     <div class="number">1</div>
                     <div class="text">
-                        <div class="normal"> <span class="black">Более 12 лет</span> успешно проводим самые яркие
-                            свадьбы</div>
+                        <div class="normal"> <span class="black">Более 12 лет</span> успешно проводим самые яркие и
+                            неповторимые свадьбы</div>
                     </div>
                 </div>
                 <div class="fact">
                     <div class="number">2</div>
                     <div class="text">
-                        <div class="normal"><span class="black">Более 1500</span> влюбленных пар были обручены</div>
+                        <div class="normal"><span class="black">Более 1500</span> влюбленных пар были успешно обручены
+                        </div>
                     </div>
                 </div>
                 <div class="fact">
                     <div class="number">3</div>
                     <div class="text">
-                        <div class="normal"><span class="black">Не боимся</span> масштабных свадеб</div>
+                        <div class="normal"><span class="black">Не боимся</span> масштабных свадеб (на наших свадьбах
+                            участвовало от 20 до 650 человек)</div>
                     </div>
                 </div>
                 <div class="fact">
@@ -123,13 +267,15 @@
                 <div class="fact">
                     <div class="number">5</div>
                     <div class="text">
-                        <div class="normal"><span class="black">Специальные условия</span> для влюбленных </div>
+                        <div class="normal"><span class="black">Специальные условия</span> для влюбленных (предлагаем
+                            каждому клиенту индивидуальные скидки)</div>
                     </div>
                 </div>
                 <div class="fact">
                     <div class="number">6</div>
                     <div class="text">
-                        <div class="normal"><span class="black">На связи 24/7</span> с первой встречи до торжества
+                        <div class="normal"><span class="black">На связи 24/7</span> с первой встречи до долгожданного
+                            торжества
                         </div>
                     </div>
                 </div>
@@ -150,75 +296,176 @@
                 <div class="fact">
                     <div class="number">9</div>
                     <div class="text">
-                        <div class="normal"><span class="black">В нашей команде</span> только профессионалы</div>
+                        <div class="normal"><span class="black">В нашей команде</span> только профессионалы своего дела</div>
                     </div>
                 </div>
             </div>
-            <p class="after">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                ut labore et
-                dolore magna aliqua.</p>
+            <p class="after">Поэтому, обращаясь в свадебное агентство «Wedding Creative», вы можете быть уверены в том,
+                что Ваша свадьба станет лучшим началом большой красивой сказки под названием «Семья»</p>
+        </div>
+    </div>
+
+    <div class="fifthAndHalf">
+        <div class="wrap">
+            <h2 class="headerLine">Портфолио</h2>
+            <div class="wra34p">
+                <div id="imageGallery-wrap">
+                    <ul id="imageGallery">
+                        <li data-thumb="img/1.jpg" data-src="img/1.jpg">
+                            <img src="img/1.jpg" />
+                        </li>
+                        <li data-thumb="img/2.jpg" data-src="img/2.jpg">
+                            <img src="img/2.jpg" />
+                        </li>
+                        <li data-thumb="img/3.jpg" data-src="img/3.jpg">
+                            <img src="img/3.jpg" />
+                        </li>
+                        <li data-thumb="img/4.jpg" data-src="img/4.jpg">
+                            <img src="img/4.jpg" />
+                        </li>
+                        <li data-thumb="img/5.jpg" data-src="img/5.jpg">
+                            <img src="img/5.jpg" />
+                        </li>
+                        <li data-thumb="img/6.jpg" data-src="img/6.jpg">
+                            <img src="img/6.jpg" />
+                        </li>
+                        <li data-thumb="img/7.jpg" data-src="img/7.jpg">
+                            <img src="img/7.jpg" />
+                        </li>
+                        <li data-thumb="img/8.jpg" data-src="img/8.jpg">
+                            <img src="img/8.jpg" />
+                        </li>
+                        <li data-thumb="img/9.jpg" data-src="img/9.jpg">
+                            <img src="img/9.jpg" />
+                        </li>
+                        <li data-thumb="img/10.jpg" data-src="img/10.jpg">
+                            <img src="img/10.jpg" />
+                        </li>
+                        <li data-thumb="img/11.jpg" data-src="img/11.jpg">
+                            <img src="img/11.jpg" />
+                        </li>
+                        <li data-thumb="img/12.jpg" data-src="img/12.jpg">
+                            <img src="img/12.jpg" />
+                        </li>
+                        <li data-thumb="img/13.jpg" data-src="img/13.jpg">
+                            <img src="img/13.jpg" />
+                        </li>
+                        <li data-thumb="img/14.jpg" data-src="img/14.jpg">
+                            <img src="img/14.jpg" />
+                        </li>
+                        <li data-thumb="img/15.jpg" data-src="img/15.jpg">
+                            <img src="img/15.jpg" />
+                        </li>
+                        <li data-thumb="img/16.jpg" data-src="img/16.jpg">
+                            <img src="img/16.jpg" />
+                        </li>
+                        <li data-thumb="img/17.jpg" data-src="img/17.jpg">
+                            <img src="img/17.jpg" />
+                        </li>
+                        <li data-thumb="img/18.jpg" data-src="img/18.jpg">
+                            <img src="img/18.jpg" />
+                        </li>
+                        <li data-thumb="img/19.jpg" data-src="img/19.jpg">
+                            <img src="img/19.jpg" />
+                        </li>
+                        <li data-thumb="img/20.jpg" data-src="img/20.jpg">
+                            <img src="img/20.jpg" />
+                        </li>
+                        <li data-thumb="img/21.jpg" data-src="img/21.jpg">
+                            <img src="img/21.jpg" />
+                        </li>
+                        <li data-thumb="img/22.jpg" data-src="img/22.jpg">
+                            <img src="img/22.jpg" />
+                        </li>
+                        <li data-thumb="img/23.jpg" data-src="img/23.jpg">
+                            <img src="img/23.jpg" />
+                        </li>
+                        <li data-thumb="img/24.jpg" data-src="img/24.jpg">
+                            <img src="img/24.jpg" />
+                        </li>
+                        <li data-thumb="img/25.jpg" data-src="img/25.jpg">
+                            <img src="img/25.jpg" />
+                        </li>
+                        <li data-thumb="img/26.jpg" data-src="img/26.jpg">
+                            <img src="img/26.jpg" />
+                        </li>
+                        <li data-thumb="img/27.jpg" data-src="img/27.jpg">
+                            <img src="img/27.jpg" />
+                        </li>
+                        <li data-thumb="img/28.jpg" data-src="img/28.jpg">
+                            <img src="img/28.jpg" />
+                        </li>
+                        <li data-thumb="img/29.jpg" data-src="img/29.jpg">
+                            <img src="img/29.jpg" />
+                        </li>
+                        <li data-thumb="img/30.jpg" data-src="img/30.jpg">
+                            <img src="img/30.jpg" />
+                        </li>
+                        <li data-thumb="img/31.jpg" data-src="img/31.jpg">
+                            <img src="img/31.jpg" />
+                        </li>
+                        <li data-thumb="img/32.jpg" data-src="img/32.jpg">
+                            <img src="img/32.jpg" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 
     <div class="fifth">
         <div class="review">
             <div class="wrap">
-                    <h3 class="head headerLine">Отзывы</h3>
+                <h3 class="head headerLine">Отзывы</h3>
             </div>
             <h4 class="underHead">клиентов</h4>
             <hr class="hr">
             <div id="owl-demo-review" class="owl-carousel owl-theme">
                 <div class="firstReview">
-                    <p class="textReview">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                        in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non
-                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                    <p class="textReview">"Организация мероприятия, начиная от декора, заканчивая бармен-шоу и
+                        выступлениями кавер-группы, была на высоте! Зал был оформлен великолепно, каждая деталь
+                        создавала неповторимую атмосферу праздника, и была выполнена качественно. Вечер удался
+                        расслабленным и душевным, все гости чувствовали себя комфортно и непринужденно, а ведущий – не
+                        давал заскучать никому. Все конкурсы были действительно интересными и веселыми.
+                        Мы оторвались по полной! Ребята, спасибо!"</p>
                     <div class="profileImage review1"></div>
-                    <div class="name">Елизавета Юдина</div>
-                    <div class="occupation">Менеджер</div>
+                    <div class="name">Анастасия и Андрей</div>
+                    <div class="occupation"></div>
                 </div>
                 <div class="firstReview">
-                    <p class="textReview">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                        in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non
-                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                    <p class="textReview">"Хочу выразить огромную благодарность, наша свадьба получилась очень крутой!
+                        Я уверена, что это была лучшая свадьба сезона!) Нам помогали во всем и были на связи 24/7. Это
+                        был волшебный день! Все было идеально! Мы искренне отдыхали и наслаждались праздником! «Wedding
+                        Creative» помогли на оптимизировать расходы, я уверена, что без них я бы и не догадалась, что
+                        аренда усадьбы вложится в наш скромный бюджет;) Молодожёны, торопитесь обратиться в «Wedding
+                        Creative», пока они не догадались поднять свои цены;)
+                        Коротко о нашей свадьбе: цвета марсала и лист оливки;) концепт — заброшенный замок. Все прошло
+                        на высоте!!! Спасибо большое, «Wedding Creative», за этот нереальный день!
+                        "</p>
                     <div class="profileImage review2"></div>
-                    <div class="name">Елизавета Юдина</div>
-                    <div class="occupation">Менеджер</div>
+                    <div class="name">Ольга и Слава</div>
+                    <div class="occupation"></div>
                 </div>
                 <div class="firstReview">
-                    <p class="textReview">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                        in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non
-                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                    <p class="textReview">"У нас был идеальный ведущий, очень красивое место и еда, мы получили крутые
+                        фотографии, наши гости были в восторге и, главное, наши нервы были в порядке. Мы выбрали
+                        «Wedding Creative», и не пожалели!
+                        Желаю каждому идеального «самого важного дня в жизни»! А чтобы он был действительно идеальным
+                        есть «Wedding Creative»!
+                        "</p>
                     <div class="profileImage review3"></div>
-                    <div class="name">Елизавета Юдина</div>
-                    <div class="occupation">Менеджер</div>
+                    <div class="name">Алиса и Алексей</div>
+                    <div class="occupation"></div>
                 </div>
                 <div class="firstReview">
-                    <p class="textReview">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                        in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non
-                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                    <p class="textReview">"От всей души хотим поблагодарить команду свадебного агенства «Wedding
+                        Creative»!!! Вы выполнили все наши пожелания и капризы, чтобы мы остались довольны!!) Ребята,
+                        желаем вам такой же слаженной работы, не останавливаться на достигнутом и всегда стремиться к
+                        максимуму в своей работе!!! Относитесь также внимательно к каждому делу, обязательно
+                        развивайтесь и продолжайте радовать пары, которые выбирают именно вас!!!"</p>
                     <div class="profileImage review4"></div>
-                    <div class="name">Елизавета Юдина</div>
-                    <div class="occupation">Менеджер</div>
+                    <div class="name">Софья и Илья</div>
+                    <div class="occupation"></div>
                 </div>
                 <div class="firstReview">
                     <p class="textReview">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -231,7 +478,7 @@
                         proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
                     <div class="profileImage review5"></div>
                     <div class="name">Елизавета Юдина</div>
-                    <div class="occupation">Менеджер</div>
+                    <div class="occupation"></div>
                 </div>
             </div>
         </div>
@@ -239,16 +486,18 @@
 
     <div class="sixth">
         <div class="contacts">
-            <div class="header">
-            </div>
             <div class="text">
-                <div class="description">
+
+                <div class="description" id="description">
                     <div class="logoSmall"></div>
-                    <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</div>
-                    <div class="button">Презентация</div>
+                    <div class="text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    </div>
+                    <a class="button" href="www.nahuy.com">Презентация</a>
                 </div>
-                <div class="adress">
+
+                <div class="adress pseudo">
                     <h4 class="con">Контакты</h4>
                     <div class="border">
                         <p>987456 Москва,</p>
@@ -256,8 +505,7 @@
                         <p>офис 105</p>
                         <p class="telephone">+7(902)685-51-23,</p>
                         <p>+7(902)685-51-23</p>
-                        <a class="email sd" href="#">samstda.io</a>
-                        <a class="email" href="#">samstda@gmai.com</a>
+                        <a class="email sd" href="nahuy.com">WeddingCreaive@gmai.com</a>
                     </div>
                     <div class="social">
                         <div class="item tw"></div>
@@ -266,27 +514,54 @@
                         <div class="item yout"></div>
                     </div>
                 </div>
-            </div>
-            <div class="form">
-                <h4 class="con">Обратная связь</h4>
-                <form id="form">
-                    <input type="hidden" name="project_name" value="Ветсельхоз">
-                    <input type="hidden" name="admin_email" value="vetklinika@hotmail.com">
-                    <input type="hidden" name="form_subject" value="Заказ звонка">
 
-                    <input class="username" type="text" name="username" placeholder="Имя">
-                    <p></p>
-                    <input class="telephone" type="text" name="theme" placeholder="Телефон">
-                    <input class="text" type="text" name="theme" placeholder="Ваш текст">
-                    <input type="hidden" name="formData" value="Заявка с сайта Ветсельхоз">
-                    <!-- <input type="submit" class="btn" id="submitt" value="Отправить"> -->
+                <div class="form pseudo">
+                    <h4 class="con">Обратная связь</h4>
+                    <form id="form">
+                        <input type="hidden" name="project_name" value="Ветсельхоз">
+                        <input type="hidden" name="admin_email" value="vetklinika@hotmail.com">
+                        <input type="hidden" name="form_subject" value="Заказ звонка">
+                        <input class="username" type="text" name="username" placeholder="Имя">
+                        <p></p>
+                        <input class="telephone" type="text" name="theme" placeholder="Телефон">
+                        <div class="wrap">
+                            <input class="text" type="text" name="theme" placeholder="Ваш текст">
+                            <input type="hidden" name="formData" value="Заявка с сайта Ветсельхоз">
+                            <div class="send-button">
+                                <span class="icon-wrapper">
+                                    <span class="icon-1 ion-paper-airplane"></span>
+                                    <span class="icon-2 ion-checkmark"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
 
-                </form>
             </div>
         </div>
     </div>
 
+    <footer>
+        <div class="wrap">
+            <p class="WeddingCreaive">"WeddingCreative" 2019 ©</p>
+            <ul class="bottomMenu">
+                <li> <a href="#">о нас</a> </li>
+                <li> <a href="#">цены</a> </li>
+                <li> <a href="#">портфолио</a> </li>
+                <li> <a href="#">отзывы</a> </li>
+                <li> <a href="#" class="test">КОНТАКТЫ</a> </li>
+            </ul>
+            <div class="up">
+                <a href="" id="scrollUp">
+                    <div class="arrow"></div>
+                </a>
+            </div>
+        </div>
+    </footer>
+
     <script src="libs/jquery/jquery-1.11.2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js">  </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.3.9/js/lightgallery.min.js"></script>
     <script src="libs/OwlCarousel/owl.carousel.min.js">  </script>
     <script src="js/newPage.js"></script>
 </body>
