@@ -1,0 +1,278 @@
+$paddingBigScreenRight: 100px
+$paddingBigScreenLeft: 300px
+
+$laserDefender: #9c7d4d
+$glitchGarden: #9fa92c
+$tilevania: #089441
+$grey: #989898
+
+a
+  &:hover
+  cursor: pointer
+  &:visited, &:link, &:hover, &:active
+  text-decoration: none
+
+p
+  margin-block-start: 0em
+  margin-block-end: 0em
+
+.hr
+    margin-block-start: 0em
+    margin-block-end: 0em
+    width: 25px
+    margin: 0
+    height: 3px
+    background: #fff
+
+
+@font-face
+  font-family: "Mon"
+  src : url("../fonts/Montserrat-Black.ttf")
+
+@font-face
+  font-family: "MonL"
+  src : url("../fonts/Montserrat-Regular.ttf")
+
+@font-face
+  font-family: "MonExL"
+  src : url("../fonts/Montserrat-Light.ttf")
+
+body
+  margin: 0
+  padding: 0
+  font-size: 14px
+  font-family: Mon
+
+.sidebar
+  width: 20%
+  position: fixed
+  height: 100%
+  background: rgba(0,0,0,.5)
+  z-index: 2
+  color: #ffffff
+  .header
+    font-family: MonL
+    padding: 40px 0 10px 30px
+    text-transform: uppercase
+  .projects
+    display: flex
+    flex-direction: column
+    .sidebarGame
+      padding: 15px 30px 
+      position: relative
+      transition: .5 ease
+      &:before
+        content: ""
+        position: absolute
+        left: 0
+        top: 0
+        background: #fff
+      p
+        color: #989898
+
+.sidebarGame.activeSidebar
+  background: #ffffff4d
+  p
+    color: #fff !important
+  &:before
+    height: 100%
+    width: 5px
+
+.project
+  .header
+    padding: 100px 0
+    position: relative
+    color: #fff
+    .gradient
+      position: absolute
+      top: 0
+      right: 0
+      width: 100%
+      height: 100%
+      background: linear-gradient(rgba(0,0,0,0) -30%,#181818)
+    .text
+      position: relative
+      .aboveHead
+        text-align: center
+        font-family: MonL
+        font-size: 19px
+      .head
+        text-align: center
+        font-size: 54px
+        margin-top: 10px
+
+.mainContent
+  padding: 0
+  padding-left: $paddingBigScreenLeft
+  padding-right: $paddingBigScreenRight
+  background: #181818
+  color: #fff
+  padding-bottom: 100px
+  .description
+    .title
+      font-family: MonL
+      font-size: 22px
+      margin: 15px 0 25px 0
+    .text
+      font-family: MonExL
+      font-size: 14px
+      line-height: 20px
+      margin: 0
+      padding-bottom: 20px
+      
+
+.bio
+  .header
+    background: url(../img/bio.jpg) no-repeat 50% 30%
+    background-size: cover
+  .mainContent
+    padding: 0 !important
+    padding-bottom: 100px !important
+    .description
+      padding-left: $paddingBigScreenLeft
+      width: 600px
+      margin: 0
+      .text
+        width: 100%
+        margin: 0 auto
+
+.game
+  .header
+    .text
+      padding: 0 $paddingBigScreenLeft
+      p
+        text-align: left !important
+  .mainContent
+    display: flex
+    justify-content: space-between
+    .description
+      width: 35%
+    .media
+      width: 70%
+      margin-top: 15px
+      margin-left: 30px
+      display: flex
+      flex-direction: column
+      align-content: center
+      .photo
+        width: 600px
+        img
+          width: 550px
+          display: block
+          margin: 0 auto
+      .video
+        width: 600px
+        margin-top: 30px 
+        video
+          width: 550px
+          margin: 0 auto
+          display: block
+    .vertical
+      flex-direction: row
+      .photo
+        width: 300px
+        img
+          width: 100%
+          height: 100%
+      .video
+        width: 300px
+        height: 528px
+        margin-top: 0
+        margin-left: 30px
+        position: relative
+        video
+          position: absolute
+          top: 0
+          width: 100%
+          height: 100%
+
+.laserDefender
+  .header
+    background: $laserDefender
+  .hr
+    background: $laserDefender
+  .owl-theme .owl-dots .owl-dot
+    &.active span
+      background: $laserDefender
+    &:hover span
+      background: $laserDefender
+
+.sidebarGame.activeSidebar.laserDefenderSidebar
+  background: #9c7d4d80
+  &:before
+    background: $laserDefender
+
+.glitchGarden
+  .header
+    background: $glitchGarden 
+  .hr
+    background: $glitchGarden 
+  .owl-theme .owl-dots .owl-dot
+    &.active span
+      background: $glitchGarden 
+    &:hover span
+      background: $glitchGarden 
+
+.sidebarGame.activeSidebar.glitchGardenSidebar
+  background: #9fa92c80
+  &:before
+    background: $glitchGarden
+
+.tilevania
+  .header
+    background: $tilevania
+  .hr
+    background: $tilevania
+  .owl-theme .owl-dots .owl-dot
+    &.active span
+      background: $tilevania
+    &:hover span
+      background: $tilevania
+
+.sidebarGame.activeSidebar.tilevaniaSidebar
+  background: #08944180
+  &:before
+    background: $tilevania
+
+.owl-theme .owl-dots .owl-dot
+  span
+    width: 25px
+    height: 3px
+    background: transparent
+    border-radius: 0
+    border: none
+    background: #fff
+    margin: 0
+  &.active span
+    background: $grey
+    position: relative
+
+.owl-theme .owl-dots .owl-dot:hover span
+  background: $grey
+  position: relative
+
+
+.owl-theme .owl-nav.disabled + .owl-dots
+  margin-top: 20px
+
+@media screen and (max-width: 1300px)
+
+  .game
+    .mainContent
+      flex-direction: column
+      .description
+        width: 600px
+    .media
+      margin-left: 0 !important
+      .photo
+        width: 550px !important
+      .video
+        video
+          margin: 0 !important
+    .vertical
+      .photo
+        width: 300px !important
+      .video
+        width: 300px
+        height: 528px !important
+      
