@@ -159,23 +159,29 @@ body {
   padding-bottom: 20px;
 }
 
-.bio .header {
+.game:first-child .header {
   background: url(../img/bio.jpg) no-repeat 50% 30%;
   background-size: cover;
 }
 
-.bio .mainContent {
-  padding: 0 !important;
+.game:first-child .mainContent {
   padding-bottom: 100px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.bio .mainContent .description {
+.game:first-child .media .photo {
+  margin-left: 138px !important;
+}
+
+.game:first-child .media .description {
   padding-left: 300px;
   width: 600px;
   margin: 0;
 }
 
-.bio .mainContent .description .text {
+.game:first-child .media .description .text {
   width: 100%;
   margin: 0 auto;
 }
@@ -577,6 +583,10 @@ body {
   }
 }
 
+.game:first-child .media .photo {
+  margin-left: 0 !important;
+}
+
 @media screen and (max-width: 1051px) {
   .project .header .text .aboveHead {
     font-size: 14px;
@@ -732,6 +742,7 @@ body {
     font-size: 11px;
     text-align: 0;
     padding-left: 0;
+    text-align: center !important;
   }
   .project .header .text .head {
     font-size: 30px;
@@ -787,6 +798,9 @@ body {
   }
   .game .mainContent .media .video video {
     width: 400px !important;
+  }
+  .game:first-child .media {
+    display: none;
   }
 }
 

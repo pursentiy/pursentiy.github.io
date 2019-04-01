@@ -45,18 +45,18 @@ $(document).ready(function () {
 
 
     function settingCss(e) {
-        if (window.innerWidth > 1051) {
-            sideBarWidth();
-        }
+        // if (window.innerWidth > 1051) {
+        //     sideBarWidth();
+        // }
 
-        function sideBarWidth() {
-            const bioBlock = $(".bio .mainContent .description .title");
-            const bioBlockPosition = bioBlock[0].getBoundingClientRect();
-            const sidebarWidth = bioBlockPosition.left - 30;
-            $(".sidebar").css({
-                width: sidebarWidth + "px"
-            });
-        }
+        // function sideBarWidth() {
+        //     const bioBlock = $(".bio .mainContent .description .title");
+        //     const bioBlockPosition = bioBlock[0].getBoundingClientRect();
+        //     const sidebarWidth = bioBlockPosition.left - 30;
+        //     $(".sidebar").css({
+        //         width: sidebarWidth + "px"
+        //     });
+        // }
     }
 
     $(window).resize(function () {
