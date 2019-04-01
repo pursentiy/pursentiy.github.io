@@ -1,6 +1,11 @@
 $(document).ready(function () {
 
-    $(this).scrollTop(0);
+    $('body').scrollTop(0);
+
+    $('.button_toggle').on('click', function () {
+        $('.sidebar').toggleClass('scroll');
+        $('.wrapper').toggleClass('wrapper_small');
+    });
 
     $('.owl-carousel').owlCarousel({
         loop: true,
@@ -22,11 +27,28 @@ $(document).ready(function () {
         }
     });
 
+    $(".sidebar").on("click", "div", function (event) {
+        event.preventDefault();
+        const ids = $(this).attr('class');
+        if (ids.length >= 25) {
+            const id = ids.split(" ");
+            const top = $(id[0]).offset().top;
+            $('body,html').animate({ scrollTop: top }, 1000);
+        }
+    });
+
+
+    function scrollPage(event) {
+
+    }
 
 
 
     function settingCss(e) {
-        sideBarWidth();
+        if (window.innerWidth > 1051) {
+            sideBarWidth();
+        }
+
         function sideBarWidth() {
             const bioBlock = $(".bio .mainContent .description .title");
             const bioBlockPosition = bioBlock[0].getBoundingClientRect();
@@ -41,13 +63,11 @@ $(document).ready(function () {
         setTimeout(function () { settingCss() }, 1000);
     });
 
-    settingCss();
-
     const gamePosArr = [];
     const sideBarGames = [];
 
     const games = document.getElementsByClassName("game");
-    GetGamesDivPos(games);
+
 
     function GetGamesDivPos(gamesDiv) {
         for (let i = 0; i < gamesDiv.length; i++) {
@@ -57,7 +77,11 @@ $(document).ready(function () {
     }
 
     const sidebarGames = document.getElementsByClassName("sidebarGame")
+   
     GetSidebarGames(sidebarGames);
+    GetGamesDivPos(games);
+    SetSideBarGame(window.pageYOffset);
+
     function GetSidebarGames(sidGames) {
         for (let i = 0; i < sidGames.length; i++) {
             sideBarGames.push(sidGames[i]);
@@ -65,12 +89,14 @@ $(document).ready(function () {
     }
 
     window.onscroll = function () {
-        SetSideBarGame(GetSidebarIndex);
+        SetSideBarGame(window.pageYOffset)
     }
 
-    function SetSideBarGame(CheckScrollPos) {
-        const gameIndex = GetSidebarIndex(window.pageYOffset );
-        if (window.pageYOffset < gamePosArr[0]){
+
+    function SetSideBarGame(offset) {
+        const gameIndex = GetSidebarIndex(offset);
+
+        if (offset < gamePosArr[0]) {
             removeActiveClassSidebarGames();
             return;
         }
@@ -94,6 +120,18 @@ $(document).ready(function () {
         }
     }
 
+
+
+    $(window).load(function () {
+        settingCss();
+
+
+    });
+
+    $(window).on('beforeunload', function () {
+        $('body').hide();
+        $(window).scrollTop(0);
+    });
 });
 
 
