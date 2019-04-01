@@ -69,13 +69,20 @@ body
     .sidebarGame
       padding: 15px 30px 
       position: relative
-      transition: .5 ease
+      transition: all .5s ease
       &:before
         content: ""
         position: absolute
         left: 0
         top: 0
         background: #fff
+      &:hover
+        cursor: pointer
+        background: $grey
+        &:before
+          background: #fff !important
+        p
+          color: #fff !important
       p
         color: #989898
 
@@ -130,24 +137,33 @@ body
       padding-bottom: 20px
       
 
-.game:first-child
+.bio
   .header
     background: url(../img/bio.jpg) no-repeat 50% 30%
     background-size: cover
   .mainContent
     padding-bottom: 100px !important
+    padding-left: 0 !important
     display: flex
-  .media
-    .photo
-      margin-left: 138px !important
-
-    .description
-      padding-left: $paddingBigScreenLeft
-      width: 600px
-      margin: 0
-      .text
-        width: 100%
-        margin: 0 auto
+    justify-content: space-between
+    flex-direction: row
+    .media
+      width: 70%
+      margin: 15px 0px 0 30px
+      display: flex
+      align-content: center
+      .photo
+        margin-left: 138px !important
+        width: 300px !important
+        img
+          width: 100% !important
+  .description
+    padding-left: $paddingBigScreenLeft
+    width: 35%
+    margin: 0
+    .text
+      width: 100%
+      margin: 0 auto
 
 .game
   .header
@@ -407,8 +423,18 @@ body
         width: 300px
         height: 528px !important
 
-.game:first-child .media .photo
-  margin-left: 0 !important
+  .bio .mainContent
+    align-content: baseline !important
+    align-items: flex-start !important
+    flex-direction: column !important
+    .description 
+      width: 600px !important
+    .media
+      margin-left: 0 !important
+      padding-left: 300px
+      .photo
+        margin-left: 0 !important
+
 
 
 @media screen and (max-width: 1051px)
@@ -497,6 +523,11 @@ body
   .scroll
     transform: translateX(0%)
 
+  .bio .mainContent
+    .media
+      margin-left: 0 !important
+      padding-left: 150px
+
 @media screen and (max-width: 800px)
 
   .project .header .text
@@ -521,6 +552,11 @@ body
       .description
         .title
           font-size: 15px
+
+  .bio .mainContent
+    .media
+      margin-left: 0 !important
+      padding-left: 50px
 
 @media screen and (max-width: 700px)
 
@@ -600,8 +636,14 @@ body
           video
             width: 400px !important
 
-  .game:first-child .media
-    display: none
+  .bio .media
+    display: none !important
+
+  .bio .mainContent
+    padding-right: 0 !important
+    .description 
+      width: 500px !important
+      margin: 0 auto !important
 
 @media screen and (max-width: 550px)
 
@@ -626,6 +668,10 @@ body
           video
             width: 300px !important
 
+  .bio .mainContent
+    .description 
+      width: 400px !important
+
 @media screen and (max-width: 450px)
 
   .sidebar
@@ -635,6 +681,10 @@ body
     .mainContent
       .description
         width: 300px
+
+  .bio .mainContent
+    .description 
+      width: 300px !important
 
   .game
     .mainContent
@@ -647,6 +697,10 @@ body
     .mainContent
       .description
         width: 270px
+
+  .bio .mainContent
+    .description 
+      width: 270px !important
 
   .game
     .mainContent

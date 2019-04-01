@@ -27,13 +27,19 @@ $(document).ready(function () {
         }
     });
 
+    let clickedLink = false;
     $(".sidebar").on("click", "div", function (event) {
+        if (clickedLink) return;
         event.preventDefault();
         const ids = $(this).attr('class');
         if (ids.length >= 25) {
             const id = ids.split(" ");
             const top = $(id[0]).offset().top;
-            $('body,html').animate({ scrollTop: top }, 1000);
+            clickedLink = true;
+            $('body,html').animate({ scrollTop: top, }, 1000);
+            setTimeout(function () {
+                clickedLink = false;
+            }, 1000);
         }
     });
 
@@ -71,16 +77,13 @@ $(document).ready(function () {
 
     function GetGamesDivPos(gamesDiv) {
         for (let i = 0; i < gamesDiv.length; i++) {
-            let gamePos = gamesDiv[i].getBoundingClientRect();
+            // let gamePos = gamesDiv[i].getBoundingClientRect();
+            // gamePosArr.push(gamePos.top);
+
+            let gamePos = $(gamesDiv[i]).position();
             gamePosArr.push(gamePos.top);
         }
     }
-
-    const sidebarGames = document.getElementsByClassName("sidebarGame")
-   
-    GetSidebarGames(sidebarGames);
-    GetGamesDivPos(games);
-    SetSideBarGame(window.pageYOffset);
 
     function GetSidebarGames(sidGames) {
         for (let i = 0; i < sidGames.length; i++) {
@@ -88,8 +91,16 @@ $(document).ready(function () {
         }
     }
 
+    const sidebarGames = document.getElementsByClassName("sidebarGame")
+
+    GetSidebarGames(sidebarGames);
+    GetGamesDivPos(games);
+    SetSideBarGame(window.pageYOffset);
+
+
+
     window.onscroll = function () {
-        SetSideBarGame(window.pageYOffset)
+        SetSideBarGame($(document).scrollTop());
     }
 
 

@@ -75,8 +75,8 @@ body {
 .sidebar .projects .sidebarGame {
   padding: 15px 30px;
   position: relative;
-  -webkit-transition: .5 ease;
-  transition: .5 ease;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
 .sidebar .projects .sidebarGame:before {
@@ -85,6 +85,19 @@ body {
   left: 0;
   top: 0;
   background: #fff;
+}
+
+.sidebar .projects .sidebarGame:hover {
+  cursor: pointer;
+  background: #989898;
+}
+
+.sidebar .projects .sidebarGame:hover:before {
+  background: #fff !important;
+}
+
+.sidebar .projects .sidebarGame:hover p {
+  color: #fff !important;
 }
 
 .sidebar .projects .sidebarGame p {
@@ -159,29 +172,52 @@ body {
   padding-bottom: 20px;
 }
 
-.game:first-child .header {
+.bio .header {
   background: url(../img/bio.jpg) no-repeat 50% 30%;
   background-size: cover;
 }
 
-.game:first-child .mainContent {
+.bio .mainContent {
   padding-bottom: 100px !important;
+  padding-left: 0 !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-.game:first-child .media .photo {
+.bio .mainContent .media {
+  width: 70%;
+  margin: 15px 0px 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.bio .mainContent .media .photo {
   margin-left: 138px !important;
+  width: 300px !important;
 }
 
-.game:first-child .media .description {
+.bio .mainContent .media .photo img {
+  width: 100% !important;
+}
+
+.bio .description {
   padding-left: 300px;
-  width: 600px;
+  width: 35%;
   margin: 0;
 }
 
-.game:first-child .media .description .text {
+.bio .description .text {
   width: 100%;
   margin: 0 auto;
 }
@@ -581,10 +617,27 @@ body {
     width: 300px;
     height: 528px !important;
   }
-}
-
-.game:first-child .media .photo {
-  margin-left: 0 !important;
+  .bio .mainContent {
+    -ms-flex-line-pack: baseline !important;
+        align-content: baseline !important;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .bio .mainContent .description {
+    width: 600px !important;
+  }
+  .bio .mainContent .media {
+    margin-left: 0 !important;
+    padding-left: 300px;
+  }
+  .bio .mainContent .media .photo {
+    margin-left: 0 !important;
+  }
 }
 
 @media screen and (max-width: 1051px) {
@@ -686,6 +739,10 @@ body {
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
   }
+  .bio .mainContent .media {
+    margin-left: 0 !important;
+    padding-left: 150px;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -709,6 +766,10 @@ body {
   }
   .game .mainContent .description .title {
     font-size: 15px;
+  }
+  .bio .mainContent .media {
+    margin-left: 0 !important;
+    padding-left: 50px;
   }
 }
 
@@ -799,8 +860,15 @@ body {
   .game .mainContent .media .video video {
     width: 400px !important;
   }
-  .game:first-child .media {
-    display: none;
+  .bio .media {
+    display: none !important;
+  }
+  .bio .mainContent {
+    padding-right: 0 !important;
+  }
+  .bio .mainContent .description {
+    width: 500px !important;
+    margin: 0 auto !important;
   }
 }
 
@@ -829,6 +897,9 @@ body {
   .game .mainContent .media .video video {
     width: 300px !important;
   }
+  .bio .mainContent .description {
+    width: 400px !important;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -838,6 +909,9 @@ body {
   .bio .mainContent .description {
     width: 300px;
   }
+  .bio .mainContent .description {
+    width: 300px !important;
+  }
   .game .mainContent .description {
     width: 300px !important;
   }
@@ -846,6 +920,9 @@ body {
 @media screen and (max-width: 380px) {
   .bio .mainContent .description {
     width: 270px;
+  }
+  .bio .mainContent .description {
+    width: 270px !important;
   }
   .game .mainContent .description {
     width: 270px !important;
