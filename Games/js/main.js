@@ -93,17 +93,6 @@ $(document).ready(function () {
 
     const sidebarGames = document.getElementsByClassName("sidebarGame")
 
-    GetSidebarGames(sidebarGames);
-    GetGamesDivPos(games);
-    SetSideBarGame(window.pageYOffset);
-
-
-
-    window.onscroll = function () {
-        SetSideBarGame($(document).scrollTop());
-    }
-
-
     function SetSideBarGame(offset) {
         const gameIndex = GetSidebarIndex(offset);
 
@@ -131,18 +120,29 @@ $(document).ready(function () {
         }
     }
 
+    GetSidebarGames(sidebarGames);
+    GetGamesDivPos(games);
+    SetSideBarGame(window.pageYOffset);
 
+    window.onscroll = function () {
+        SetSideBarGame($(document).scrollTop());
+    }
+
+    $(window).resize(function () {
+        gamePosArr.length = 0;
+        GetGamesDivPos(games);
+        SetSideBarGame($(document).scrollTop());
+    });
 
     $(window).load(function () {
         settingCss();
-
-
     });
 
     $(window).on('beforeunload', function () {
         $('body').hide();
         $(window).scrollTop(0);
     });
+
 });
 
 

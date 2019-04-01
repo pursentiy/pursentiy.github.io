@@ -297,7 +297,7 @@ body {
 
 .game .mainContent .vertical .video {
   width: 300px;
-  height: 528px;
+  height: 535px;
   margin-top: 0;
   margin-left: 30px;
   position: relative;
@@ -615,7 +615,7 @@ body {
   }
   .game .vertical .video {
     width: 300px;
-    height: 528px !important;
+    height: 535px !important;
   }
   .bio .mainContent {
     -ms-flex-line-pack: baseline !important;
