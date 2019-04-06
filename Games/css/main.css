@@ -167,7 +167,7 @@ body {
 .mainContent .description .text {
   font-family: MonExL;
   font-size: 17px;
-  line-height: 20px;
+  line-height: 24px;
   margin: 0;
   padding-bottom: 20px;
 }
@@ -203,8 +203,8 @@ body {
 }
 
 .bio .mainContent .media .photo {
-  margin-left: 138px !important;
-  width: 300px !important;
+  margin-left: 74px !important;
+  width: 480px !important;
 }
 
 .bio .mainContent .media .photo img {
