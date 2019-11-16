@@ -125,10 +125,6 @@ $(document).ready(function () {
         SetSideBarGame($(document).scrollTop());
     });
 
-    $(window).load(function () {
-        settingCss();
-    });
-
     $(window).on('beforeunload', function () {
         $('body').hide();
         $(window).scrollTop(0);
