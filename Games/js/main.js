@@ -30,39 +30,32 @@ $(document).ready(function () {
     let clickedLink = false;
     $(".sidebar").on("click", "div", function (event) {
         if (clickedLink) return;
+        GetGamesDivPos(games);
         event.preventDefault();
         const ids = $(this).attr('class');
-        if (ids.length >= 25) {
-            const id = ids.split(" ");
-            const top = $(id[0]).offset().top;
-            clickedLink = true;
-            $('body,html').animate({ scrollTop: top, }, 1000);
-            setTimeout(function () {
-                clickedLink = false;
-            }, 1000);
-        }
+        ScrollDisplayToGame(ids)
     });
 
-
-    function scrollPage(event) {
-
+    function ScrollDisplayToGame(ids){
+        if (ids.length >= 25) {
+            const id = ids.split(" ");
+            var gameBlock = document.getElementById(id[0].slice(1)).getBoundingClientRect();
+            clickedLink = true;
+            $('body,html').animate({ scrollTop: GetScroll(gameBlock.top), }, 1000);
+            setTimeout(function () {
+                clickedLink = false;
+                SetSideBarGame(document.documentElement.scrollTop) 
+            }, 1000);
+            
+        }
     }
 
 
-
-    function settingCss(e) {
-        // if (window.innerWidth > 1051) {
-        //     sideBarWidth();
-        // }
-
-        // function sideBarWidth() {
-        //     const bioBlock = $(".bio .mainContent .description .title");
-        //     const bioBlockPosition = bioBlock[0].getBoundingClientRect();
-        //     const sidebarWidth = bioBlockPosition.left - 30;
-        //     $(".sidebar").css({
-        //         width: sidebarWidth + "px"
-        //     });
-        // }
+    function GetScroll(amount) {
+        let displayScroll = document.documentElement.scrollTop;
+        displayScroll += amount;
+        if (displayScroll < 0) displayScroll = 0;
+        return displayScroll;
     }
 
     $(window).resize(function () {
@@ -76,10 +69,8 @@ $(document).ready(function () {
 
 
     function GetGamesDivPos(gamesDiv) {
+        gamePosArr.length = 0;
         for (let i = 0; i < gamesDiv.length; i++) {
-            // let gamePos = gamesDiv[i].getBoundingClientRect();
-            // gamePosArr.push(gamePos.top);
-
             let gamePos = $(gamesDiv[i]).position();
             gamePosArr.push(gamePos.top);
         }
@@ -94,9 +85,9 @@ $(document).ready(function () {
     const sidebarGames = document.getElementsByClassName("sidebarGame")
 
     function SetSideBarGame(offset) {
-        const gameIndex = GetSidebarIndex(offset);
+        let gameIndex = GetSidebarIndex(offset);
 
-        if (offset < gamePosArr[0]) {
+        if (offset + 1 < gamePosArr[0]) {
             removeActiveClassSidebarGames();
             return;
         }
@@ -108,7 +99,7 @@ $(document).ready(function () {
 
     function GetSidebarIndex(pageYOffset) {
         for (let i = gamePosArr.length; i >= 0; i--) {
-            if (pageYOffset >= gamePosArr[i]) {
+            if (pageYOffset + 1 >= gamePosArr[i]) {
                 return i;
             }
         }
@@ -125,7 +116,7 @@ $(document).ready(function () {
     SetSideBarGame(window.pageYOffset);
 
     window.onscroll = function () {
-        SetSideBarGame($(document).scrollTop());
+        SetSideBarGame(document.documentElement.scrollTop);
     }
 
     $(window).resize(function () {

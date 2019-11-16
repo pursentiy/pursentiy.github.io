@@ -5,16 +5,16 @@ a {
 
 p {
   -webkit-margin-before: 0em;
-          margin-block-start: 0em;
+  margin-block-start: 0em;
   -webkit-margin-after: 0em;
-          margin-block-end: 0em;
+  margin-block-end: 0em;
 }
 
 .hr {
   -webkit-margin-before: 0em;
-          margin-block-start: 0em;
+  margin-block-start: 0em;
   -webkit-margin-after: 0em;
-          margin-block-end: 0em;
+  margin-block-end: 0em;
   width: 25px;
   margin: 0;
   height: 3px;
@@ -68,8 +68,8 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .sidebar .projects .sidebarGame {
@@ -184,12 +184,12 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 .bio .mainContent .media {
@@ -199,7 +199,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
 }
 
 .bio .mainContent .media .photo {
@@ -235,8 +235,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .game .mainContent .description {
@@ -252,10 +252,10 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
 }
 
 .game .mainContent .media .photo {
@@ -282,8 +282,8 @@ body {
 .game .mainContent .vertical {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 .game .mainContent .vertical .photo {
@@ -526,6 +526,38 @@ body {
   background: #25511a;
 }
 
+.sidebarGame.activeSidebar.MinecraftSidebar {
+  background: #9cf57180;
+}
+
+.sidebarGame.activeSidebar.MinecraftSidebar:before {
+  background: #9cf571;
+}
+
+.sidebarGame.activeSidebar.UnrealSidebar {
+  background: #43010080;
+}
+
+.sidebarGame.activeSidebar.UnrealSidebar:before {
+  background: #430100;
+}
+
+.minecraft .header {
+  background: #9cf571;
+}
+
+.minecraft .hr {
+  background: #9cf571;
+}
+
+.Unreal .header {
+  background: #430100;
+}
+
+.Unreal .hr {
+  background: #430100;
+}
+
 .heroClicker .header {
   background: #ffca99;
 }
@@ -570,7 +602,7 @@ body {
   position: relative;
 }
 
-.owl-theme .owl-nav.disabled + .owl-dots {
+.owl-theme .owl-nav.disabled+.owl-dots {
   margin-top: 20px;
 }
 
@@ -578,8 +610,8 @@ body {
   .game .mainContent {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   .game .mainContent .description {
     width: 600px;
@@ -600,15 +632,15 @@ body {
   .game .vertical {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
-        -ms-flex-direction: column !important;
-            flex-direction: column !important;
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-align: start !important;
-        -ms-flex-align: start !important;
-            align-items: flex-start !important;
+    -ms-flex-align: start !important;
+    align-items: flex-start !important;
     -ms-flex-line-pack: baseline !important;
-        align-content: baseline !important;
+    align-content: baseline !important;
   }
   .game .vertical .photo {
     width: 300px !important;
@@ -619,14 +651,14 @@ body {
   }
   .bio .mainContent {
     -ms-flex-line-pack: baseline !important;
-        align-content: baseline !important;
+    align-content: baseline !important;
     -webkit-box-align: start !important;
-        -ms-flex-align: start !important;
-            align-items: flex-start !important;
+    -ms-flex-align: start !important;
+    align-items: flex-start !important;
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
-        -ms-flex-direction: column !important;
-            flex-direction: column !important;
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
   }
   .bio .mainContent .description {
     width: 600px !important;
@@ -675,7 +707,7 @@ body {
     width: 45%;
     height: 100%;
     -webkit-transform: translateX(-110%);
-            transform: translateX(-110%);
+    transform: translateX(-110%);
     -webkit-transition: -webkit-transform 0.6s ease;
     transition: -webkit-transform 0.6s ease;
     transition: transform 0.6s ease;
@@ -711,16 +743,16 @@ body {
     cursor: pointer;
     margin-top: 0px;
   }
-  input[type="checkbox"]:checked + span {
+  input[type="checkbox"]:checked+span {
     background: transparent;
   }
-  input[type="checkbox"]:checked + span:after {
+  input[type="checkbox"]:checked+span:after {
     -webkit-transform: rotate(-45deg) translate(-4px, 16px);
-            transform: rotate(-45deg) translate(-4px, 16px);
+    transform: rotate(-45deg) translate(-4px, 16px);
   }
-  input[type="checkbox"]:checked + span:before {
+  input[type="checkbox"]:checked+span:before {
     -webkit-transform: rotate(45deg) translate(-1px, -12px);
-            transform: rotate(45deg) translate(-1px, -12px);
+    transform: rotate(45deg) translate(-1px, -12px);
   }
   .button_toggle span:before, .button_toggle span:after {
     content: "";
@@ -740,7 +772,7 @@ body {
   }
   .scroll {
     -webkit-transform: translateX(0%);
-            transform: translateX(0%);
+    transform: translateX(0%);
   }
   .bio .mainContent .media {
     margin-left: 0 !important;
@@ -831,11 +863,11 @@ body {
     padding-left: 0 !important;
     padding-right: 0 !important;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   .game .mainContent .description {
     width: 500px !important;
@@ -949,4 +981,5 @@ body {
     overflow: scroll;
   }
 }
+
 /*# sourceMappingURL=main.css.map */
