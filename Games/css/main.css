@@ -42,6 +42,15 @@ p {
   src: url("../fonts/Montserrat-Light.ttf");
 }
 
+a{
+  color:#fff;
+  cursor: pointer;
+}
+
+a:hover{
+ font-weight: bold;
+}
+
 body {
   margin: 0;
   padding: 0;
